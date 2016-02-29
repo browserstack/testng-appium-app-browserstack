@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="3" name="Suite" parallel="tests">
+  <test name="FirstTest">
+    <parameter name="browser" value="firefox"/>
+    <parameter name="version" value="20.0"/>
+    <parameter name="platform" value="MAC"/>
+    <classes>
+      <class name="bs.TestNGParallel"/>
+    </classes>
+  </test> <!-- Test -->
+  <test name="SecondTest">
+    <parameter name="browser" value="chrome"/>
+    <parameter name="version" value="26.0"/>
+    <parameter name="platform" value="WINDOWS"/>
+    <classes>
+      <class name="bs.TestNGParallel"/>
+    </classes>
+  </test> <!-- Test -->
+  <test name="ThirdTest">
+    <parameter name="browser" value="safari"/>
+    <parameter name="version" value="6.0"/>
+    <parameter name="platform" value="MAC"/>
+    <classes>
+      <class name="bs.TestNGParallel"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
