@@ -9,8 +9,6 @@
 
 	<property name="build.dir" location="bin" />
 
-	<property name="dist.dir" location="dist" />
-
 	<target name="init">
 		<tstamp />
 		<mkdir dir="${build.dir}" />
@@ -28,26 +26,16 @@
     </javac>
 	</target>
 
-	<target name="dist" depends="compile" description="create a JAR for the tests">
-		<mkdir dir="${dist.dir}" />
-
-		<jar jarfile="${dist.dir}/${projectName}-${DSTAMP}.jar" basedir="${build.dir}" >
-		    <manifest>
-          <attribute name="Main-Class" value="com.browserstack.TestNGParallel" />
-		    </manifest>
-		</jar>
-	</target>
-
   <taskdef name="testng" classpathref="build.classpath" classname="org.testng.TestNGAntTask" />
 
-  <target name="test-parallel" depends="dist" description="run the tests on BrowserStack">
+  <target name="test-parallel" depends="compile" description="run the tests on BrowserStack">
     <testng classpathref="build.classpath" verbose="10" >
       <classpath location="bin" />
       <xmlfileset dir="." includes="testng.xml"/>
     </testng>
   </target>
 
-  <target name="test-series" depends="dist" description="run the tests on BrowserStack">
+  <target name="test-series" depends="compile" description="run the tests on BrowserStack">
     <testng classpathref="build.classpath" verbose="10" groups="series_test">
       <classpath location="bin" />
       <classfileset dir="bin" includes="**/**/TestNGSample.class"/>
@@ -56,9 +44,8 @@
 
 	<target name="clean" description="clean up">
 		<delete dir="${build.dir}" />
-		<delete dir="${dist.dir}" />
 	</target>
 
-	<target name="main" depends="clean, compile, dist, test-parallel" />
+	<target name="main" depends="clean, compile, test-parallel" />
 
 </project>
