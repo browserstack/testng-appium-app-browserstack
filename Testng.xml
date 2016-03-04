@@ -6,7 +6,7 @@
     <parameter name="version" value="20.0"/>
     <parameter name="platform" value="MAC"/>
     <classes>
-      <class name="bs.TestNGParallel"/>
+      <class name="com.browserstack.TestNGParallel"/>
     </classes>
   </test> <!-- Test -->
   <test name="SecondTest">
@@ -14,7 +14,7 @@
     <parameter name="version" value="26.0"/>
     <parameter name="platform" value="WINDOWS"/>
     <classes>
-      <class name="bs.TestNGParallel"/>
+      <class name="com.browserstack.TestNGParallel"/>
     </classes>
   </test> <!-- Test -->
   <test name="ThirdTest">
@@ -22,7 +22,7 @@
     <parameter name="version" value="6.0"/>
     <parameter name="platform" value="MAC"/>
     <classes>
-      <class name="bs.TestNGParallel"/>
+      <class name="com.browserstack.TestNGParallel"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
