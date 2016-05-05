@@ -1,8 +1,12 @@
 package com.browserstack;
 
+import com.browserstack.local.Local;
+
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeSuite;
+import org.testng.annotations.AfterSuite;
 import org.testng.annotations.Factory;
 import org.testng.annotations.Test;
 import org.testng.Assert;
@@ -10,6 +14,7 @@ import org.testng.Assert;
 import java.io.File;
 import java.io.IOException;
 import java.net.URL;
+import java.util.HashMap;
 
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.By;
@@ -22,13 +27,15 @@ import org.openqa.selenium.remote.Augmenter;
 import org.openqa.selenium.remote.RemoteWebDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
 
-public class TestNGSample {
+public class TestNGLocal {
   private String platform;
   private String browserName;
   private String browserVersion;
+  private Local bsLocal;
 
   @Factory(dataProvider = "getBrowsers")
-  public TestNGSample(String platform,String browserName,String browserVersion) {
+  public TestNGLocal(String platform,String browserName,String browserVersion) {
+    this.bsLocal = new Local();
     this.platform = platform;
     this.browserName = browserName;
     this.browserVersion = browserVersion;
@@ -36,20 +43,33 @@ public class TestNGSample {
 
   private WebDriver driver;
 
+  @BeforeSuite(alwaysRun=true)
+  public void suiteSetup() throws Exception {
+    String accessKey = System.getenv("BROWSERSTACK_ACCESS_KEY");
+
+    HashMap<String, String> bsLocalArgs = new HashMap<String, String>();
+    bsLocalArgs.put("key", accessKey);
+    bsLocalArgs.put("forcelocal", "");
+    bsLocal.start(bsLocalArgs);
+  }
+
   @BeforeMethod(alwaysRun=true)
   public void setUp() throws Exception {
+    String username = System.getenv("BROWSERSTACK_USERNAME");
+    String accessKey = System.getenv("BROWSERSTACK_ACCESS_KEY");
+
     DesiredCapabilities capability = new DesiredCapabilities();
     capability.setCapability("platform",platform);
     capability.setCapability("browser", browserName);
     capability.setCapability("browserVersion", browserVersion);
-    capability.setCapability("name", "Sample TestNG Series Tests");
+    capability.setCapability("name", "Sample TestNG Local  Test");
     capability.setCapability("build", "Sample TestNG Tests");
-    String username = System.getenv("BROWSERSTACK_USERNAME");
-    String accessKey = System.getenv("BROWSERSTACK_ACCESS_KEY");
+    capability.setCapability("browserstack.local", "true");
+
     driver = new RemoteWebDriver(new URL("http://"+username+":"+accessKey+"@hub.browserstack.com/wd/hub"), capability);
   }
 
-  @Test(groups = { "series_test" })
+  @Test(groups = { "local_test" })
   public void testSimple() throws Exception {
     this.driver.get("http://www.google.com");
     System.out.println("Page title is: " + driver.getTitle());
@@ -70,6 +90,13 @@ public class TestNGSample {
   public void tearDown() throws Exception {
     if(driver != null) {
       driver.quit();
+    }
+  }
+
+  @AfterSuite(alwaysRun=true)
+  public void afterSuite() throws Exception {
+    if(bsLocal != null) {
+      bsLocal.stop();
     }
   }
 
