@@ -2,3 +2,4 @@ test-output/
 dist/
 bin/
 *.png
+local.log

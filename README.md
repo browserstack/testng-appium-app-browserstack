@@ -10,6 +10,7 @@ Sample for running [TestNG] tests with BrowserStack Automate.
 - Optionally, you can add your BrowserStack credentials to the environment variables `BROWSERSTACK_USERNAME` and `BROWSERSTACK_ACCESS_KEY`.
 
 ### Running the tests
+- To start local tests run: `ant test-local`
 - To start tests in series, run: `ant test-series`
 - To start parallel tests run: `ant test-parallel`
 

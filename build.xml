@@ -42,6 +42,13 @@
     </testng>
   </target>
 
+  <target name="test-local" depends="compile" description="run the tests on BrowserStack">
+    <testng classpathref="build.classpath" verbose="10" groups="local_test">
+      <classpath location="bin" />
+      <classfileset dir="bin" includes="**/**/TestNGLocal.class"/>
+    </testng>
+  </target>
+
 	<target name="clean" description="clean up">
 		<delete dir="${build.dir}" />
 	</target>
