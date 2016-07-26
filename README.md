@@ -1,19 +1,20 @@
-TestNG-BrowserStack
-=========
+# testng-browserstack
 
-Sample for running [TestNG] tests with BrowserStack Automate.
+[TestNG](http://testng.org) Integration with BrowserStack.
 
-### Configuring the json
-- Open `src/com/browserstack/TestNGSample.java` or `src/com/browserstack/TestNGParallel.java`.
-- Add `username` and `accessKey` with your BrowserStack credentials. Don't have one? Get one on BrowserStack [dashboard].
-- Add / customise more [capabilities].
-- Optionally, you can add your BrowserStack credentials to the environment variables `BROWSERSTACK_USERNAME` and `BROWSERSTACK_ACCESS_KEY`.
+## Setup
 
-### Running the tests
-- To start local tests run: `ant test-local`
-- To start tests in series, run: `ant test-series`
-- To start parallel tests run: `ant test-parallel`
+- Clone the repo
+- Install dependencies `mvn compile`
+- Update `*.conf.json` files inside the `src/test/resources/conf` directory with your BrowserStack Username and Access Key. (These can be found in the [settings](https://www.browserstack.com/accounts/settings) section on BrowserStack accounts page)
+- Alternatively, you can export the environment variables for the Username and Access Key of your BrowserStack account. `export BROWSERSTACK_USERNAME=<browserstack-username> && export BROWSERSTACK_ACCESS_KEY=<browserstack-access-key>`
 
-[TestNG]:http://testng.org
-[capabilities]:http://www.browserstack.com/automate/capabilities
-[dashboard]:https://www.browserstack.com/automate
+### Run the tests
+
+- To run single test, run `mvn test -P single`
+- To run parallel tests, run `mvn test -P parallel`
+- To run local tests, run `mvn test -P local`
+
+### Notes
+
+- In order to test on different set of browsers, check out our [code generator](https://www.browserstack.com/automate/python#setting-os-and-browser)

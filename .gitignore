@@ -1,5 +1,5 @@
-test-output/
-dist/
-bin/
 *.png
+target/
 local.log
+.idea
+*.iml

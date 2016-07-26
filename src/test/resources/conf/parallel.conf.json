@@ -1,0 +1,26 @@
+{
+  "server": "hub-cloud.browserstack.com",
+  "user": "BROWSERSTACK_USERNAME",
+  "key": "BROWSERSTACK_ACCESS_KEY",
+
+  "capabilities": {
+    "build": "testng-browserstack",
+    "name": "parallel_test",
+    "browserstack.debug": true
+  },
+
+  "environments": {
+    "chrome": {
+      "browser": "chrome"
+    },
+    "firefox": {
+      "browser": "firefox"
+    },
+    "safari": {
+      "browser": "safari"
+    },
+    "ie": {
+      "browser": "internet explorer"
+    }
+  }
+}
