@@ -1,17 +1,19 @@
 {
-  "server": "hub-cloud.browserstack.com",
+  "server": "hub.browserstack.com",
   "user": "BROWSERSTACK_USERNAME",
   "key": "BROWSERSTACK_ACCESS_KEY",
 
   "capabilities": {
     "build": "testng-browserstack",
-    "name": "single_test",
-    "browserstack.debug": true
+    "name": "single_appium_test",
+    "browserstack.debug": true,
+    "realMobile": true,
+    "app": "bs://3fc0a1f5a158e935ad806b97288f4b24e11ebcc4"
   },
 
   "environments": {
-    "chrome": {
-      "browser": "chrome"
+    "galaxy_s6": {
+      "device": "Samsung Galaxy S6"
     }
   }
 }

@@ -3,7 +3,7 @@
 <suite name="Single">
     <test name="SingleTest">
         <parameter name="config" value="single.conf.json"/>
-        <parameter name="environment" value="chrome"/>
+        <parameter name="environment" value="galaxy_s6"/>
         <classes>
             <class name="com.browserstack.SingleTest"/>
         </classes>

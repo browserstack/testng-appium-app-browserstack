@@ -1,26 +1,28 @@
 {
-  "server": "hub-cloud.browserstack.com",
+  "server": "hub.browserstack.com",
   "user": "BROWSERSTACK_USERNAME",
   "key": "BROWSERSTACK_ACCESS_KEY",
 
   "capabilities": {
     "build": "testng-browserstack",
-    "name": "suite_test",
-    "browserstack.debug": true
+    "name": "suite_appium_test",
+    "browserstack.debug": true,
+    "realMobile": true,
+    "app": "bs://d747176bd63686393208fea69d1963ec9c225080"
   },
 
   "environments": {
-    "chrome": {
-      "browser": "chrome"
+    "galaxy_s6": {
+      "device": "Samsung Galaxy S6"
     },
-    "firefox": {
-      "browser": "firefox"
+    "pixel": {
+      "device": "Google Pixel"
     },
-    "safari": {
-      "browser": "safari"
+    "galaxy_s7": {
+      "device": "Samsung Galaxy S7"
     },
-    "ie": {
-      "browser": "internet explorer"
+    "nexus_9": {
+      "device": "Google Nexus 9"
     }
   }
 }

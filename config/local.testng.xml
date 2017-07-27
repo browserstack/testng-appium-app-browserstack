@@ -3,7 +3,7 @@
 <suite name="Local">
     <test name="LocalTest">
         <parameter name="config" value="local.conf.json"/>
-        <parameter name="environment" value="chrome"/>
+        <parameter name="environment" value="galaxy_s6"/>
         <classes>
             <class name="com.browserstack.LocalTest"/>
         </classes>

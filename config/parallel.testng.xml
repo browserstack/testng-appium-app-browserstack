@@ -1,33 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Parallel" thread-count="4" parallel="tests">
-    <test name="SingleTestChrome">
+    <test name="SingleTestGalaxyS6">
         <parameter name="config" value="parallel.conf.json"/>
-        <parameter name="environment" value="chrome"/>
+        <parameter name="environment" value="galaxy_s6"/>
         <classes>
             <class name="com.browserstack.SingleTest"/>
         </classes>
     </test>
 
-    <test name="SingleTestFirefox">
+    <test name="SingleTestPixel">
         <parameter name="config" value="parallel.conf.json"/>
-        <parameter name="environment" value="firefox"/>
+        <parameter name="environment" value="pixel"/>
         <classes>
             <class name="com.browserstack.SingleTest"/>
         </classes>
     </test>
 
-    <test name="SingleTestSafari">
+    <test name="SingleTestGalaxyS7">
         <parameter name="config" value="parallel.conf.json"/>
-        <parameter name="environment" value="safari"/>
+        <parameter name="environment" value="galaxy_s7"/>
         <classes>
             <class name="com.browserstack.SingleTest"/>
         </classes>
     </test>
 
-    <test name="SingleTestIE">
+    <test name="SingleTestNexus9">
         <parameter name="config" value="parallel.conf.json"/>
-        <parameter name="environment" value="ie"/>
+        <parameter name="environment" value="nexus_9"/>
         <classes>
             <class name="com.browserstack.SingleTest"/>
         </classes>
