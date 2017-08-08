@@ -12,9 +12,6 @@
   },
 
   "environments": {
-    "galaxy_s6": {
-      "device": "Samsung Galaxy S6"
-    },
     "pixel": {
       "device": "Google Pixel"
     },
