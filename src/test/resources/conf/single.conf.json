@@ -12,8 +12,8 @@
   },
 
   "environments": {
-    "galaxy_s6": {
-      "device": "Samsung Galaxy S6"
+    "galaxy_s7": {
+      "device": "Samsung Galaxy S7"
     }
   }
 }
