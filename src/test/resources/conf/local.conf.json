@@ -9,7 +9,7 @@
     "browserstack.debug": true,
     "browserstack.local": true,
     "realMobile": true,
-    "app": "bs://9a04c63690c3c532341a22a69a916017536ec165"
+    "app": "bs://<hashed app-id>"
   },
 
   "environments": {
