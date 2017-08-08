@@ -8,7 +8,7 @@
     "name": "parallel_appium_test",
     "browserstack.debug": true,
     "realMobile": true,
-    "app": "bs://d747176bd63686393208fea69d1963ec9c225080"
+    "app": "bs://<hashed app-id>"
   },
 
   "environments": {
