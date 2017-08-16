@@ -8,7 +8,9 @@
     "name": "suite_appium_test",
     "browserstack.debug": true,
     "realMobile": true,
-    "app": "bs://<hashed app-id>"
+    "app": "bs://<hashed app-id>",
+    "appPackage": "org.wikipedia.alpha",
+    "appActivity": "org.wikipedia.main.MainActivity"
   },
 
   "environments": {

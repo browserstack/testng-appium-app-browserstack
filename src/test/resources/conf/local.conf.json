@@ -9,7 +9,9 @@
     "browserstack.debug": true,
     "browserstack.local": true,
     "realMobile": true,
-    "app": "bs://<hashed app-id>"
+    "app": "bs://<hashed app-id>",
+    "appPackage": "com.example.android.basicnetworking",
+    "appActivity": "com.example.android.basicnetworking.MainActivity"
   },
 
   "environments": {
