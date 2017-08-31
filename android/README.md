@@ -1,9 +1,3 @@
-# testng-appium-app-browserstack
-
-[TestNG](http://testng.org) Integration with BrowserStack.
-
-![BrowserStack Logo](https://d98b8t1nnulk5.cloudfront.net/production/images/layout/logo-header.png?1469004780)
-
 ## Setup
 
 * Clone the repo
@@ -34,5 +28,6 @@ to the BrowserStack servers using the above API.
   export BROWSERSTACK_USERNAME=<browserstack-username> &&
   export BROWSERSTACK_ACCESS_KEY=<browserstack-access-key>
   ```
+
 ## Additional Resources
 * [Getting Started with App Automate](https://www.browserstack.com/app-automate/get-started)
