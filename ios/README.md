@@ -5,6 +5,14 @@
 * Update `*.conf.json` files inside the `src/test/resources/conf` directory with your [BrowserStack Username and Access Key](https://www.browserstack.com/accounts/settings)
 
 ## Running your tests
+
+- Upload your Native App (.ipa file) to BrowserStack servers using upload API:
+
+  ```
+  curl -u "username:accesskey" -X POST "https://api.browserstack.com/app-automate/upload" -F "file=@/path/to/app/file/Application-debug.ipa"
+  ```
+
+- Update the desired capability "app" with the App URL returned from the above API call
 - To run a single test, run `mvn test -P single`
 - To run parallel tests, run `mvn test -P parallel`
 - To run local tests, run `mvn test -P local`
