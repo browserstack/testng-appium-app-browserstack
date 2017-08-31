@@ -1,0 +1,23 @@
+{
+  "server": "hub.browserstack.com",
+  "user": "BROWSERSTACK_USERNAME",
+  "key": "BROWSERSTACK_ACCESS_KEY",
+
+  "capabilities": {
+    "build": "testng-browserstack",
+    "name": "suite_appium_test",
+    "browserstack.debug": true,
+    "realMobile": true,
+    "app": "bs://<hashed app-id>",
+    "automationName": "XCUITest"
+  },
+
+  "environments": {
+    "iPhone_7": {
+      "device": "iPhone 7"
+    },
+    "iPhone_7_Plus": {
+      "device": "iPhone 7 Plus"
+    }
+  }
+}
