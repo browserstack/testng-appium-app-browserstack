@@ -8,7 +8,7 @@
     <packaging>jar</packaging>
 
     <name>testng-browserstack</name>
-    <url>https://www.github.com/browserstack/testng-browserstack</url>
+    <url>https://github.com/browserstack/testng-appium-app-browserstack</url>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
