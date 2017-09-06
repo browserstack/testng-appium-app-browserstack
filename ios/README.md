@@ -12,6 +12,8 @@
   curl -u "username:accesskey" -X POST "https://api.browserstack.com/app-automate/upload" -F "file=@/path/to/app/file/Application-debug.ipa"
   ```
 
+- If you do not have an .ipa file and looking to simply try App Automate, [you can download our sample app and upload](https://www.browserstack.com/app-automate/sample-apps/ios/WordPressSample.ipa)
+to the BrowserStack servers using the above API.
 - Update the desired capability "app" with the App URL returned from the above API call
 - To run a single test, run `mvn test -P single`
 - To run parallel tests, run `mvn test -P parallel`
@@ -19,7 +21,7 @@
 
 ## Notes
 * You can view your test results on the [BrowserStack Automate dashboard](https://www.browserstack.com/automate)
-* Refer [Get Started](https://www.browserstack.com/app-automate/get-started#getting-started) document to configure the capabilities
+* Refer [Get Started](https://www.browserstack.com/app-automate/get-started#getting-started-ios) document to configure the capabilities
 * You can export the environment variables for the Username and Access Key of your BrowserStack account
 
   ```
@@ -28,4 +30,4 @@
   ```
 
 ## Additional Resources
-* [Getting Started with App Automate](https://www.browserstack.com/app-automate/get-started)
+* [Getting Started with App Automate](https://www.browserstack.com/app-automate/get-started-ios)
