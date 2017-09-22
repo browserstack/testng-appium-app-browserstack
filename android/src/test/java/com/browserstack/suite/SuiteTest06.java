@@ -1,7 +1,8 @@
 package com.browserstack.suite;
 
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebElement;
+import io.appium.java_client.MobileBy;
+import io.appium.java_client.android.AndroidElement;
+
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 
@@ -15,15 +16,15 @@ public class SuiteTest06 extends BrowserStackTestNGTest {
 
     @Test
     public void test_06() throws Exception {
-      WebElement searchElement = new WebDriverWait(driver, 30).until(
-          ExpectedConditions.elementToBeClickable(By.id("Search Wikipedia")));
+      AndroidElement searchElement = (AndroidElement) new WebDriverWait(driver, 30).until(
+          ExpectedConditions.elementToBeClickable(MobileBy.AccessibilityId("Search Wikipedia")));
       searchElement.click();
-      WebElement insertTextElement = new WebDriverWait(driver, 30).until(
-          ExpectedConditions.elementToBeClickable(By.id("org.wikipedia.alpha:id/search_src_text")));
+      AndroidElement insertTextElement = (AndroidElement) new WebDriverWait(driver, 30).until(
+          ExpectedConditions.elementToBeClickable(MobileBy.id("org.wikipedia.alpha:id/search_src_text")));
       insertTextElement.sendKeys("BrowserStack 06");
       Thread.sleep(5000);
 
-      List<WebElement> allProductsName = driver.findElements(By.className("android.widget.TextView"));
+      List<AndroidElement> allProductsName = driver.findElementsByClassName("android.widget.TextView");
       Assert.assertTrue(allProductsName.size() > 0);
     }
 }

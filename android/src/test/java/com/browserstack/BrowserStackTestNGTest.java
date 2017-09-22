@@ -1,17 +1,17 @@
 package com.browserstack;
 import com.browserstack.local.Local;
 
-import java.io.FileReader;
 import java.net.URL;
-import java.util.HashMap;
 import java.util.Map;
+import java.util.HashMap;
 import java.util.Iterator;
+import java.io.FileReader;
 import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
 
 import io.appium.java_client.android.AndroidDriver;
+import io.appium.java_client.android.AndroidElement;
 
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
 
 import org.testng.annotations.BeforeMethod;
@@ -20,7 +20,7 @@ import org.testng.annotations.Parameters;
 
 
 public class BrowserStackTestNGTest {
-    public WebDriver driver;
+    public AndroidDriver<AndroidElement> driver;
     private Local l;
 
     @BeforeMethod(alwaysRun=true)

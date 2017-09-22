@@ -7,8 +7,9 @@ import java.io.File;
 import java.util.List;
 import org.apache.commons.io.FileUtils;
 
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebElement;
+import io.appium.java_client.MobileBy;
+import io.appium.java_client.android.AndroidElement;
+
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -18,17 +19,16 @@ public class LocalTest extends BrowserStackTestNGTest {
 
     @Test
     public void test() throws Exception {
-    WebElement searchElement = new WebDriverWait(driver, 30).until(
-        ExpectedConditions.elementToBeClickable(By.id("com.example.android.basicnetworking:id/test_action")));
+    AndroidElement searchElement = (AndroidElement) new WebDriverWait(driver, 30).until(
+        ExpectedConditions.elementToBeClickable(MobileBy.id("com.example.android.basicnetworking:id/test_action")));
     searchElement.click();
-    WebElement insertTextElement = new WebDriverWait(driver, 30).until(
-        ExpectedConditions.elementToBeClickable(By.className("android.widget.TextView")));
+    AndroidElement insertTextElement = (AndroidElement) new WebDriverWait(driver, 30).until(
+        ExpectedConditions.elementToBeClickable(MobileBy.className("android.widget.TextView")));
 
-    WebElement testElement = null;
-    List<WebElement> allTextViewElements = driver.findElements(By.className("android.widget.TextView"));
+    AndroidElement testElement = null;
+    List<AndroidElement> allTextViewElements = driver.findElementsByClassName("android.widget.TextView");
     Thread.sleep(10);
-    for(WebElement textElement : allTextViewElements) {
-      System.out.println(textElement.getText());
+    for(AndroidElement textElement : allTextViewElements) {
       if(textElement.getText().contains("The active connection is")) {
         testElement = textElement;
       }
