@@ -21,14 +21,7 @@ public class SuiteTest04 extends BrowserStackTestNGTest {
     loginButton.click();
     IOSElement emailTextField = (IOSElement) new WebDriverWait(driver, 30).until(
         ExpectedConditions.elementToBeClickable(MobileBy.AccessibilityId("Email address")));
-
-    // element.sendKeys() method is not supported in Appium 1.6.3
-    // Workaround for sendKeys() method:
-    emailTextField.click();
-    String email = "hello.d@browserstack.com";
-    for (int i = 0; i < email.length(); i++) {
-      driver.findElementByXPath("//XCUIElementTypeKey[@name='" + email.charAt(i) + "']").click();
-    }
+    emailTextField.sendKeys("hello04@browserstack.com");
 
     driver.findElementByAccessibilityId("Next").click();
     Thread.sleep(5000);
