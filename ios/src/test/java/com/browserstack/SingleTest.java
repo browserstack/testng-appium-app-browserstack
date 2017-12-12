@@ -30,7 +30,7 @@ public class SingleTest extends BrowserStackTestNGTest {
     String matchedString = "";
     for(IOSElement textElement : textElements) {
       String textContent = textElement.getText();
-      if(textContent.contains("not registered")) {
+      if(textContent != null && textContent.contains("not registered")) {
         matchedString = textContent;
       }
     }
