@@ -8,9 +8,7 @@
     "name": "local_appium_test",
     "browserstack.debug": true,
     "browserstack.local": true,
-    "realMobile": true,
-    "app": "bs://<hashed app-id>",
-    "automationName": "XCUITest"
+    "app": "bs://<hashed app-id>"
   },
 
   "environments": {
