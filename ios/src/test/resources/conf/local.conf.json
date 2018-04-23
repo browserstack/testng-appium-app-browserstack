@@ -8,8 +8,7 @@
     "name": "local_appium_test",
     "browserstack.debug": true,
     "browserstack.local": true,
-    "app": "bs://<hashed app-id>",
-    "browserstack.enterpriseApp": true
+    "app": "bs://<hashed app-id>"
   },
 
   "environments": {
