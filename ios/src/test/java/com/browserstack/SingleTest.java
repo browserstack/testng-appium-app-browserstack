@@ -15,27 +15,18 @@ public class SingleTest extends BrowserStackTestNGTest {
 
   @Test
   public void test() throws Exception {
-    IOSElement loginButton = (IOSElement) new WebDriverWait(driver, 30).until(
-        ExpectedConditions.elementToBeClickable(MobileBy.AccessibilityId("Log In")));
-    loginButton.click();
-    IOSElement emailTextField = (IOSElement) new WebDriverWait(driver, 30).until(
-        ExpectedConditions.elementToBeClickable(MobileBy.AccessibilityId("Email address")));
-    emailTextField.sendKeys("hello@browserstack.com");
+    IOSElement textButton = (IOSElement) new WebDriverWait(driver, 30).until(
+        ExpectedConditions.elementToBeClickable(MobileBy.AccessibilityId("Text Button")));
+    textButton.click();
+    IOSElement textInput = (IOSElement) new WebDriverWait(driver, 30).until(
+        ExpectedConditions.elementToBeClickable(MobileBy.AccessibilityId("Text Input")));
+    textInput.sendKeys("hello@browserstack.com"+"\n");
 
-    driver.findElementByAccessibilityId("Next").click();
     Thread.sleep(5000);
 
-    List<IOSElement> textElements = driver.findElementsByXPath("//XCUIElementTypeStaticText");
-    Assert.assertTrue(textElements.size() > 0);
-    String matchedString = "";
-    for(IOSElement textElement : textElements) {
-      String textContent = textElement.getText();
-      if(textContent != null && textContent.contains("not registered")) {
-        matchedString = textContent;
-      }
-    }
+    IOSElement textOutput = (IOSElement) new WebDriverWait(driver, 30).until(
+        ExpectedConditions.elementToBeClickable(MobileBy.AccessibilityId("Text Output")));
 
-    System.out.println(matchedString);
-    Assert.assertTrue(matchedString.contains("not registered on WordPress.com"));
+    Assert.assertEquals(textOutput.getText(),"hello@browserstack.com");
   }
 }
