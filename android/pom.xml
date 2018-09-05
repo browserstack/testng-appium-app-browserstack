@@ -16,6 +16,9 @@
 
         <test.file></test.file>
         <config.file>default</config.file>
+        
+        <maven.compiler.source>1.6</maven.compiler.source>
+        <maven.compiler.target>1.6</maven.compiler.target>
     </properties>
 
     <dependencies>
