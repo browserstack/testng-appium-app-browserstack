@@ -1,22 +1,20 @@
 package com.browserstack;
-import com.browserstack.local.Local;
-
+import java.io.FileReader;
 import java.net.URL;
-import java.util.Map;
 import java.util.HashMap;
 import java.util.Iterator;
-import java.io.FileReader;
+import java.util.Map;
+
 import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
+import org.openqa.selenium.remote.DesiredCapabilities;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeMethod;
+
+import com.browserstack.local.Local;
 
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.android.AndroidElement;
-
-import org.openqa.selenium.remote.DesiredCapabilities;
-
-import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.AfterMethod;
-import org.testng.annotations.Parameters;
 
 
 public class BrowserStackTestNGTest {
@@ -32,17 +30,17 @@ public class BrowserStackTestNGTest {
 
         DesiredCapabilities capabilities = new DesiredCapabilities();
 
-        Map<String, String> envCapabilities = (Map<String, String>) envs.get(environment);
-        Iterator it = envCapabilities.entrySet().iterator();
+        Map<?, ?> envCapabilities = (Map<?, ?>) envs.get(environment);
+        Iterator<?> it = envCapabilities.entrySet().iterator();
         while (it.hasNext()) {
-            Map.Entry pair = (Map.Entry)it.next();
+            Map.Entry<?,?> pair = (Map.Entry<?,?>)it.next();
             capabilities.setCapability(pair.getKey().toString(), pair.getValue().toString());
         }
         
-        Map<String, String> commonCapabilities = (Map<String, String>) config.get("capabilities");
+        Map<?, ?> commonCapabilities = (Map<?, ?>) config.get("capabilities");
         it = commonCapabilities.entrySet().iterator();
         while (it.hasNext()) {
-            Map.Entry pair = (Map.Entry)it.next();
+            Map.Entry<?,?> pair = (Map.Entry<?,?>)it.next();
             if(capabilities.getCapability(pair.getKey().toString()) == null){
                 capabilities.setCapability(pair.getKey().toString(), pair.getValue().toString());
             }
@@ -70,7 +68,7 @@ public class BrowserStackTestNGTest {
             l.start(options);
         }
 
-        driver = new AndroidDriver(new URL("http://"+username+":"+accessKey+"@"+config.get("server")+"/wd/hub"), capabilities);
+        driver = new AndroidDriver<AndroidElement>(new URL("http://"+username+":"+accessKey+"@"+config.get("server")+"/wd/hub"), capabilities);
     }
 
     @AfterMethod(alwaysRun=true)
