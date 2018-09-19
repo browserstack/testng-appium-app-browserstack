@@ -27,7 +27,6 @@ public class LocalTest extends BrowserStackTestNGTest {
 
     WebDriverWait wait = new WebDriverWait(driver, 30);
     wait.until(new ExpectedCondition<Boolean>() {
-      @Override
       public Boolean apply(WebDriver d) {
         String result = d.findElement(MobileBy.AccessibilityId("ResultBrowserStackLocal")).getAttribute("value");
         return result != null && result.length() > 0;
