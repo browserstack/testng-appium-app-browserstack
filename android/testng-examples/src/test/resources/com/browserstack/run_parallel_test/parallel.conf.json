@@ -4,21 +4,19 @@
   "key": "BROWSERSTACK_ACCESS_KEY",
 
   "capabilities": {
-    "build": "testng-browserstack",
-    "name": "parallel_appium_test",
+    "project": "First TestNg Android Project",
+    "build": "TestNg Android Parallel",
+    "name": "parallel_test",
     "browserstack.debug": true,
     "app": "bs://<hashed app-id>"
   },
 
-  "environments": {
-    "pixel": {
-      "device": "Google Pixel"
+  "environments": [
+    {
+      "device": "Google Pixel 3"
     },
-    "galaxy_s7": {
-      "device": "Samsung Galaxy S7"
-    },
-    "nexus_9": {
-      "device": "Google Nexus 9"
+    {
+      "device": "Samsung Galaxy S10e"
     }
-  }
+  ]
 }

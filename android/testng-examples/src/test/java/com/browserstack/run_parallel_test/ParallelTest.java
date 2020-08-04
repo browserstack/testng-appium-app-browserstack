@@ -1,4 +1,4 @@
-package com.browserstack.run_first_test;
+package com.browserstack.run_parallel_test;
 
 import io.appium.java_client.MobileBy;
 import io.appium.java_client.android.AndroidElement;
@@ -10,7 +10,7 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 import java.util.List;
 
-public class FirstTest extends BrowserStackTestNGTest {
+public class ParallelTest extends BrowserStackTestNGTest {
 
     @Test
     public void test() throws Exception {

@@ -4,15 +4,16 @@
   "key": "BROWSERSTACK_ACCESS_KEY",
 
   "capabilities": {
-    "build": "testng-browserstack",
-    "name": "single_appium_test",
+    "project": "First TestNg Android Project",
+    "build": "TestNg Android First",
+    "name": "first_test",
     "browserstack.debug": true,
     "app": "bs://<hashed app-id>"
   },
 
-  "environments": {
-    "galaxy_s7": {
-      "device": "Samsung Galaxy S7"
+  "environments": [
+    { 
+      "device": "Google Pixel 3"
     }
-  }
+  ]
 }

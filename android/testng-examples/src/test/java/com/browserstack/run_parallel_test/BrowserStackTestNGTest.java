@@ -1,4 +1,4 @@
-package com.browserstack;
+package com.browserstack.run_parallel_test;
 import com.browserstack.local.Local;
 
 import java.net.URL;
@@ -8,6 +8,7 @@ import java.util.Iterator;
 import java.io.FileReader;
 import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
+import org.json.simple.JSONArray;
 
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.android.AndroidElement;
@@ -24,15 +25,15 @@ public class BrowserStackTestNGTest {
     private Local l;
 
     @BeforeMethod(alwaysRun=true)
-    @org.testng.annotations.Parameters(value={"config", "environment"})
-    public void setUp(String config_file, String environment) throws Exception {
+    @org.testng.annotations.Parameters(value={"deviceIndex"})
+    public void setUp(String deviceIndex) throws Exception {
         JSONParser parser = new JSONParser();
-        JSONObject config = (JSONObject) parser.parse(new FileReader("src/test/resources/conf/" + config_file));
-        JSONObject envs = (JSONObject) config.get("environments");
+        JSONObject config = (JSONObject) parser.parse(new FileReader("src/test/resources/com/browserstack/run_parallel_test/parallel.conf.json"));
+        JSONArray envs = (JSONArray) config.get("environments");
 
         DesiredCapabilities capabilities = new DesiredCapabilities();
 
-        Map<String, String> envCapabilities = (Map<String, String>) envs.get(environment);
+        Map<String, String> envCapabilities = (Map<String, String>) envs.get(Integer.parseInt(deviceIndex));
         Iterator it = envCapabilities.entrySet().iterator();
         while (it.hasNext()) {
             Map.Entry pair = (Map.Entry)it.next();

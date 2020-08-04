@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Parallel" thread-count="2" parallel="tests">
+    <test name="ParallelTestPixel3">
+    <parameter name="deviceIndex" value="0"/>
+        <classes>
+            <class name="com.browserstack.run_parallel_test.ParallelTest"/>
+        </classes>
+    </test>
+
+    <test name="ParallelTestGalaxy10e">
+    <parameter name="deviceIndex" value="1"/>
+        <classes>
+            <class name="com.browserstack.run_parallel_test.ParallelTest"/>
+        </classes>
+    </test>
+</suite>

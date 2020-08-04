@@ -1,5 +1,4 @@
-package com.browserstack;
-import com.browserstack.local.Local;
+package com.browserstack.run_first_test;
 
 import java.net.URL;
 import java.util.Map;
@@ -8,6 +7,7 @@ import java.util.Iterator;
 import java.io.FileReader;
 import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
+import org.json.simple.JSONArray;
 
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.android.AndroidElement;
@@ -21,18 +21,16 @@ import org.testng.annotations.Parameters;
 
 public class BrowserStackTestNGTest {
     public AndroidDriver<AndroidElement> driver;
-    private Local l;
 
     @BeforeMethod(alwaysRun=true)
-    @org.testng.annotations.Parameters(value={"config", "environment"})
-    public void setUp(String config_file, String environment) throws Exception {
+    public void setUp() throws Exception {
         JSONParser parser = new JSONParser();
-        JSONObject config = (JSONObject) parser.parse(new FileReader("src/test/resources/conf/" + config_file));
-        JSONObject envs = (JSONObject) config.get("environments");
+        JSONObject config = (JSONObject) parser.parse(new FileReader("src/test/resources/com/browserstack/run_first_test/first.conf.json"));
 
         DesiredCapabilities capabilities = new DesiredCapabilities();
 
-        Map<String, String> envCapabilities = (Map<String, String>) envs.get(environment);
+        JSONArray envs = (JSONArray) config.get("environments");
+        Map<String, String> envCapabilities = (Map<String, String>) envs.get(0);
         Iterator it = envCapabilities.entrySet().iterator();
         while (it.hasNext()) {
             Map.Entry pair = (Map.Entry)it.next();
@@ -63,19 +61,11 @@ public class BrowserStackTestNGTest {
           capabilities.setCapability("app", app);
         }
 
-        if(capabilities.getCapability("browserstack.local") != null && capabilities.getCapability("browserstack.local") == "true"){
-            l = new Local();
-            Map<String, String> options = new HashMap<String, String>();
-            options.put("key", accessKey);
-            l.start(options);
-        }
-
         driver = new AndroidDriver(new URL("http://"+username+":"+accessKey+"@"+config.get("server")+"/wd/hub"), capabilities);
     }
 
     @AfterMethod(alwaysRun=true)
     public void tearDown() throws Exception {
         driver.quit();
-        if(l != null) l.stop();
     }
 }
