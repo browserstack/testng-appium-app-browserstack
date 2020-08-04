@@ -22,7 +22,6 @@ import org.testng.annotations.Parameters;
 
 public class BrowserStackTestNGTest {
     public AndroidDriver<AndroidElement> driver;
-    private Local l;
 
     @BeforeMethod(alwaysRun=true)
     @org.testng.annotations.Parameters(value={"deviceIndex"})
@@ -64,19 +63,11 @@ public class BrowserStackTestNGTest {
           capabilities.setCapability("app", app);
         }
 
-        if(capabilities.getCapability("browserstack.local") != null && capabilities.getCapability("browserstack.local") == "true"){
-            l = new Local();
-            Map<String, String> options = new HashMap<String, String>();
-            options.put("key", accessKey);
-            l.start(options);
-        }
-
         driver = new AndroidDriver(new URL("http://"+username+":"+accessKey+"@"+config.get("server")+"/wd/hub"), capabilities);
     }
 
     @AfterMethod(alwaysRun=true)
     public void tearDown() throws Exception {
         driver.quit();
-        if(l != null) l.stop();
     }
 }

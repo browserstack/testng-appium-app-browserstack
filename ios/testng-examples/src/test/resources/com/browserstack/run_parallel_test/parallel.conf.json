@@ -4,18 +4,21 @@
   "key": "BROWSERSTACK_ACCESS_KEY",
 
   "capabilities": {
-    "build": "testng-browserstack",
-    "name": "parallel_appium_test",
+    "project": "First TestNg IOS Project",
+    "build": "TestNg IOS Parallel",
+    "name": "parallel_test",
     "browserstack.debug": true,
     "app": "bs://<hashed app-id>"
   },
 
-  "environments": {
-    "iPhone_7": {
-      "device": "iPhone 7"
+  "environments": [
+    {
+      "device": "iPhone 11 Pro",
+      "os_version": "13"
     },
-    "iPhone_7_Plus": {
-      "device": "iPhone 7 Plus"
+    {
+      "device": "iPhone 11 Pro Max",
+      "os_version": "13"
     }
-  }
+  ]
 }

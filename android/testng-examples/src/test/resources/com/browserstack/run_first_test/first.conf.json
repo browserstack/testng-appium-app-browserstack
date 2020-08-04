@@ -13,7 +13,8 @@
 
   "environments": [
     { 
-      "device": "Google Pixel 3"
+      "device": "Google Pixel 3",
+      "os_version": "9.0"
     }
   ]
 }

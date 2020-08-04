@@ -1,4 +1,4 @@
-package com.browserstack;
+package com.browserstack.run_local_test;
 import com.browserstack.local.Local;
 
 import java.net.URL;
@@ -8,6 +8,7 @@ import java.util.Iterator;
 import java.io.FileReader;
 import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
+import org.json.simple.JSONArray;
 
 import org.openqa.selenium.remote.DesiredCapabilities;
 
@@ -24,15 +25,14 @@ public class BrowserStackTestNGTest {
   private Local l;
 
   @BeforeMethod(alwaysRun=true)
-  @org.testng.annotations.Parameters(value={"config", "environment"})
-  public void setUp(String config_file, String environment) throws Exception {
+  public void setUp() throws Exception {
     JSONParser parser = new JSONParser();
-    JSONObject config = (JSONObject) parser.parse(new FileReader("src/test/resources/conf/" + config_file));
-    JSONObject envs = (JSONObject) config.get("environments");
+    JSONObject config = (JSONObject) parser.parse(new FileReader("src/test/resources/com/browserstack/run_local_test/local.conf.json"));
+    JSONArray envs = (JSONArray) config.get("environments");
 
     DesiredCapabilities capabilities = new DesiredCapabilities();
 
-    Map<String, String> envCapabilities = (Map<String, String>) envs.get(environment);
+    Map<String, String> envCapabilities = (Map<String, String>) envs.get(0);
     Iterator it = envCapabilities.entrySet().iterator();
     while (it.hasNext()) {
       Map.Entry pair = (Map.Entry)it.next();

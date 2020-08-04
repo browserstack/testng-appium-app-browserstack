@@ -4,16 +4,18 @@
   "key": "BROWSERSTACK_ACCESS_KEY",
 
   "capabilities": {
-    "build": "testng-browserstack",
-    "name": "local_appium_test",
+    "project": "First TestNg IOS Project",
+    "build": "TestNg IOS Local",
+    "name": "local_test",
     "browserstack.debug": true,
     "browserstack.local": true,
     "app": "bs://<hashed app-id>"
   },
 
-  "environments": {
-    "iPhone_7": {
-      "device": "iPhone 7"
+  "environments": [
+    { 
+      "device": "iPhone 11 Pro",
+      "os_version": "13"
     }
-  }
+  ]
 }
