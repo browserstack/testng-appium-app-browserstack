@@ -1,0 +1,24 @@
+{
+  "server": "hub-cloud.browserstack.com",
+  "user": "BROWSERSTACK_USERNAME",
+  "key": "BROWSERSTACK_ACCESS_KEY",
+
+  "capabilities": {
+    "build": "testng-browserstack",
+    "name": "suite_appium_test",
+    "browserstack.debug": true,
+    "app": "bs://<hashed app-id>"
+  },
+
+  "environments": {
+    "pixel": {
+      "device": "Google Pixel"
+    },
+    "galaxy_s7": {
+      "device": "Samsung Galaxy S7"
+    },
+    "nexus_9": {
+      "device": "Google Nexus 9"
+    }
+  }
+}
