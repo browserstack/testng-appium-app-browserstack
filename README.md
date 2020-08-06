@@ -97,7 +97,7 @@ Getting Started with Appium tests in TestNg on BrowserStack couldn't be easier!
 - If you do not have an local .apk file and looking to simply try local for  App Automate, [you can download our sample local app and upload](https://www.browserstack.com/app-automate/sample-apps/android/LocalSample.apk)
      to the BrowserStack servers using the same app upload API.
 
-- Switch to `run-local-test` directory under [Android examples](android/testng-examples/) or [iOS examples](ios/testng-examples/)
+- Switch to `run_local_test` directory under [Android examples](android/testng-examples/) or [iOS examples](ios/testng-examples/)
 - Then run
     ```sh
     mvn test -P local

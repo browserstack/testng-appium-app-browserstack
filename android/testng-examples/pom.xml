@@ -80,7 +80,7 @@
                         <artifactId>maven-surefire-plugin</artifactId>
                         <configuration>
                             <suiteXmlFiles>
-                                <suiteXmlFile>src/test/resources/com/browserstack/run_first_test/first.testing.xml</suiteXmlFile>
+                                <suiteXmlFile>src/test/resources/com/browserstack/run_first_test/first.testng.xml</suiteXmlFile>
                             </suiteXmlFiles>
                         </configuration>
                     </plugin>
@@ -97,7 +97,7 @@
                         <artifactId>maven-surefire-plugin</artifactId>
                         <configuration>
                             <suiteXmlFiles>
-                                <suiteXmlFile>src/test/resources/com/browserstack/run_local_test/local.testing.xml</suiteXmlFile>
+                                <suiteXmlFile>src/test/resources/com/browserstack/run_local_test/local.testng.xml</suiteXmlFile>
                             </suiteXmlFiles>
                         </configuration>
                     </plugin>
@@ -114,7 +114,7 @@
                         <artifactId>maven-surefire-plugin</artifactId>
                         <configuration>
                             <suiteXmlFiles>
-                                <suiteXmlFile>src/test/resources/com/browserstack/run_parallel_test/parallel.testing.xml</suiteXmlFile>
+                                <suiteXmlFile>src/test/resources/com/browserstack/run_parallel_test/parallel.testng.xml</suiteXmlFile>
                             </suiteXmlFiles>
                         </configuration>
                     </plugin>

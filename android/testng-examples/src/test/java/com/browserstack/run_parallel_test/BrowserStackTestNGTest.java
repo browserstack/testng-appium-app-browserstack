@@ -1,9 +1,7 @@
 package com.browserstack.run_parallel_test;
-import com.browserstack.local.Local;
 
 import java.net.URL;
 import java.util.Map;
-import java.util.HashMap;
 import java.util.Iterator;
 import java.io.FileReader;
 import org.json.simple.JSONObject;
@@ -50,12 +48,12 @@ public class BrowserStackTestNGTest {
 
         String username = System.getenv("BROWSERSTACK_USERNAME");
         if(username == null) {
-            username = (String) config.get("user");
+            username = (String) config.get("username");
         }
 
         String accessKey = System.getenv("BROWSERSTACK_ACCESS_KEY");
         if(accessKey == null) {
-            accessKey = (String) config.get("key");
+            accessKey = (String) config.get("access_key");
         }
         
         String app = System.getenv("BROWSERSTACK_APP_ID");

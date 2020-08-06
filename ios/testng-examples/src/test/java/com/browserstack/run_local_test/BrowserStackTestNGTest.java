@@ -14,7 +14,6 @@ import org.openqa.selenium.remote.DesiredCapabilities;
 
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.AfterMethod;
-import org.testng.annotations.Parameters;
 
 import io.appium.java_client.ios.IOSDriver;
 import io.appium.java_client.ios.IOSElement;
@@ -22,7 +21,7 @@ import io.appium.java_client.ios.IOSElement;
 
 public class BrowserStackTestNGTest {
   public IOSDriver<IOSElement> driver;
-  private Local l;
+  private Local local;
 
   @BeforeMethod(alwaysRun=true)
   public void setUp() throws Exception {
@@ -50,12 +49,12 @@ public class BrowserStackTestNGTest {
 
     String username = System.getenv("BROWSERSTACK_USERNAME");
     if(username == null) {
-      username = (String) config.get("user");
+      username = (String) config.get("username");
     }
 
     String accessKey = System.getenv("BROWSERSTACK_ACCESS_KEY");
     if(accessKey == null) {
-      accessKey = (String) config.get("key");
+      accessKey = (String) config.get("access_key");
     }
     
     String app = System.getenv("BROWSERSTACK_APP_ID");
@@ -64,10 +63,10 @@ public class BrowserStackTestNGTest {
     }
 
     if(capabilities.getCapability("browserstack.local") != null && capabilities.getCapability("browserstack.local") == "true"){
-      l = new Local();
+      local = new Local();
       Map<String, String> options = new HashMap<String, String>();
       options.put("key", accessKey);
-      l.start(options);
+      local.start(options);
     }
 
     driver = new IOSDriver<IOSElement>(new URL("http://"+username+":"+accessKey+"@"+config.get("server")+"/wd/hub"), capabilities);
@@ -76,6 +75,6 @@ public class BrowserStackTestNGTest {
   @AfterMethod(alwaysRun=true)
   public void tearDown() throws Exception {
     driver.quit();
-    if(l != null) l.stop();
+    if(local != null) local.stop();
   }
 }

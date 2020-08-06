@@ -1,6 +1,5 @@
 package com.browserstack.run_first_test;
 
-import java.util.List;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 

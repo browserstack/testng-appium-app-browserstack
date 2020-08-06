@@ -1,11 +1,11 @@
 {
   "server": "hub-cloud.browserstack.com",
-  "user": "BROWSERSTACK_USERNAME",
-  "key": "BROWSERSTACK_ACCESS_KEY",
+  "username": "BROWSERSTACK_USERNAME",
+  "access_key": "BROWSERSTACK_ACCESS_KEY",
 
   "capabilities": {
-    "project": "First TestNg IOS Project",
-    "build": "TestNg IOS Local",
+    "project": "First TestNg iOS Project",
+    "build": "TestNg iOS Local",
     "name": "local_test",
     "browserstack.debug": true,
     "browserstack.local": true,
