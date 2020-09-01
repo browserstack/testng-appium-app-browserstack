@@ -1,0 +1,24 @@
+{
+  "server": "hub-cloud.browserstack.com",
+  "username": "BROWSERSTACK_USERNAME",
+  "access_key": "BROWSERSTACK_ACCESS_KEY",
+
+  "capabilities": {
+    "project": "First TestNg iOS Project",
+    "build": "TestNg iOS Parallel",
+    "name": "parallel_test",
+    "browserstack.debug": true,
+    "app": "bs://<app-id>"
+  },
+
+  "environments": [
+    {
+      "device": "iPhone 11 Pro",
+      "os_version": "13"
+    },
+    {
+      "device": "iPhone 11 Pro Max",
+      "os_version": "13"
+    }
+  ]
+}
