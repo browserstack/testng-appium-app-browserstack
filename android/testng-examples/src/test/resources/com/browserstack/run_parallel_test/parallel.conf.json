@@ -5,7 +5,7 @@
 
   "capabilities": {
     "project": "First TestNg Android Project",
-    "build": "TestNg Android Parallel",
+    "build": "browserstack-build-1",
     "name": "parallel_test",
     "browserstack.debug": true,
     "app": "bs://<app-id>"
