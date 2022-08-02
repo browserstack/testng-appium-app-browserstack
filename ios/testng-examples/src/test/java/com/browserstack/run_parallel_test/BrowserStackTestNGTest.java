@@ -42,7 +42,7 @@ public class BrowserStackTestNGTest {
     while (it.hasNext()) {
       Map.Entry pair = (Map.Entry)it.next();
       if(capabilities.getCapability(pair.getKey().toString()) == null){
-          capabilities.setCapability(pair.getKey().toString(), pair.getValue().toString());
+          capabilities.setCapability(pair.getKey().toString(), pair.getValue());
       }
     }
 
