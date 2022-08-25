@@ -2,6 +2,8 @@ package com.browserstack.run_first_test;
 
 import java.net.URL;
 import java.util.Map;
+import java.util.HashMap;
+
 import java.util.Iterator;
 import java.io.FileReader;
 import org.json.simple.JSONObject;
@@ -9,40 +11,42 @@ import org.json.simple.parser.JSONParser;
 import org.json.simple.JSONArray;
 
 import io.appium.java_client.android.AndroidDriver;
-import io.appium.java_client.android.AndroidElement;
-
-import org.openqa.selenium.remote.DesiredCapabilities;
+import io.appium.java_client.android.options.UiAutomator2Options;
+import org.openqa.selenium.WebElement;
 
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.AfterMethod;
 
 
 public class BrowserStackTestNGTest {
-    public AndroidDriver<AndroidElement> driver;
+    public AndroidDriver driver;
 
     @BeforeMethod(alwaysRun=true)
     public void setUp() throws Exception {
         JSONParser parser = new JSONParser();
         JSONObject config = (JSONObject) parser.parse(new FileReader("src/test/resources/com/browserstack/run_first_test/first.conf.json"));
 
-        DesiredCapabilities capabilities = new DesiredCapabilities();
+        UiAutomator2Options options = new UiAutomator2Options();
 
         JSONArray envs = (JSONArray) config.get("environments");
         Map<String, String> envCapabilities = (Map<String, String>) envs.get(0);
         Iterator it = envCapabilities.entrySet().iterator();
         while (it.hasNext()) {
             Map.Entry pair = (Map.Entry)it.next();
-            capabilities.setCapability(pair.getKey().toString(), pair.getValue().toString());
+            options.setCapability(pair.getKey().toString(), pair.getValue().toString());
         }
         
         Map<String, String> commonCapabilities = (Map<String, String>) config.get("capabilities");
         it = commonCapabilities.entrySet().iterator();
         while (it.hasNext()) {
             Map.Entry pair = (Map.Entry)it.next();
-            if(capabilities.getCapability(pair.getKey().toString()) == null){
-                capabilities.setCapability(pair.getKey().toString(), pair.getValue());
+            if(options.getCapability(pair.getKey().toString()) == null){
+                options.setCapability(pair.getKey().toString(), pair.getValue());
             }
         }
+
+        HashMap<String, Object> browserstackOptions = (HashMap<String, Object>) config.get("browserstackOptions");
+        options.setCapability("bstack:options", browserstackOptions);
 
         String username = System.getenv("BROWSERSTACK_USERNAME");
         if(username == null) {
@@ -56,10 +60,10 @@ public class BrowserStackTestNGTest {
         
         String app = System.getenv("BROWSERSTACK_APP_ID");
         if(app != null && !app.isEmpty()) {
-          capabilities.setCapability("app", app);
+          options.setCapability("app", app);
         }
 
-        driver = new AndroidDriver(new URL("http://"+username+":"+accessKey+"@"+config.get("server")+"/wd/hub"), capabilities);
+        driver = new AndroidDriver(new URL("http://"+config.get("server")+"/wd/hub"), options);
     }
 
     @AfterMethod(alwaysRun=true)
