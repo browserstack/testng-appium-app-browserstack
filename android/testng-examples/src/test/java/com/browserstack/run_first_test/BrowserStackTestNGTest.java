@@ -50,12 +50,12 @@ public class BrowserStackTestNGTest {
 
         String username = System.getenv("BROWSERSTACK_USERNAME");
         if(username == null) {
-            username = (String) config.get("username");
+            username = (String) browserstackOptions.get("userName");
         }
 
         String accessKey = System.getenv("BROWSERSTACK_ACCESS_KEY");
         if(accessKey == null) {
-            accessKey = (String) config.get("access_key");
+            accessKey = (String) browserstackOptions.get("accessKey");
         }
         
         String app = System.getenv("BROWSERSTACK_APP_ID");
