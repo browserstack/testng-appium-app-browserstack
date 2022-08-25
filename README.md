@@ -4,6 +4,12 @@ This repository demonstrates how to run Appium tests in [TestNG](http://testng.o
 
 ![BrowserStack Logo](https://d98b8t1nnulk5.cloudfront.net/production/images/layout/logo-header.png?1469004780)
 
+## Based on
+
+These code samples are currently based on:
+
+- **Appium-Java-Client:** `8.1.1`
+- **Protocol:** `W3C`
 ## Setup
 
 ### Requirements
