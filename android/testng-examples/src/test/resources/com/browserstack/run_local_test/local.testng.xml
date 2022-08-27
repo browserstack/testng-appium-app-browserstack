@@ -2,8 +2,10 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Local">
     <test name="LocalTest">
+        <parameter name="deviceIndex" value="0"/>
+        <parameter name="config" value="run_local_test/local.conf.json"/>
         <classes>
-            <class name="com.browserstack.run_local_test.LocalTest"/>
+            <class name="com.browserstack.LocalTest"/>
         </classes>
     </test>
 </suite>

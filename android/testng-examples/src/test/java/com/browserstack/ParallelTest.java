@@ -1,4 +1,4 @@
-package com.browserstack.run_parallel_test;
+package com.browserstack;
 
 import io.appium.java_client.AppiumBy;
 

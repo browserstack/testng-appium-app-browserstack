@@ -1,4 +1,5 @@
-package com.browserstack.run_first_test;
+package com.browserstack;
+import com.browserstack.local.Local;
 
 import java.net.URL;
 import java.util.Map;
@@ -20,16 +21,18 @@ import org.testng.annotations.AfterMethod;
 
 public class BrowserStackTestNGTest {
     public AndroidDriver driver;
+    private Local local;
 
     @BeforeMethod(alwaysRun=true)
-    public void setUp() throws Exception {
+    @org.testng.annotations.Parameters(value = { "config", "deviceIndex" })
+    public void setUp(String config_file, String deviceIndex) throws Exception {
         JSONParser parser = new JSONParser();
-        JSONObject config = (JSONObject) parser.parse(new FileReader("src/test/resources/com/browserstack/run_first_test/first.conf.json"));
+        JSONObject config = (JSONObject) parser.parse(new FileReader("src/test/resources/com/browserstack/" + config_file));
 
         UiAutomator2Options options = new UiAutomator2Options();
 
         JSONArray envs = (JSONArray) config.get("environments");
-        Map<String, String> envCapabilities = (Map<String, String>) envs.get(0);
+        Map<String, String> envCapabilities = (Map<String, String>) envs.get(Integer.parseInt(deviceIndex));
         Iterator it = envCapabilities.entrySet().iterator();
         while (it.hasNext()) {
             Map.Entry pair = (Map.Entry)it.next();
@@ -61,6 +64,13 @@ public class BrowserStackTestNGTest {
         String app = System.getenv("BROWSERSTACK_APP_ID");
         if(app != null && !app.isEmpty()) {
           options.setCapability("app", app);
+        }
+
+        if(browserstackOptions.get("local") != null && browserstackOptions.get("local").toString() == "true"){
+            local = new Local();
+            Map<String, String> LocalOptions = new HashMap<String, String>();
+            LocalOptions.put("key", accessKey);
+            local.start(LocalOptions);
         }
 
         driver = new AndroidDriver(new URL("http://"+config.get("server")+"/wd/hub"), options);
