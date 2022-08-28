@@ -1,4 +1,5 @@
-package com.browserstack.run_parallel_test;
+package com.browserstack;
+import com.browserstack.local.Local;
 
 import java.net.URL;
 import java.util.Map;
@@ -15,17 +16,17 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.AfterMethod;
 
 import io.appium.java_client.ios.IOSDriver;
-import org.openqa.selenium.WebElement;
 
 
 public class BrowserStackTestNGTest {
   public IOSDriver driver;
+  private Local local;
 
   @BeforeMethod(alwaysRun=true)
-  @org.testng.annotations.Parameters(value={"deviceIndex"})
-  public void setUp(String deviceIndex) throws Exception {
+  @org.testng.annotations.Parameters(value = { "config", "deviceIndex" })
+  public void setUp(String config_file, String deviceIndex) throws Exception {
     JSONParser parser = new JSONParser();
-    JSONObject config = (JSONObject) parser.parse(new FileReader("src/test/resources/com/browserstack/run_parallel_test/parallel.conf.json"));
+    JSONObject config = (JSONObject) parser.parse(new FileReader("src/test/resources/com/browserstack/"+config_file));
     JSONArray envs = (JSONArray) config.get("environments");
 
     XCUITestOptions options = new XCUITestOptions();
@@ -64,6 +65,13 @@ public class BrowserStackTestNGTest {
       options.setCapability("app", app);
     }
 
+    if(browserstackOptions.get("local") != null && browserstackOptions.get("local").toString() == "true"){
+      local = new Local();
+      Map<String, String> LocalOptions = new HashMap<String, String>();
+      LocalOptions.put("key", accessKey);
+      local.start(LocalOptions);
+    }
+
     driver = new IOSDriver(new URL("http://"+config.get("server")+"/wd/hub"), options);
   }
 
@@ -72,5 +80,6 @@ public class BrowserStackTestNGTest {
     // Invoke driver.quit() to indicate that the test is completed. 
     // Otherwise, it will appear as timed out on BrowserStack.
     driver.quit();
+    if(local != null) local.stop();
   }
 }
