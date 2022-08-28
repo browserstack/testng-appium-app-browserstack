@@ -2,17 +2,16 @@
   "server": "hub.browserstack.com",
 
   "capabilities": {
-    "app": "bs://<app-id>"
-  },
-
-  "browserstackOptions": {
-    "projectName": "First TestNg iOS Project",
-    "buildName": "browserstack-build-1",
-    "sessionName": "BStack local_test",
-    "debug": true,
-    "local": true,
-    "userName": "BROWSERSTACK_USERNAME",
-    "accessKey": "BROWSERSTACK_ACCESS_KEY"
+    "app": "bs://<app-id>",
+    "bstack:options": {
+      "projectName": "First TestNg iOS Project",
+      "buildName": "browserstack-build-1",
+      "sessionName": "BStack local_test",
+      "debug": true,
+      "local": true,
+      "userName": "BROWSERSTACK_USERNAME",
+      "accessKey": "BROWSERSTACK_ACCESS_KEY"
+    }
   },
 
   "environments": [

@@ -44,11 +44,14 @@ public class BrowserStackTestNGTest {
       Map.Entry pair = (Map.Entry)it.next();
       if(options.getCapability(pair.getKey().toString()) == null){
           options.setCapability(pair.getKey().toString(), pair.getValue());
+      } else if (pair.getKey().toString().equalsIgnoreCase("bstack:options")){
+          HashMap bstackOptionsMap = (HashMap) pair.getValue();
+          bstackOptionsMap.putAll((HashMap) options.getCapability("bstack:options"));
+          options.setCapability(pair.getKey().toString(), bstackOptionsMap);
       }
     }
 
-    HashMap<String, Object> browserstackOptions = (HashMap<String, Object>) config.get("browserstackOptions");
-    options.setCapability("bstack:options", browserstackOptions);
+    JSONObject browserstackOptions = (JSONObject) options.getCapability("bstack:options");
 
     String username = System.getenv("BROWSERSTACK_USERNAME");
     if(username == null) {
