@@ -47,17 +47,17 @@ Getting Started with Appium tests in TestNg on BrowserStack couldn't be easier!
 
 ### **Run first test :**
 
-- Switch to `run_first_test` directory under [Android examples](android/testng-examples) or [iOS examples](ios/testng-examples)
+- Switch to directory [Android examples](android/testng-examples) or [iOS examples](ios/testng-examples)
 - Follow the steps outlined in the documentation - [Get Started with your first test on App Automate](https://www.browserstack.com/docs/app-automate/appium/getting-started/java/testng)
 
 ### **Speed up test execution with parallel testing :**
 
-- Switch to `run_parallel_test` directory under [Android examples](android/testng-examples/) or [iOS examples](ios/testng-examples/)
+- Switch to directory [Android examples](android/testng-examples/) or [iOS examples](ios/testng-examples/)
 - Follow the steps outlined in the documentation - [Get Started with parallel testing on App Automate](https://www.browserstack.com/docs/app-automate/appium/getting-started/java/testng/parallelize-tests)
 
 ### **Use Local testing for apps that access resources hosted in development or testing environments :**
 
-- Switch to `run_local_test` directory under [Android examples](android/testng-examples/) or [iOS examples](ios/testng-examples/)
+- Switch to directory [Android examples](android/testng-examples/) or [iOS examples](ios/testng-examples/)
 - Follow the steps outlined in the documentation - [Get Started with Local testing on App Automate](https://www.browserstack.com/docs/app-automate/appium/getting-started/java/testng/local-testing)
 
 **Note**: If you are facing any issues, refer [Getting Help section](#Getting-Help)
