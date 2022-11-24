@@ -1,16 +1,15 @@
 package com.browserstack.run_first_test;
 
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.annotations.Test;
-
-import org.openqa.selenium.support.ui.WebDriverWait;
-import org.openqa.selenium.support.ui.ExpectedConditions;
 
 import io.appium.java_client.MobileBy;
 import io.appium.java_client.ios.IOSElement;
 
 
-public class FirstTest extends BrowserStackTestNGTest {
+public class FirstTest extends AppiumTest {
 
   @Test
   public void test() throws Exception {
