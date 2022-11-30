@@ -17,7 +17,7 @@ public class AppiumTest {
     @BeforeMethod(alwaysRun=true)
     public void setUp() throws Exception {
         DesiredCapabilities capabilities = new DesiredCapabilities();
-        driver = new IOSDriver(new URL("http://127.0.0.1:4723/wd/hub"),capabilities);
+        driver = new IOSDriver<IOSElement>(new URL("http://127.0.0.1:4723/wd/hub"),capabilities);
     }
 
     @AfterMethod(alwaysRun=true)

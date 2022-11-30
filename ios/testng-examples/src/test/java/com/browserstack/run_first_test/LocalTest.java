@@ -1,7 +1,5 @@
 package com.browserstack.run_first_test;
 
-import java.beans.Transient;
-
 import org.testng.Assert;
 import org.testng.annotations.Test;
 

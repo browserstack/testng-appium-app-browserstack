@@ -18,7 +18,7 @@ public class AppiumTest {
     @BeforeMethod(alwaysRun=true)
     public void setUp() throws Exception {
         DesiredCapabilities capabilities = new DesiredCapabilities();
-        driver = new AndroidDriver(new URL("http://127.0.0.1:4723/wd/hub"),capabilities);
+        driver = new AndroidDriver<AndroidElement>(new URL("http://127.0.0.1:4723/wd/hub"),capabilities);
     }
 
     @AfterMethod(alwaysRun=true)

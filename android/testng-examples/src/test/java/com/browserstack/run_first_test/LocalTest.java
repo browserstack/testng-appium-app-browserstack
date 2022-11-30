@@ -22,7 +22,7 @@ public class LocalTest extends AppiumTest {
     AndroidElement searchElement = (AndroidElement) new WebDriverWait(driver, 30).until(
         ExpectedConditions.elementToBeClickable(MobileBy.id("com.example.android.basicnetworking:id/test_action")));
     searchElement.click();
-    AndroidElement insertTextElement = (AndroidElement) new WebDriverWait(driver, 30).until(
+    new WebDriverWait(driver, 30).until(
         ExpectedConditions.elementToBeClickable(MobileBy.className("android.widget.TextView")));
 
     AndroidElement testElement = null;
