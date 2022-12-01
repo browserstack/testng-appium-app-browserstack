@@ -118,7 +118,7 @@
             <artifactId>maven-surefire-plugin</artifactId>
             <configuration>
               <suiteXmlFiles>
-                <suiteXmlFile>src/test/resources/com/browserstack/run_first_test/locale.testng.xml</suiteXmlFile>
+                <suiteXmlFile>src/test/resources/com/browserstack/run_first_test/local.testng.xml</suiteXmlFile>
               </suiteXmlFiles>
             </configuration>
           </plugin>

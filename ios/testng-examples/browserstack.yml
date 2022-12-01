@@ -29,7 +29,7 @@ source: testng:archetype-integrate:v1.2
 # =======================================
 # Platforms object contains all the browser / device combinations you want to test on.
 # Entire list available here -> (https://www.browserstack.com/list-of-browsers-and-platforms/automate)
-app: ./BStackSampleApp.ipa
+app: ./LocalSample.ipa
 
 platforms:
   - deviceName: iPhone 14 Pro
