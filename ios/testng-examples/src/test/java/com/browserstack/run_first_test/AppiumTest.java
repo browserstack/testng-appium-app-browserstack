@@ -7,17 +7,16 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 
 import io.appium.java_client.ios.IOSDriver;
-import io.appium.java_client.ios.IOSElement;
 
 
 public class AppiumTest {
 
-    public IOSDriver<IOSElement> driver;
+    public IOSDriver driver;
 
     @BeforeMethod(alwaysRun=true)
     public void setUp() throws Exception {
         DesiredCapabilities capabilities = new DesiredCapabilities();
-        driver = new IOSDriver<IOSElement>(new URL("http://127.0.0.1:4723/wd/hub"),capabilities);
+        driver = new IOSDriver(new URL("http://127.0.0.1:4723/wd/hub"),capabilities);
     }
 
     @AfterMethod(alwaysRun=true)

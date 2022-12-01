@@ -32,12 +32,15 @@ source: testng:archetype-integrate:v1.2
 app: ./WikipediaSample.apk
 
 platforms:
-  - device: Samsung Galaxy S22 Ultra
+  - deviceName: Samsung Galaxy S22 Ultra
     osVersion: 12.0
+    platformName: android
   - deviceName: Samsung Galaxy S21
     osVersion: 11.0
-  - deviceName: Google Pixel 7
-    osVersion: 13.0
+    platformName: android
+  - deviceName: Google Pixel 6 Pro
+    osVersion: 12.0
+    platformName: android
 
 
 # =======================
