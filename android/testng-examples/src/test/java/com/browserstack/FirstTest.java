@@ -1,4 +1,4 @@
-package com.browserstack.run_first_test;
+package com.browserstack;
 
 import java.time.Duration;
 import java.util.List;

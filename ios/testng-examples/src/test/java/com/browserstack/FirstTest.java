@@ -1,4 +1,4 @@
-package com.browserstack.run_first_test;
+package com.browserstack;
 
 import org.testng.Assert;
 import org.testng.annotations.Test;
