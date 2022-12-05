@@ -16,20 +16,22 @@ accessKey: BROWSERSTACK_ACCESS_KEY
 # Ensure you add a dynamic identifier, like an incremental build number from your
 # CI/CD or timestamp at the end of every build; otherwise tests from different
 # executions will be grouped together on BrowserStack
-buildName: browserstack-build-1
+buildName: browserstack-build
 # Use `projectName` to set the name of your project. Example, Marketing Website
 projectName: BrowserStack Samples
 # Use `framework` to set the framework of your project. Example, testng, cucumber, cucumber-testng
 framework: testng
 
-source: testng:archetype-integrate:v1.2
+source: testng:sample-sdk:v1.0
+
+app: ./WikipediaSample.apk
+# app: ./LocalSample.ipa #For running local tests
 
 # =======================================
 # Platforms (Browsers / Devices to test)
 # =======================================
 # Platforms object contains all the browser / device combinations you want to test on.
 # Entire list available here -> (https://www.browserstack.com/list-of-browsers-and-platforms/automate)
-app: ./WikipediaSample.apk
 
 platforms:
   - deviceName: Samsung Galaxy S22 Ultra
@@ -42,7 +44,6 @@ platforms:
     osVersion: 12.0
     platformName: android
 
-
 # =======================
 # Parallels per Platform
 # =======================
@@ -52,7 +53,7 @@ platforms:
 # Example 1 - If you have configured 3 platforms and set `parallelsPerPlatform` as 2, a total of 6 (2 * 3) parallel threads will be used on BrowserStack
 #
 # Example 2 - If you have configured 1 platform and set `parallelsPerPlatform` as 5, a total of 5 (1 * 5) parallel threads will be used on BrowserStack
-parallelsPerPlatform: 2
+parallelsPerPlatform: 1
 
 # ==========================================
 # BrowserStack Local
