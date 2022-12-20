@@ -2,6 +2,7 @@ package com.browserstack;
 
 import java.net.URL;
 
+import org.openqa.selenium.MutableCapabilities;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 
@@ -15,7 +16,7 @@ public class AppiumTest {
 
     @BeforeMethod(alwaysRun=true)
     public void setUp() throws Exception {
-        XCUITestOptions options = new XCUITestOptions();
+        MutableCapabilities options = new XCUITestOptions();
         driver = new IOSDriver(new URL("http://127.0.0.1:4723/wd/hub"),options);
     }
 
