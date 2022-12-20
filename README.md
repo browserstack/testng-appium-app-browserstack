@@ -44,13 +44,10 @@ Getting Started with Appium tests in TestNg on BrowserStack couldn't be easier!
 - Switch to one of the following directories: [Android examples](android/testng-examples) or [iOS examples](ios/testng-examples)
 - Run the following maven command `mvn test -P first`
 
-### **Speed up test execution with parallel testing :**
-
-- Change the `parallelsPerPlatform` parameter in the `browserstack.yml` file to run your test suite in parallel - [Detailled documentation for the browserstack.yml file](https://www.browserstack.com/docs/automate/selenium/browserstack-sdk/core-concepts#sdk-configuration-file)
-
 ### **Use Local testing for apps that access resources hosted in development or testing environments :**
 
 - Simply configure the `browserstackLocal` parameter in the `browserstack.yml` file accordingly in [Android examples](android/testng-examples/) or [iOS examples](ios/testng-examples/).
+- You can use the `LocalSample` app provided in both folder [Android examples](android/testng-examples/) or [iOS examples](ios/testng-examples/) to run your test. Change the app parameter in the `browserstack.yml` file and run the tests with the following command: `mvn test -P local`
 
 
 **Note**: If you are facing any issues, refer [Getting Help section](#Getting-Help)
