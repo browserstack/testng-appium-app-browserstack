@@ -18,7 +18,7 @@ accessKey: BROWSERSTACK_ACCESS_KEY
 # executions will be grouped together on BrowserStack
 buildName: browserstack-build
 # Use `projectName` to set the name of your project. Example, Marketing Website
-projectName: BrowserStack Samples
+projectName: TestNg Android Project
 # Use `framework` to set the framework of your project. Example, testng, cucumber, cucumber-testng
 framework: testng
 
