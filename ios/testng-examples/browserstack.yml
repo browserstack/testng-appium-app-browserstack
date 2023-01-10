@@ -11,7 +11,7 @@ accessKey: BROWSERSTACK_ACCESS_KEY
 # ======================
 # The following capabilities are used to set up reporting on BrowserStack:
 # Set 'projectName' to the name of your project. Example, Marketing Website
-projectName: TestNg Android Project
+projectName: First TestNg iOS Project
 # Set `buildName` as the name of the job / testsuite being run
 buildName: browserstack build
 # `buildIdentifier` is a unique id to differentiate every execution that gets appended to
@@ -24,7 +24,7 @@ buildIdentifier: '#${BUILD_NUMBER}' # Supports strings along with either/both ${
 # This property is needed to send test context to BrowserStack (test name, status)
 framework: testng
 
-source: testng:sample-sdk:v1.0
+source: testng:appium-sample-sdk:v1.0
 
 app: ./BStackSampleApp.ipa
 #app: ./LocalSample.ipa #For running local tests
