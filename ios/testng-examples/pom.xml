@@ -41,11 +41,6 @@
       <version>4.6.0</version>
     </dependency>
     <dependency>
-      <groupId>com.browserstack</groupId>
-      <artifactId>browserstack-local-java</artifactId>
-      <version>1.0.3</version>
-    </dependency>
-    <dependency>
       <groupId>com.googlecode.json-simple</groupId>
       <artifactId>json-simple</artifactId>
       <version>1.1.1</version>
@@ -94,7 +89,7 @@
 
   <profiles>
     <profile>
-      <id>first</id>
+      <id>sample-test</id>
       <build>
         <plugins>
           <plugin>
@@ -102,7 +97,7 @@
             <artifactId>maven-surefire-plugin</artifactId>
             <configuration>
               <suiteXmlFiles>
-                <suiteXmlFile>src/test/resources/com/browserstack/first.testng.xml</suiteXmlFile>
+                <suiteXmlFile>src/test/resources/com/browserstack/sample-test.testng.xml</suiteXmlFile>
               </suiteXmlFiles>
             </configuration>
           </plugin>
@@ -110,7 +105,7 @@
       </build>
     </profile>
     <profile>
-      <id>local</id>
+      <id>sample-local-test</id>
       <build>
         <plugins>
           <plugin>
@@ -118,7 +113,7 @@
             <artifactId>maven-surefire-plugin</artifactId>
             <configuration>
               <suiteXmlFiles>
-                <suiteXmlFile>src/test/resources/com/browserstack/local.testng.xml</suiteXmlFile>
+                <suiteXmlFile>src/test/resources/com/browserstack/sample-local-test.testng.xml</suiteXmlFile>
               </suiteXmlFiles>
             </configuration>
           </plugin>

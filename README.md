@@ -1,6 +1,6 @@
 # testng-appium-app-browserstack
 
-This repository demonstrates how to run Appium tests in [TestNG](http://testng.org) on BrowserStack App Automate.
+This repository demonstrates how to run Appium tests in [TestNG](http://testng.org) on BrowserStack App Automate using BrowserStack SDK.
 
 ![BrowserStack Logo](https://d98b8t1nnulk5.cloudfront.net/production/images/layout/logo-header.png?1469004780)
 
@@ -39,15 +39,18 @@ mvn clean
 
 Getting Started with Appium tests in TestNg on BrowserStack couldn't be easier!
 
-### **Run first test :**
+### **Run Sample test :**
 
 - Switch to one of the following directories: [Android examples](android/testng-examples) or [iOS examples](ios/testng-examples)
-- Run the following maven command `mvn test -P first`
+- Run the following maven command `mvn test -P sample-test`
 
 ### **Use Local testing for apps that access resources hosted in development or testing environments :**
 
-- Simply configure the `browserstackLocal` parameter in the `browserstack.yml` file accordingly in [Android examples](android/testng-examples/) or [iOS examples](ios/testng-examples/).
-- You can use the `LocalSample` app provided in both folder [Android examples](android/testng-examples/) or [iOS examples](ios/testng-examples/) to run your test. Change the app parameter in the `browserstack.yml` file and run the tests with the following command: `mvn test -P local`
+- Simply configure the `browserstackLocal` parameter in the `browserstack.yml` file accordingly in [Android examples](android/testng-examples) or [iOS examples](ios/testng-examples).
+  ```
+  browserstackLocal: true
+  ```
+- You can use the `LocalSample` app provided in both folder [Android examples](android/testng-examples) or [iOS examples](ios/testng-examples) to run your test. Change the app parameter in the `browserstack.yml` file and run the tests with the following command: `mvn test -P sample-local-test`
 
 
 **Note**: If you are facing any issues, refer [Getting Help section](#Getting-Help)

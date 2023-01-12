@@ -7,25 +7,27 @@ userName: BROWSERSTACK_USERNAME
 accessKey: BROWSERSTACK_ACCESS_KEY
 
 # ======================
-# Organizing your tests
+# BrowserStack Reporting
 # ======================
-# Use `projectName`, `buildName`, `name` capabilities to organise your tests
-# `name` is the name of your test sessions and is automatically picked from your
-# test name and doesn't need to be set manually when using BrowserStack SDK
-# `buildName` is used to name your CI/CD job or the execution of your test suite.
-# Ensure you add a dynamic identifier, like an incremental build number from your
-# CI/CD or timestamp at the end of every build; otherwise tests from different
-# executions will be grouped together on BrowserStack
-buildName: browserstack-build
-# Use `projectName` to set the name of your project. Example, Marketing Website
-projectName: TestNg Android Project
-# Use `framework` to set the framework of your project. Example, testng, cucumber, cucumber-testng
+# The following capabilities are used to set up reporting on BrowserStack:
+# Set 'projectName' to the name of your project. Example, Marketing Website
+projectName: BrowserStack Samples
+# Set `buildName` as the name of the job / testsuite being run
+buildName: browserstack build
+# `buildIdentifier` is a unique id to differentiate every execution that gets appended to
+# buildName. Choose your buildIdentifier format from the available expressions:
+# ${BUILD_NUMBER} (Default): Generates an incremental counter with every execution
+# ${DATE_TIME}: Generates a Timestamp with every execution. Eg. 05-Nov-19:30
+# Read more about buildIdentifiers here -> https://www.browserstack.com/docs/automate/selenium/organize-tests
+buildIdentifier: '#${BUILD_NUMBER}' # Supports strings along with either/both ${expression}
+# Set `framework` of your test suite. Example, `testng`, `cucumber`, `cucumber-testng`
+# This property is needed to send test context to BrowserStack (test name, status)
 framework: testng
 
-source: testng:sample-sdk:v1.0
+source: testng:appium-sample-sdk:v1.0
 
 app: ./WikipediaSample.apk
-# app: ./LocalSample.ipa #For running local tests
+#app: ./LocalSample.apk #For running local tests
 
 # =======================================
 # Platforms (Browsers / Devices to test)
