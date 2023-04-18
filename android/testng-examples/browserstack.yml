@@ -24,7 +24,7 @@ buildIdentifier: '#${BUILD_NUMBER}' # Supports strings along with either/both ${
 # This property is needed to send test context to BrowserStack (test name, status)
 framework: testng
 
-source: testng:appium-sample-sdk:v1.0
+source: testng:appium-sample-sdk:v1.1
 
 app: ./WikipediaSample.apk
 #app: ./LocalSample.apk #For running local tests
