@@ -65,6 +65,7 @@ jobs:
       - name: Run mvn profile sample-local-test for testng android
         run: |
           cd android/testng-examples
+          sed -i '' 's/^[^#]*WikipediaSample/app\: \.\/LocalSample/' browserstack.yml
           mvn compile
           mvn test -P sample-local-test
       - name: Run mvn test for testng iOS
@@ -75,6 +76,7 @@ jobs:
       - name: Run mvn profile sample-test for testng iOS
         run: |
           cd ios/testng-examples
+          sed -i '' 's/^[^#]*WikipediaSample/app\: \.\/LocalSample/' browserstack.yml
           mvn compile
           mvn test -P sample-test
       - name: Run mvn profile sample-local-test for testng iOS
