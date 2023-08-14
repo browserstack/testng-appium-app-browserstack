@@ -66,7 +66,7 @@ jobs:
         run: |
           cd android/testng-examples
           mvn compile
-          mvn test -P sample-local-test -Dbrowserstack.app="./LocalSample.apk"
+          mvn test -P sample-local-test -D"browserstack.app"="./LocalSample.apk"
       - name: Run mvn test for testng ios
         run: |
           cd ios/testng-examples
@@ -81,7 +81,7 @@ jobs:
         run: |
           cd ios/testng-examples
           mvn compile
-          mvn test -P sample-local-test -Dbrowserstack.app="./LocalSample.ipa"
+          mvn test -P sample-local-test -D"browserstack.app"="./LocalSample.ipa"
       - if: always()
         uses: actions/github-script@98814c53be79b1d30f795b907e553d8679345975
         id: status-check-completed
