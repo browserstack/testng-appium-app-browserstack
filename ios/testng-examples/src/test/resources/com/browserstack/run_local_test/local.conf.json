@@ -1,21 +1,24 @@
 {
-  "server": "hub-cloud.browserstack.com",
-  "username": "BROWSERSTACK_USERNAME",
-  "access_key": "BROWSERSTACK_ACCESS_KEY",
+  "server": "hub.browserstack.com",
 
   "capabilities": {
-    "project": "First TestNg iOS Project",
-    "build": "browserstack-build-1",
-    "name": "local_test",
-    "browserstack.debug": true,
-    "browserstack.local": true,
-    "app": "bs://<app-id>"
+    "app": "bs://<app-id>",
+    "bstack:options": {
+      "projectName": "First TestNg iOS Project",
+      "buildName": "browserstack-build-1",
+      "sessionName": "BStack local_test",
+      "debug": true,
+      "local": true,
+      "userName": "BROWSERSTACK_USERNAME",
+      "accessKey": "BROWSERSTACK_ACCESS_KEY"
+    }
   },
 
   "environments": [
     { 
-      "device": "iPhone 11 Pro",
-      "os_version": "13"
+      "deviceName": "iPhone XS",
+      "platformVersion": "12",
+      "platformName": "ios"
     }
   ]
 }

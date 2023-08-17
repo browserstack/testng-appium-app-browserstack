@@ -3,15 +3,17 @@
 <suite name="Parallel" thread-count="2" parallel="tests">
     <test name="ParallelTestPixel3">
     <parameter name="deviceIndex" value="0"/>
+    <parameter name="config" value="run_parallel_test/parallel.conf.json"/>
         <classes>
-            <class name="com.browserstack.run_parallel_test.ParallelTest"/>
+            <class name="com.browserstack.ParallelTest"/>
         </classes>
     </test>
 
     <test name="ParallelTestGalaxy10e">
     <parameter name="deviceIndex" value="1"/>
+    <parameter name="config" value="run_parallel_test/parallel.conf.json"/>
         <classes>
-            <class name="com.browserstack.run_parallel_test.ParallelTest"/>
+            <class name="com.browserstack.ParallelTest"/>
         </classes>
     </test>
 </suite>

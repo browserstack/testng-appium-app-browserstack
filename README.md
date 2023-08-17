@@ -4,6 +4,12 @@ This repository demonstrates how to run Appium tests in [TestNG](http://testng.o
 
 ![BrowserStack Logo](https://d98b8t1nnulk5.cloudfront.net/production/images/layout/logo-header.png?1469004780)
 
+## Based on
+
+These code samples are currently based on:
+
+- **Appium-Java-Client:** `8.1.1`
+- **Protocol:** `W3C`
 ## Setup
 
 ### Requirements
@@ -41,18 +47,18 @@ Getting Started with Appium tests in TestNg on BrowserStack couldn't be easier!
 
 ### **Run first test :**
 
-- Switch to `run_first_test` directory under [Android examples](android/testng-examples) or [iOS examples](ios/testng-examples)
-- Follow the steps outlined in the documentation - [Get Started with your first test on App Automate](https://www.browserstack.com/docs/app-automate/appium/getting-started/java/testng)
+- Update `first.conf.json` file inside the `src/test/resources/com/browserstack/run_first_test` with your [BrowserStack Username and Access Key](https://www.browserstack.com/accounts/settings)
+- Run `mvn test -P first`
 
 ### **Speed up test execution with parallel testing :**
 
-- Switch to `run_parallel_test` directory under [Android examples](android/testng-examples/) or [iOS examples](ios/testng-examples/)
-- Follow the steps outlined in the documentation - [Get Started with parallel testing on App Automate](https://www.browserstack.com/docs/app-automate/appium/getting-started/java/testng/parallelize-tests)
+- Update `parallel.conf.json` file inside the `src/test/resources/com/browserstack/run_parallel_test` with your [BrowserStack Username and Access Key](https://www.browserstack.com/accounts/settings)
+- Run `mvn test -P parallel`
 
 ### **Use Local testing for apps that access resources hosted in development or testing environments :**
 
-- Switch to `run_local_test` directory under [Android examples](android/testng-examples/) or [iOS examples](ios/testng-examples/)
-- Follow the steps outlined in the documentation - [Get Started with Local testing on App Automate](https://www.browserstack.com/docs/app-automate/appium/getting-started/java/testng/local-testing)
+- Update `local.conf.json` file inside the `src/test/resources/com/browserstack/run_local_test` with your [BrowserStack Username and Access Key](https://www.browserstack.com/accounts/settings)
+- Run `mvn test -P local`
 
 **Note**: If you are facing any issues, refer [Getting Help section](#Getting-Help)
 
