@@ -15,6 +15,10 @@ public class FirstTest extends AppiumTest {
 
     @Test
     public void test() throws Exception {
+      WebElement skipButton = (WebElement) new WebDriverWait(driver, Duration.ofSeconds(30)).until(
+          ExpectedConditions.presenceOfElementLocated(AppiumBy.id("org.wikipedia.alpha:id/fragment_onboarding_skip_button")));
+      skipButton.click();
+
       WebElement searchElement = (WebElement) new WebDriverWait(driver, Duration.ofSeconds(30)).until(
           ExpectedConditions.elementToBeClickable(AppiumBy.accessibilityId("Search Wikipedia")));
 
