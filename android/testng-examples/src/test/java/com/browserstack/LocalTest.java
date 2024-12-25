@@ -5,6 +5,7 @@ import java.time.Duration;
 import java.util.List;
 
 import org.apache.commons.io.FileUtils;
+import org.openqa.selenium.*;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebElement;
@@ -19,30 +20,60 @@ public class LocalTest extends AppiumTest {
 
     @Test
     public void test() throws Exception {
-    WebElement searchElement = (WebElement) new WebDriverWait(driver, Duration.ofSeconds(30)).until(
-        ExpectedConditions.elementToBeClickable(AppiumBy.id("com.example.android.basicnetworking:id/test_action")));
-    searchElement.click();
-    WebElement insertTextElement = (WebElement) new WebDriverWait(driver, Duration.ofSeconds(30)).until(
-        ExpectedConditions.elementToBeClickable(AppiumBy.className("android.widget.TextView")));
+        try {
+            WebElement searchElement = new WebDriverWait(driver, Duration.ofSeconds(30))
+                    .until(ExpectedConditions.elementToBeClickable(AppiumBy.id("com.example.android.basicnetworking:id/test_action")));
+            searchElement.click();
 
-    WebElement testElement = null;
-    List<WebElement> allTextViewElements = driver.findElements(AppiumBy.className("android.widget.TextView"));
-    Thread.sleep(10);
-    for(WebElement textElement : allTextViewElements) {
-      if(textElement.getText().contains("The active connection is")) {
-        testElement = textElement;
-      }
+            new WebDriverWait(driver, Duration.ofSeconds(30))
+                    .until(ExpectedConditions.presenceOfElementLocated(AppiumBy.className("android.widget.TextView")));
+
+            WebElement testElement = findTextViewWithRetry("The active connection is", 3, 2000);
+
+            if (testElement == null) {
+                takeScreenshot("screenshot.png");
+                throw new Error("Cannot find the needed TextView element from app after retries.");
+            }
+
+            String matchedString = testElement.getText();
+            System.out.println(matchedString);
+
+            Assert.assertTrue(matchedString.contains("The active connection is wifi"));
+            Assert.assertTrue(matchedString.contains("Up and running"));
+        } catch (Exception e) {
+            takeScreenshot("error-screenshot.png");
+            throw e;
+        }
     }
 
-    if(testElement == null) {
-      File scrFile = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
-      FileUtils.copyFile(scrFile, new File(System.getProperty("user.dir") + "screenshot.png"));
-      System.out.println("Screenshot stored at " + System.getProperty("user.dir") + "screenshot.png");
-      throw new Error("Cannot find the needed TextView element from app");
+    private WebElement findTextViewWithRetry(String textToMatch, int retries, int waitMillis) throws InterruptedException {
+        WebElement matchedElement = null;
+
+        for (int i = 0; i < retries; i++) {
+            List<WebElement> allTextViewElements = driver.findElements(AppiumBy.className("android.widget.TextView"));
+
+            for (WebElement textElement : allTextViewElements) {
+                if (textElement.getText().contains(textToMatch)) {
+                    matchedElement = textElement;
+                    break;
+                }
+            }
+            if (matchedElement != null) {
+                break;
+            }
+            Thread.sleep(waitMillis);
+        }
+        return matchedElement;
     }
-    String matchedString = testElement.getText();
-    System.out.println(matchedString);
-    Assert.assertTrue(matchedString.contains("The active connection is wifi"));
-    Assert.assertTrue(matchedString.contains("Up and running"));
+
+    private void takeScreenshot(String fileName) {
+        try {
+            File scrFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
+            String filePath = System.getProperty("user.dir") + File.separator + fileName;
+            FileUtils.copyFile(scrFile, new File(filePath));
+            System.out.println("Screenshot stored at " + filePath);
+        } catch (Exception e) {
+            System.err.println("Failed to take screenshot: " + e.getMessage());
+        }
     }
 }
