@@ -20,6 +20,7 @@ public class FirstTest extends AppiumTest {
     textButton.click();
     WebElement textInput = (WebElement) new WebDriverWait(driver, Duration.ofSeconds(30)).until(
         ExpectedConditions.elementToBeClickable(AppiumBy.accessibilityId("Text Input")));
+    Thread.sleep(1000);
     textInput.sendKeys("hello@browserstack.com"+"\n");
 
     Thread.sleep(5000);

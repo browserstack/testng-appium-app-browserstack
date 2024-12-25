@@ -52,11 +52,6 @@ jobs:
         with:
           distribution: 'temurin'
           java-version: ${{ matrix.java }}
-      - name: Run mvn test for testng android
-        run: |
-          cd android/testng-examples
-          mvn compile
-          mvn test
       - name: Run mvn profile sample-test for testng android
         run: |
           cd android/testng-examples
@@ -67,11 +62,6 @@ jobs:
           cd android/testng-examples
           mvn compile
           mvn test -P sample-local-test -D"browserstack.app"="./LocalSample.apk"
-      - name: Run mvn test for testng ios
-        run: |
-          cd ios/testng-examples
-          mvn compile
-          mvn test
       - name: Run mvn profile sample-test for testng ios
         run: |
           cd ios/testng-examples

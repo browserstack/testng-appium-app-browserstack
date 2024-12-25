@@ -26,7 +26,7 @@ public class LocalTest extends AppiumTest {
         ExpectedConditions.elementToBeClickable(AppiumBy.className("android.widget.TextView")));
 
     WebElement testElement = null;
-    List<WebElement> allTextViewElements = driver.findElements(AppiumBy.className("android.widget.TextView"));
+    List<WebElement> allTextViewElements = driver.findElements(AppiumBy.xpath("//android.widget.TextView[@resource-id='com.example.android.basicnetworking:id/textView']"));
     Thread.sleep(10);
     for(WebElement textElement : allTextViewElements) {
       if(textElement.getText().contains("The active connection is")) {
