@@ -5,3 +5,7 @@ local.log
 *.iml
 **/logs/*
 .DS_Store
+build
+gradle
+.gradle
+gradlew*

@@ -18,6 +18,10 @@ This repository demonstrates how to run Appium tests in [TestNG](http://testng.o
    - If Maven is not downloaded, download it from [here](https://maven.apache.org/download.cgi)
    - For installation, follow the instructions [here](https://maven.apache.org/install.html)
 
+3. Gradle
+  - If Gradle is not downloaded, download it from [here](https://gradle.org/releases/)  
+  - For installation, follow the instructions [here](https://gradle.org/install/) 
+
 ### Install the dependencies
 
 To install the dependencies for Android tests, run :
@@ -43,6 +47,7 @@ Getting Started with Appium tests in TestNg on BrowserStack couldn't be easier!
 
 - Switch to one of the following directories: [Android examples](android/testng-examples) or [iOS examples](ios/testng-examples)
 - Run the following maven command `mvn test -P sample-test`
+- Run the following gradle command `gradle clean sampleTest`
 
 ### **Use Local testing for apps that access resources hosted in development or testing environments :**
 
@@ -51,6 +56,8 @@ Getting Started with Appium tests in TestNg on BrowserStack couldn't be easier!
   browserstackLocal: true
   ```
 - You can use the `LocalSample` app provided in both folder [Android examples](android/testng-examples) or [iOS examples](ios/testng-examples) to run your test. Change the app parameter in the `browserstack.yml` file and run the tests with the following command: `mvn test -P sample-local-test`
+
+-similarly for gradle you can do :- gradle clean sampleLocalTest
 
 
 **Note**: If you are facing any issues, refer [Getting Help section](#Getting-Help)
