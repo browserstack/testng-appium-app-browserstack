@@ -1,0 +1,16 @@
+pluginManagement {
+    repositories {
+        mavenCentral()
+        mavenLocal()
+        gradlePluginPortal()
+    }
+
+    resolutionStrategy {
+        eachPlugin {
+            if (requested.id.id == "com.browserstack.gradle-sdk") {
+                useModule("com.browserstack:gradle-sdk:1.1.2")
+            }
+        }
+    }
+}
+rootProject.name = 'testng-browserstack-ios'

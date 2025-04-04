@@ -67,6 +67,14 @@ jobs:
           cd android/testng-examples
           mvn compile
           mvn test -P sample-local-test -D"browserstack.app"="./LocalSample.apk"
+      - name: Run Gradle sample-test for testng Android
+        run: |
+          cd android/testng-examples
+          gradle clean sampleTest
+      - name: Run Gradle sampleLocalTest for testng Android
+        run: |
+          cd android/testng-examples
+          gradle clean sampleLocalTest -D"browserstack.app"="./LocalSample.apk"
       - name: Run mvn test for testng ios
         run: |
           cd ios/testng-examples
@@ -82,6 +90,14 @@ jobs:
           cd ios/testng-examples
           mvn compile
           mvn test -P sample-local-test -D"browserstack.app"="./LocalSample.ipa"
+      - name: Run Gradle sample-test for testng ios
+        run: |
+          cd ios/testng-examples
+          gradle clean sampleTest
+      - name: Run Gradle sampleLocalTest for testng ios
+        run: |
+          cd ios/testng-examples
+          gradle clean sample-local-test -D"browserstack.app"="./LocalSample.ipa"    
       - if: always()
         uses: actions/github-script@98814c53be79b1d30f795b907e553d8679345975
         id: status-check-completed
