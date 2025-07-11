@@ -3,17 +3,17 @@
 # =============================
 # Add your BrowserStack userName and acccessKey here or set BROWSERSTACK_USERNAME and
 # BROWSERSTACK_ACCESS_KEY as env variables
-userName: BROWSERSTACK_USERNAME
-accessKey: BROWSERSTACK_ACCESS_KEY
+userName: ${BROWSERSTACK_USERNAME}
+accessKey: ${BROWSERSTACK_ACCESS_KEY}
 
 # ======================
 # BrowserStack Reporting
 # ======================
 # The following capabilities are used to set up reporting on BrowserStack:
 # Set 'projectName' to the name of your project. Example, Marketing Website
-projectName: BrowserStack Samples
+projectName: App Automate Onboarding
 # Set `buildName` as the name of the job / testsuite being run
-buildName: browserstack build
+buildName: Tech Challenge
 # `buildIdentifier` is a unique id to differentiate every execution that gets appended to
 # buildName. Choose your buildIdentifier format from the available expressions:
 # ${BUILD_NUMBER} (Default): Generates an incremental counter with every execution
@@ -26,7 +26,7 @@ framework: testng
 
 source: testng:appium-sample-sdk:v1.1
 
-app: ./WikipediaSample.apk
+app: ./browserstack-demoapp.apk
 #app: ./LocalSample.apk #For running local tests
 
 # =======================================
@@ -36,15 +36,15 @@ app: ./WikipediaSample.apk
 # Entire list available here -> (https://www.browserstack.com/list-of-browsers-and-platforms/automate)
 
 platforms:
-  - deviceName: Samsung Galaxy S22 Ultra
-    osVersion: 12.0
-    platformName: android
-  - deviceName: Samsung Galaxy S21
-    osVersion: 11.0
-    platformName: android
-  - deviceName: Google Pixel 6 Pro
-    osVersion: 12.0
-    platformName: android
+  - platformName: android
+    deviceName: Samsung Galaxy S22 Ultra
+    platformVersion: '12.0'
+  - platformName: android
+    deviceName: Google Pixel 7 Pro
+    platformVersion: '13.0'
+  - platformName: android
+    deviceName: OnePlus 9
+    platformVersion: '11.0'
 
 # =======================
 # Parallels per Platform
