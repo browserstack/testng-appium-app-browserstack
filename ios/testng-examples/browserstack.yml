@@ -36,13 +36,13 @@ app: ./BStackSampleApp.ipa
 # Entire list available here -> (https://www.browserstack.com/list-of-browsers-and-platforms/automate)
 
 platforms:
-  - deviceName: iPhone 14 Pro
+  - deviceName: iPhone 14 Pro Max
     osVersion: 16
     platformName: ios
-  - deviceName: iPhone 13 Pro
+  - deviceName: iPhone  XR
     osVersion: 15
     platformName: ios
-  - deviceName: iPhone 15 Plus
+  - deviceName: iPhone 15
     osVersion: 17
     platformName: ios
 
