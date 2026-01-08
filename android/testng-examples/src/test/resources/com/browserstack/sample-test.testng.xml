@@ -3,7 +3,9 @@
 <suite name="First">
     <test name="FirstTest">
         <classes>
-            <class name="com.browserstack.FirstTest"/>
+            <class name="com.browserstack.modulea.DemoTest"/>
+            <class name="com.browserstack.moduleb.DemoTest"/>
+            <class name="com.browserstack.modulec.DemoTest"/>
         </classes>
     </test>
 </suite>
