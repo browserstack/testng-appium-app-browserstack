@@ -39,7 +39,7 @@ platforms:
   - deviceName: iPhone 14 Pro Max
     osVersion: 16
     platformName: ios
-  - deviceName: iPhone  XR
+  - deviceName: iPhone 13
     osVersion: 15
     platformName: ios
   - deviceName: iPhone 15
