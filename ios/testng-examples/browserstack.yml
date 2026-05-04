@@ -3,8 +3,8 @@
 # =============================
 # Add your BrowserStack userName and accessKey here or set BROWSERSTACK_USERNAME and
 # BROWSERSTACK_ACCESS_KEY as env variables
-userName: BROWSERSTACK_USERNAME
-accessKey: BROWSERSTACK_ACCESS_KEY
+userName: moksedulhasan_231xCg
+accessKey: G8Spdrf1B4UCE8qp7pgy
 
 # ======================
 # BrowserStack Reporting
@@ -26,7 +26,7 @@ framework: testng
 
 source: testng:appium-sample-sdk:v1.1
 
-app: ./BStackSampleApp.ipa
+app: ios/BStackSampleApp.ipa
 #app: ./LocalSample.ipa #For running local tests
 
 # =======================================
@@ -35,15 +35,15 @@ app: ./BStackSampleApp.ipa
 # Platforms object contains all the browser / device combinations you want to test on.
 # Entire list available here -> (https://www.browserstack.com/list-of-browsers-and-platforms/automate)
 
-platforms:
-  - deviceName: iPhone 14 Pro Max
-    osVersion: 16
+platforms: ios
+  - deviceName: iPhone 16 Pro Max
+    osVersion: 18
     platformName: ios
-  - deviceName: iPhone 13
-    osVersion: 15
+  - deviceName: iPhone 16 pro
+    osVersion: 18
     platformName: ios
-  - deviceName: iPhone 15
-    osVersion: 17
+  - deviceName: iPhone 16 plus
+    osVersion: 18
     platformName: ios
 
 # =======================
