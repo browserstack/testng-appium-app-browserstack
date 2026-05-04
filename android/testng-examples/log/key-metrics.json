@@ -1,0 +1,14 @@
+[ {
+  "duration" : 6.0,
+  "name" : "sdk:cli:start",
+  "startTime" : 1.776677310201E12,
+  "success" : true,
+  "worker" : 3,
+  "failure" : null,
+  "details" : null,
+  "entryType" : "measure",
+  "platform" : 0,
+  "command" : null,
+  "testName" : null,
+  "hookType" : ""
+} ]

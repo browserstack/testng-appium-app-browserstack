@@ -1,0 +1,59 @@
+14:58:13.033 [main] DEBUG c.browserstack.BrowserStackJavaAgent - [AGENT] Found agent via ProtectionDomain: /Users/bhuwankashyap/.m2/repository/com/browserstack/browserstack-java-sdk/1.56.6/browserstack-java-sdk-1.56.6.jar
+14:58:13.035 [main] INFO  c.browserstack.BrowserStackJavaAgent - [AGENT] Stored agent path for child processes: /Users/bhuwankashyap/.m2/repository/com/browserstack/browserstack-java-sdk/1.56.6/browserstack-java-sdk-1.56.6.jar
+14:58:13.035 [main] DEBUG browserStackFileDebugger - Running SDK with properties: {java.specification.version=25, sun.jnu.encoding=UTF-8, java.class.path=/Users/bhuwankashyap/Documents/testng-appium-app-browserstack/android/testng-examples/target/surefire/surefirebooter574754499493453196.jar, java.vm.vendor=Homebrew, sun.arch.data.model=64, java.vendor.url=https://github.com/Homebrew/homebrew-core/issues, user.timezone=Asia/Kolkata, java.vm.specification.version=25, os.name=Mac OS X, sun.java.launcher=SUN_STANDARD, user.country=US, BROWSERSTACK_LOG_DIR=/Users/bhuwankashyap/Documents/testng-appium-app-browserstack/android/testng-examples/log, browserstack.agent.path=/Users/bhuwankashyap/.m2/repository/com/browserstack/browserstack-java-sdk/1.56.6/browserstack-java-sdk-1.56.6.jar, sun.boot.library.path=/opt/homebrew/Cellar/openjdk/25.0.1/libexec/openjdk.jdk/Contents/Home/lib, sun.java.command=/Users/bhuwankashyap/Documents/testng-appium-app-browserstack/android/testng-examples/target/surefire/surefirebooter574754499493453196.jar /Users/bhuwankashyap/Documents/testng-appium-app-browserstack/android/testng-examples/target/surefire 2026-04-20T14-58-12_681-jvmRun1 surefire7700313805325888236tmp surefire_018219670816607832576tmp, jdk.debug=release, sun.cpu.endian=little, user.home=/Users/bhuwankashyap, user.language=en, java.specification.vendor=Oracle Corporation, java.version.date=2025-10-21, java.home=/opt/homebrew/Cellar/openjdk/25.0.1/libexec/openjdk.jdk/Contents/Home, file.separator=/, java.vm.compressedOopsMode=Zero based, line.separator=
+, java.vm.specification.vendor=Oracle Corporation, java.specification.name=Java Platform API Specification, sun.management.compiler=HotSpot 64-Bit Tiered Compilers, java.runtime.version=25.0.1, user.name=bhuwankashyap, stdout.encoding=UTF-8, path.separator=:, os.version=15.2, java.runtime.name=OpenJDK Runtime Environment, file.encoding=UTF-8, java.vm.name=OpenJDK 64-Bit Server VM, java.vendor.version=Homebrew, java.vendor.url.bug=https://github.com/Homebrew/homebrew-core/issues, java.io.tmpdir=/var/folders/81/htrr8c_94ljdczsjv1lw26_h0000gp/T/, java.version=25.0.1, user.dir=/Users/bhuwankashyap/Documents/testng-appium-app-browserstack/android/testng-examples, os.arch=aarch64, java.vm.specification.name=Java Virtual Machine Specification, native.encoding=UTF-8, java.library.path=/Users/bhuwankashyap/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:., java.vm.info=mixed mode, sharing, stderr.encoding=UTF-8, java.vendor=Homebrew, java.vm.version=25.0.1, stdin.encoding=UTF-8, sun.io.unicode.encoding=UnicodeBig, java.class.version=69.0}
+14:58:13.035 [main] DEBUG browserStackFileDebugger - Running SDK with classpath: /Users/bhuwankashyap/Documents/testng-appium-app-browserstack/android/testng-examples/target/surefire/surefirebooter574754499493453196.jar
+14:58:13.035 [main] DEBUG c.browserstack.BrowserStackJavaAgent - Extracted CLI argument from system : null
+14:58:13.039 [main] INFO  c.browserstack.BrowserStackJavaAgent - Selenium version detected - 4.13.0
+14:58:13.039 [main] INFO  c.browserstack.BrowserStackJavaAgent - Appium version detected - 8.6.0
+14:58:13.112 [main] DEBUG c.b.config.BrowserStackConfig - Cli Config passed - {basedir=/Users/bhuwankashyap/Documents/testng-appium-app-browserstack/android/testng-examples, surefire.suitexmlfiles=src/test/resources/com/browserstack/ai-authoring-test.testng.xml, user.dir=/Users/bhuwankashyap/Documents/testng-appium-app-browserstack/android/testng-examples, argline=-javaagent\:/Users/bhuwankashyap/.m2/repository/com/browserstack/browserstack-java-sdk/1.56.6/browserstack-java-sdk-1.56.6.jar, localrepository=/Users/bhuwankashyap/.m2/repository}
+14:58:13.114 [main] INFO  c.b.config.BrowserStackConfig - Detected Framework testng
+14:58:13.246 [main] DEBUG c.b.logger.BrowserstackLoggerFactory - Log Level set to INFO for logger ROOT
+14:58:13.246 [main] DEBUG c.b.logger.BrowserstackLoggerFactory - Log Level set to TRACE for logger browserStackAutomationFileDebugger
+14:58:13.246 [main] DEBUG c.b.logger.BrowserstackLoggerFactory - Log Level set to INFO for logger browserStackFileDebugger
+14:58:13.246 [main] DEBUG c.b.logger.BrowserstackLoggerFactory - Log Level set to INFO for logger com
+14:58:13.246 [main] DEBUG c.b.logger.BrowserstackLoggerFactory - Log Level set to TRACE for logger com.browserstack
+14:58:13.246 [main] DEBUG c.b.logger.BrowserstackLoggerFactory - Log Level set to null for logger com.browserstack.BrowserStackJavaAgent
+14:58:13.246 [main] DEBUG c.b.logger.BrowserstackLoggerFactory - Log Level set to null for logger com.browserstack.config
+14:58:13.246 [main] DEBUG c.b.logger.BrowserstackLoggerFactory - Log Level set to null for logger com.browserstack.config.BrowserStackConfig
+14:58:13.246 [main] DEBUG c.b.logger.BrowserstackLoggerFactory - Log Level set to null for logger com.browserstack.logger
+14:58:13.246 [main] DEBUG c.b.logger.BrowserstackLoggerFactory - Log Level set to null for logger com.browserstack.logger.BrowserstackLoggerFactory
+14:58:13.246 [main] DEBUG c.b.logger.BrowserstackLoggerFactory - Log Level set to null for logger com.browserstack.monitoring
+14:58:13.246 [main] DEBUG c.b.logger.BrowserstackLoggerFactory - Log Level set to null for logger com.browserstack.monitoring.PerformanceTester
+14:58:13.246 [main] DEBUG c.b.logger.BrowserstackLoggerFactory - Log Level set to null for logger com.browserstack.testOps
+14:58:13.246 [main] DEBUG c.b.logger.BrowserstackLoggerFactory - Log Level set to null for logger com.browserstack.testOps.RequestUtils
+14:58:13.246 [main] DEBUG c.b.logger.BrowserstackLoggerFactory - Log Level set to null for logger com.browserstack.testOrchestration
+14:58:13.246 [main] DEBUG c.b.logger.BrowserstackLoggerFactory - Log Level set to null for logger com.browserstack.testOrchestration.TestOrchestrationOptions
+14:58:13.246 [main] DEBUG c.b.logger.BrowserstackLoggerFactory - Log Level set to null for logger com.browserstack.utils
+14:58:13.246 [main] DEBUG c.b.logger.BrowserstackLoggerFactory - Log Level set to null for logger com.browserstack.utils.AccessibilityUtilityMethods
+14:58:13.246 [main] DEBUG c.b.logger.BrowserstackLoggerFactory - Log Level set to null for logger com.browserstack.utils.FrameworkDetectionUtils
+14:58:13.246 [main] DEBUG c.b.logger.BrowserstackLoggerFactory - Log Level set to null for logger com.browserstack.utils.FunnelInstrumentation
+14:58:13.246 [main] DEBUG c.b.logger.BrowserstackLoggerFactory - Log Level set to null for logger stdoutPrinter
+14:58:13.250 [main] DEBUG c.b.utils.FrameworkDetectionUtils - Found the target path is : /Users/bhuwankashyap/Documents/testng-appium-app-browserstack/android/testng-examples/target/surefire
+14:58:13.250 [main] DEBUG c.b.utils.FrameworkDetectionUtils - Found the configuration path is : surefire7700313805325888236tmp
+14:58:13.251 [main] DEBUG c.b.utils.FrameworkDetectionUtils - Test classes detected: com.browserstack.AppiumTest, com.browserstack.FirstTest, com.browserstack..!22820!AIAuthoringTest, com.browserstack.AIAuthoringTest, com.browserstack.LocalTest
+14:58:13.260 [pool-1-thread-1] DEBUG c.b.utils.FrameworkDetectionUtils - Couldn't find the class: java.lang.ClassNotFoundException: com/browserstack//!22820!AIAuthoringTest
+14:58:13.263 [main] DEBUG c.b.utils.FrameworkDetectionUtils - Runner: testng, Engine: none
+14:58:13.264 [main] DEBUG c.b.utils.FrameworkDetectionUtils - Runner: testng, Engine: none from dependencies
+14:58:13.264 [main] DEBUG c.b.utils.FrameworkDetectionUtils - Detected final framework as: testng
+14:58:13.264 [main] DEBUG c.browserstack.BrowserStackJavaAgent - JavaAgent Version 1.56.6
+14:58:13.264 [main] INFO  c.browserstack.BrowserStackJavaAgent - Using app: [-bs://e062a41d22626330df16b78ddf43fb319f078be2]
+14:58:13.265 [main] INFO  c.browserstack.BrowserStackJavaAgent - Framework set to testng
+14:58:13.265 [main] DEBUG c.b.utils.ExitSignalHandler - Registered handler for INT
+14:58:13.265 [main] DEBUG c.b.utils.ExitSignalHandler - Registered handler for TERM
+14:58:13.265 [main] DEBUG c.b.utils.ExitSignalHandler - Registered handler for HUP
+14:58:13.265 [main] DEBUG c.b.utils.ExitSignalHandler - Registered handler for ABRT
+14:58:13.266 [main] INFO  c.browserstack.BrowserStackJavaAgent - SDK run started with id: af76b89e-5a49-4c9a-a5da-5a4b9d7b3cca
+14:58:13.266 [main] INFO  c.b.config.BrowserStackConfig - INFO
+14:58:13.270 [main] DEBUG c.b.c.CourgetteContext - [COURGETTE] Initialized temp directories - browserstackErrorReportsDirectory: /var/folders/81/htrr8c_94ljdczsjv1lw26_h0000gp/T/15015677878589452821, browserStackDataFile: /var/folders/81/htrr8c_94ljdczsjv1lw26_h0000gp/T/3435299041739862650
+14:58:13.279 [main] DEBUG com.browserstack.v2.SdkCliUtils - File /Users/bhuwankashyap/.browserstack already exist
+14:58:13.282 [main] DEBUG com.browserstack.v2.SdkCliUtils - Current CLI Path Found: /Users/bhuwankashyap/.browserstack/cli/binary-macos-arm64
+14:58:13.282 [main] DEBUG com.browserstack.v2.SdkCliUtils - Adding sdk_framework parameter: testng
+14:58:18.768 [main] INFO  com.browserstack.v2.SdkCliUtils - CLI update check successful. Status: 200
+14:58:18.770 [main] DEBUG com.browserstack.v2.SdkCliUtils - Need to update binary, current binary version: 0
+14:58:18.770 [main] DEBUG com.browserstack.v2.SdkCliUtils - Downloading SDK binary from: https://sdk-assets.browserstack.com/binary-macos-arm64-1.26.2.zip
+14:58:30.165 [main] DEBUG com.browserstack.v2.SdkCliUtils - Files successfully extracted to: /Users/bhuwankashyap/.browserstack/cli
+14:58:30.168 [main] DEBUG com.browserstack.v2.SdkCliUtils - Resolved binary path: /Users/bhuwankashyap/.browserstack/cli/binary-macos-arm64
+14:58:30.185 [main] DEBUG com.browserstack.v2.SdkCLI - Skipping PlaywrightModule load: Playwright not detected on classpath
+14:58:30.201 [main] DEBUG com.browserstack.v2.SdkCLI - startMain: main-process starting
+14:58:30.201 [main] INFO  com.browserstack.v2.SdkCLI - spawning command='/Users/bhuwankashyap/.browserstack/cli/binary-macos-arm64' 'sdk' 'tcp'

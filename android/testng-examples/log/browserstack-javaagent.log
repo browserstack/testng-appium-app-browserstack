@@ -1,0 +1,587 @@
+09:19:27.618 [main] DEBUG c.browserstack.BrowserStackJavaAgent - [AGENT] Found agent via ProtectionDomain: /Users/bhuwankashyap/.m2/repository/com/browserstack/browserstack-java-sdk/1.56.6/browserstack-java-sdk-1.56.6.jar
+09:19:27.619 [main] INFO  c.browserstack.BrowserStackJavaAgent - [AGENT] Stored agent path for child processes: /Users/bhuwankashyap/.m2/repository/com/browserstack/browserstack-java-sdk/1.56.6/browserstack-java-sdk-1.56.6.jar
+09:19:27.619 [main] DEBUG c.browserstack.BrowserStackJavaAgent - Extracted CLI argument from system : null
+09:19:27.623 [main] INFO  c.browserstack.BrowserStackJavaAgent - Selenium version detected - 4.13.0
+09:19:27.623 [main] INFO  c.browserstack.BrowserStackJavaAgent - Appium version detected - 8.6.0
+09:19:27.703 [main] DEBUG c.b.config.BrowserStackConfig - Cli Config passed - {basedir=/Users/bhuwankashyap/Documents/testng-appium-app-browserstack/android/testng-examples, test=AIAuthoringTest, user.dir=/Users/bhuwankashyap/Documents/testng-appium-app-browserstack/android/testng-examples, localrepository=/Users/bhuwankashyap/.m2/repository}
+09:19:27.706 [main] INFO  c.b.config.BrowserStackConfig - Detected Framework testng
+09:19:27.709 [main] INFO  c.b.config.BrowserStackConfig - Few SDK features were not activated as platforms object was not defined
+09:19:27.813 [main] DEBUG c.b.logger.BrowserstackLoggerFactory - Log Level set to INFO for logger ROOT
+09:19:27.813 [main] DEBUG c.b.logger.BrowserstackLoggerFactory - Log Level set to TRACE for logger browserStackAutomationFileDebugger
+09:19:27.813 [main] DEBUG c.b.logger.BrowserstackLoggerFactory - Log Level set to INFO for logger browserStackFileDebugger
+09:19:27.813 [main] DEBUG c.b.logger.BrowserstackLoggerFactory - Log Level set to INFO for logger com
+09:19:27.826 [main] INFO  c.browserstack.BrowserStackJavaAgent - Framework set to testng
+09:19:27.828 [main] INFO  c.browserstack.BrowserStackJavaAgent - SDK run started with id: cc2bb758-5e11-44d1-874a-d2c1d00dd1ae
+09:19:27.829 [main] INFO  c.b.config.BrowserStackConfig - INFO
+09:19:30.237 [main] INFO  com.browserstack.v2.SdkCliUtils - CLI update check successful. Status: 200
+09:19:40.823 [main] INFO  com.browserstack.v2.SdkCLI - spawning command='/Users/bhuwankashyap/.browserstack/cli/binary-macos-arm64' 'sdk' 'tcp'
+09:19:41.955 [ForkJoinPool.commonPool-worker-1] INFO  com.browserstack.v2.SdkCLI - loadCLIParams: start binSessionId=411f8b75-0334-496d-9674-b72653974670 listenAddress=127.0.0.1:5400
+09:19:42.104 [main] INFO  com.browserstack.v2.SdkCLI - startMain: main-process connected
+09:19:42.409 [main] INFO  c.browserstack.BrowserStackJavaAgent - Project and debug logs are captured by default. To disable, set disableAutoCaptureLogs: true in config.
+09:19:42.414 [main] INFO  com.browserstack.testOps.Listener - onStart: CLI is active
+09:19:42.863 [main] INFO  com.browserstack.testOps.Listener - logCreated: CLI is active
+09:19:42.863 [main] INFO  com.browserstack.testOps.Listener - logCreated: CLI is active
+09:19:42.865 [main] INFO  com.browserstack.testOps.Listener - logCreated: CLI is active
+09:19:42.865 [main] INFO  com.browserstack.testOps.Listener - logCreated: CLI is active
+09:19:42.865 [main] INFO  com.browserstack.testOps.Listener - logCreated: CLI is active
+09:19:42.865 [main] INFO  com.browserstack.testOps.Listener - logCreated: CLI is active
+09:19:42.865 [main] INFO  com.browserstack.testOps.Listener - logCreated: CLI is active
+09:19:42.865 [main] INFO  com.browserstack.testOps.Listener - logCreated: CLI is active
+09:19:42.866 [main] INFO  com.browserstack.testOps.Listener - logCreated: CLI is active
+09:19:42.866 [main] INFO  com.browserstack.testOps.Listener - logCreated: CLI is active
+09:19:42.867 [main] INFO  com.browserstack.testOps.Listener - logCreated: CLI is active
+09:19:42.867 [main] INFO  com.browserstack.testOps.Listener - logCreated: CLI is active
+09:19:42.867 [main] INFO  com.browserstack.testOps.Listener - logCreated: CLI is active
+09:19:42.867 [main] INFO  com.browserstack.testOps.Listener - logCreated: CLI is active
+09:19:42.867 [main] INFO  com.browserstack.testOps.Listener - logCreated: CLI is active
+09:19:42.883 [main] INFO  c.b.v2.framework.TestNgFramework - trackTestNgTest: saved instance contextId=-1106888064 target=Surefire test@null instances=[3, -1106888064]
+09:19:42.883 [main] INFO  c.b.v2.framework.TestNgFramework - trackEvent: found instance, testFrameworkState=TestFrameworkState.INIT_TEST hookState=HookState.PRE instance=-1106888064
+09:19:42.884 [main] INFO  c.b.v2.framework.TestNgFramework - trackEvent: loaded instance, testFrameworkState=TestFrameworkState.INIT_TEST hookState=HookState.PRE instance=-1106888064
+09:19:42.884 [main] WARN  c.b.v2.eventBus.EventDispatcher - notifyModuleObservers: No observers registered for hookRegistry={TestFrameworkState.INIT_TEST:HookState.PRE}
+09:19:42.905 [setUp@null] DEBUG c.browserstack.utils.UtilityMethods - [findFileMatcher] Current Path is :: /Users/bhuwankashyap/Documents/testng-appium-app-browserstack/android/testng-examples, TestClass :: com/browserstack/AppiumTest
+09:19:42.914 [setUp@null] INFO  com.browserstack.testOps.Listener - hookStarted: CLI is active
+09:19:43.167 [setUp@null] INFO  com.browserstack.testOps.Listener - logCreated: CLI is active
+09:19:43.542 [setUp@null] DEBUG c.browserstack.utils.UtilityMethods - [Patch]: SDK enabled, patching remote server
+09:19:43.543 [setUp@null] DEBUG c.browserstack.utils.UtilityMethods - quitWebDriverForCLIFlow: [Instance: 21504:3] Starting single instance quit process
+09:19:43.543 [setUp@null] DEBUG c.browserstack.utils.UtilityMethods - quitWebDriverForCLIFlow: [Instance: 21504:3] SdkCLI is running, getting tracked instance
+09:19:43.543 [setUp@null] DEBUG c.browserstack.utils.UtilityMethods - quitWebDriverForCLIFlow: [Instance: 21504:3] AutomationFramework.getTrackedInstance() returned null, no driver to quit
+09:19:43.543 [setUp@null] INFO  c.b.v2.framework.SeleniumFramework - trackSeleniumTest: saved instance contextId=-1416199405 target=21504:3 instances=[-1416199405]
+09:19:43.543 [setUp@null] INFO  c.b.v2.module.WebdriverModule - onBeforeDriverCreate: event=com.browserstack.v2.eventBus.Event@6f731759
+09:19:43.553 [setUp@null] DEBUG c.browserstack.utils.UtilityMethods - Optimal hub url from cli. 
+09:19:43.556 [setUp@null] INFO  c.b.v2.framework.TestNgFramework - trackEvent: found instance, testFrameworkState=TestFrameworkState.TEST hookState=HookState.PRE instance=-1106888064
+09:19:43.557 [setUp@null] DEBUG c.browserstack.utils.UtilityMethods - [findFileMatcher] Current Path is :: /Users/bhuwankashyap/Documents/testng-appium-app-browserstack/android/testng-examples, TestClass :: com/browserstack/AIAuthoringTest
+09:19:43.560 [setUp@null] INFO  c.b.v2.framework.TestNgFramework - trackEvent: loaded initial test data to instance, testFrameworkState=TestFrameworkState.TEST hookState=HookState.PRE instance=-1106888064 instanceThreadId=3 testResult=Surefire test testData={test_uuid=67195f71-9ede-41ab-98c7-aec7e6b5add0, test_file_path=src/test/java/com/browserstack/AIAuthoringTest.java, test_scope=Surefire suite.com.browserstack.AIAuthoringTest, test_meta={}, test_scopes=[Surefire suite, com.browserstack.AIAuthoringTest], test_code=public void com.browserstack.AIAuthoringTest.testLoginWithAIAgent() throws java.lang.Exception, test_session_name=com.browserstack.AIAuthoringTest-testLoginWithAIAgent, test_name=testLoginWithAIAgent, test_tags=, custom_metadata={}, test_id=Surefire test@null, test_location=src/test/java/com/browserstack/AIAuthoringTest.java}
+09:19:43.560 [setUp@null] INFO  c.b.v2.module.WebdriverModule - onBeforeTest: event=com.browserstack.v2.eventBus.Event@35cec305
+09:19:43.564 [testLoginWithAIAgent@null] INFO  c.b.v2.framework.TestNgFramework - trackEvent: found instance, testFrameworkState=TestFrameworkState.LOG_REPORT hookState=HookState.PRE instance=-1106888064
+09:19:43.564 [testLoginWithAIAgent@null] WARN  c.b.v2.eventBus.EventDispatcher - notifyModuleObservers: No observers registered for hookRegistry={TestFrameworkState.LOG_REPORT:HookState.PRE}
+09:19:43.564 [testLoginWithAIAgent@null] INFO  c.b.v2.framework.TestNgFramework - trackEvent: found instance, testFrameworkState=TestFrameworkState.LOG_REPORT hookState=HookState.POST instance=-1106888064
+09:19:43.564 [testLoginWithAIAgent@null] INFO  c.b.v2.framework.TestNgFramework - trackEvent: load test results
+09:19:43.565 [testLoginWithAIAgent@null] WARN  c.b.v2.eventBus.EventDispatcher - notifyModuleObservers: No observers registered for hookRegistry={TestFrameworkState.LOG_REPORT:HookState.POST}
+09:19:43.565 [testLoginWithAIAgent@null] INFO  c.b.v2.framework.TestNgFramework - trackEvent: found instance, testFrameworkState=TestFrameworkState.TEST hookState=HookState.POST instance=-1106888064
+09:19:43.565 [testLoginWithAIAgent@null] INFO  c.b.v2.module.WebdriverModule - onAfterTest: event=com.browserstack.v2.eventBus.Event@12952aff
+09:19:43.565 [testLoginWithAIAgent@null] INFO  c.b.utils.SeleniumMethodUtils - Session Name ID status marking: 
+09:19:43.885 [testLoginWithAIAgent@null] INFO  c.b.utils.SeleniumMethodUtils - Session ID status marking: 
+09:19:44.197 [tearDown@null] DEBUG c.browserstack.utils.UtilityMethods - [findFileMatcher] Current Path is :: /Users/bhuwankashyap/Documents/testng-appium-app-browserstack/android/testng-examples, TestClass :: com/browserstack/AppiumTest
+09:19:44.199 [tearDown@null] INFO  com.browserstack.testOps.Listener - hookStarted: CLI is active
+09:19:44.202 [tearDown@null] DEBUG c.browserstack.utils.UtilityMethods - [findFileMatcher] Current Path is :: /Users/bhuwankashyap/Documents/testng-appium-app-browserstack/android/testng-examples, TestClass :: com/browserstack/AppiumTest
+09:19:44.204 [tearDown@null] INFO  com.browserstack.testOps.Listener - hookFinished: CLI is active
+09:19:45.451 [tearDown@null] DEBUG c.browserstack.utils.UtilityMethods - quitWebDriverForCLIFlow: [Instance: 21504:3] Starting single instance quit process
+09:19:45.451 [tearDown@null] DEBUG c.browserstack.utils.UtilityMethods - quitWebDriverForCLIFlow: [Instance: 21504:3] SdkCLI is running, getting tracked instance
+09:19:45.451 [tearDown@null] DEBUG c.browserstack.utils.UtilityMethods - quitWebDriverForCLIFlow: [Instance: 21504:3] Found tracked instance, getting driver
+09:19:45.452 [tearDown@null] DEBUG c.browserstack.utils.UtilityMethods - quitWebDriverForCLIFlow: [Instance: 21504:3] Driver is null, nothing to quit
+09:19:45.503 [tearDown@null] INFO  com.browserstack.testOps.Listener - logCreated: CLI is active
+09:19:45.503 [tearDown@null] INFO  com.browserstack.testOps.Listener - logCreated: CLI is active
+09:19:45.503 [tearDown@null] INFO  com.browserstack.testOps.Listener - logCreated: CLI is active
+09:19:45.503 [tearDown@null] INFO  com.browserstack.testOps.Listener - logCreated: CLI is active
+09:19:45.503 [tearDown@null] INFO  com.browserstack.testOps.Listener - logCreated: CLI is active
+09:19:45.527 [Thread-0] INFO  com.browserstack.testOps.Listener - onComplete: CLI is active
+09:19:45.530 [Thread-0] INFO  com.browserstack.v2.SdkCLI - stop: cli stop triggered
+09:19:45.547 [Thread-0] INFO  com.browserstack.v2.SdkCLI - stop: shutting down CLI
+09:19:46.483 [Thread-0] DEBUG c.browserstack.utils.UtilityMethods - Browserstack yml path passed - /Users/bhuwankashyap/Documents/testng-appium-app-browserstack/android/testng-examples/browserstack.yml
+09:19:48.768 [Thread-0] DEBUG c.browserstack.utils.UtilityMethods - Browserstack Gradle Config File does not exist.
+09:19:48.770 [Thread-0] WARN  c.browserstack.utils.UtilityMethods - Unable to show build URL, as build capability is not used
+09:19:48.770 [Thread-0] INFO  c.b.config.BrowserStackConfig - WARN
+09:19:48.770 [Thread-0] DEBUG c.browserstack.utils.UtilityMethods - quitAllWebDriversForCLIFlow: Starting cleanup process
+09:19:48.770 [Thread-0] DEBUG c.browserstack.utils.UtilityMethods - quitAllWebDriversForCLIFlow: No automation framework instances found to quit for CLI flow
+09:19:48.772 [Thread-0] INFO  c.browserstack.BrowserStackJavaAgent - SDK run ended for id: cc2bb758-5e11-44d1-874a-d2c1d00dd1ae, testhub id: 
+09:19:48.772 [Thread-0] INFO  c.b.config.BrowserStackConfig - INFO
+09:23:52.389 [main] DEBUG c.browserstack.BrowserStackJavaAgent - [AGENT] Found agent via ProtectionDomain: /Users/bhuwankashyap/.m2/repository/com/browserstack/browserstack-java-sdk/1.56.6/browserstack-java-sdk-1.56.6.jar
+09:23:52.390 [main] INFO  c.browserstack.BrowserStackJavaAgent - [AGENT] Stored agent path for child processes: /Users/bhuwankashyap/.m2/repository/com/browserstack/browserstack-java-sdk/1.56.6/browserstack-java-sdk-1.56.6.jar
+09:23:52.391 [main] DEBUG c.browserstack.BrowserStackJavaAgent - Extracted CLI argument from system : null
+09:23:52.394 [main] INFO  c.browserstack.BrowserStackJavaAgent - Selenium version detected - 4.13.0
+09:23:52.394 [main] INFO  c.browserstack.BrowserStackJavaAgent - Appium version detected - 8.6.0
+09:23:52.474 [main] DEBUG c.b.config.BrowserStackConfig - Cli Config passed - {basedir=/Users/bhuwankashyap/Documents/testng-appium-app-browserstack/android/testng-examples, suitexmlfile=src/test/resources/com/browserstack/ai-authoring-test.testng.xml, user.dir=/Users/bhuwankashyap/Documents/testng-appium-app-browserstack/android/testng-examples, localrepository=/Users/bhuwankashyap/.m2/repository}
+09:23:52.477 [main] INFO  c.b.config.BrowserStackConfig - Detected Framework testng
+09:23:52.479 [main] INFO  c.b.config.BrowserStackConfig - Few SDK features were not activated as platforms object was not defined
+09:23:52.617 [main] DEBUG c.b.logger.BrowserstackLoggerFactory - Log Level set to INFO for logger ROOT
+09:23:52.617 [main] DEBUG c.b.logger.BrowserstackLoggerFactory - Log Level set to TRACE for logger browserStackAutomationFileDebugger
+09:23:52.617 [main] DEBUG c.b.logger.BrowserstackLoggerFactory - Log Level set to INFO for logger browserStackFileDebugger
+09:23:52.617 [main] DEBUG c.b.logger.BrowserstackLoggerFactory - Log Level set to INFO for logger com
+09:23:52.633 [main] INFO  c.browserstack.BrowserStackJavaAgent - Framework set to testng
+09:23:52.634 [main] INFO  c.browserstack.BrowserStackJavaAgent - SDK run started with id: a749bc63-6159-4467-a621-e0bc34a35c30
+09:23:52.634 [main] INFO  c.b.config.BrowserStackConfig - INFO
+09:23:53.923 [main] INFO  com.browserstack.v2.SdkCliUtils - CLI update check successful. Status: 200
+09:24:03.791 [main] INFO  com.browserstack.v2.SdkCLI - spawning command='/Users/bhuwankashyap/.browserstack/cli/binary-macos-arm64' 'sdk' 'tcp'
+09:24:04.747 [ForkJoinPool.commonPool-worker-1] INFO  com.browserstack.v2.SdkCLI - loadCLIParams: start binSessionId=8f4aa232-7240-4af3-8816-c86cef5934ca listenAddress=127.0.0.1:5400
+09:24:04.893 [main] INFO  com.browserstack.v2.SdkCLI - startMain: main-process connected
+09:24:05.742 [main] INFO  c.browserstack.BrowserStackJavaAgent - Project and debug logs are captured by default. To disable, set disableAutoCaptureLogs: true in config.
+09:24:05.754 [main] INFO  com.browserstack.testOps.Listener - onStart: CLI is active
+09:24:06.093 [main] INFO  com.browserstack.testOps.Listener - logCreated: CLI is active
+09:24:06.093 [main] INFO  com.browserstack.testOps.Listener - logCreated: CLI is active
+09:24:06.095 [main] INFO  com.browserstack.testOps.Listener - logCreated: CLI is active
+09:24:06.095 [main] INFO  com.browserstack.testOps.Listener - logCreated: CLI is active
+09:24:06.095 [main] INFO  com.browserstack.testOps.Listener - logCreated: CLI is active
+09:24:06.095 [main] INFO  com.browserstack.testOps.Listener - logCreated: CLI is active
+09:24:06.095 [main] INFO  com.browserstack.testOps.Listener - logCreated: CLI is active
+09:24:06.095 [main] INFO  com.browserstack.testOps.Listener - logCreated: CLI is active
+09:24:06.095 [main] INFO  com.browserstack.testOps.Listener - logCreated: CLI is active
+09:24:06.095 [main] INFO  com.browserstack.testOps.Listener - logCreated: CLI is active
+09:24:06.098 [main] INFO  com.browserstack.testOps.Listener - logCreated: CLI is active
+09:24:06.098 [main] INFO  com.browserstack.testOps.Listener - logCreated: CLI is active
+09:24:06.098 [main] INFO  com.browserstack.testOps.Listener - logCreated: CLI is active
+09:24:06.098 [main] INFO  com.browserstack.testOps.Listener - logCreated: CLI is active
+09:24:06.098 [main] INFO  com.browserstack.testOps.Listener - logCreated: CLI is active
+09:24:06.111 [main] INFO  c.b.v2.framework.TestNgFramework - trackTestNgTest: saved instance contextId=-958035003 target=FirstTest@null instances=[-958035003, 3]
+09:24:06.111 [main] INFO  c.b.v2.framework.TestNgFramework - trackEvent: found instance, testFrameworkState=TestFrameworkState.INIT_TEST hookState=HookState.PRE instance=-958035003
+09:24:06.112 [main] INFO  c.b.v2.framework.TestNgFramework - trackEvent: loaded instance, testFrameworkState=TestFrameworkState.INIT_TEST hookState=HookState.PRE instance=-958035003
+09:24:06.112 [main] WARN  c.b.v2.eventBus.EventDispatcher - notifyModuleObservers: No observers registered for hookRegistry={TestFrameworkState.INIT_TEST:HookState.PRE}
+09:24:06.122 [setUp@null] DEBUG c.browserstack.utils.UtilityMethods - [findFileMatcher] Current Path is :: /Users/bhuwankashyap/Documents/testng-appium-app-browserstack/android/testng-examples, TestClass :: com/browserstack/AppiumTest
+09:24:06.130 [setUp@null] INFO  com.browserstack.testOps.Listener - hookStarted: CLI is active
+09:24:06.220 [setUp@null] INFO  com.browserstack.testOps.Listener - logCreated: CLI is active
+09:24:06.385 [setUp@null] DEBUG c.browserstack.utils.UtilityMethods - [Patch]: SDK enabled, patching remote server
+09:24:06.386 [setUp@null] DEBUG c.browserstack.utils.UtilityMethods - quitWebDriverForCLIFlow: [Instance: 22615:3] Starting single instance quit process
+09:24:06.386 [setUp@null] DEBUG c.browserstack.utils.UtilityMethods - quitWebDriverForCLIFlow: [Instance: 22615:3] SdkCLI is running, getting tracked instance
+09:24:06.386 [setUp@null] DEBUG c.browserstack.utils.UtilityMethods - quitWebDriverForCLIFlow: [Instance: 22615:3] AutomationFramework.getTrackedInstance() returned null, no driver to quit
+09:24:06.386 [setUp@null] INFO  c.b.v2.framework.SeleniumFramework - trackSeleniumTest: saved instance contextId=-1386615981 target=22615:3 instances=[-1386615981]
+09:24:06.386 [setUp@null] INFO  c.b.v2.module.WebdriverModule - onBeforeDriverCreate: event=com.browserstack.v2.eventBus.Event@4b55ff0a
+09:24:06.393 [setUp@null] DEBUG c.browserstack.utils.UtilityMethods - Optimal hub url from cli. 
+09:24:06.398 [setUp@null] INFO  c.b.v2.framework.TestNgFramework - trackEvent: found instance, testFrameworkState=TestFrameworkState.TEST hookState=HookState.PRE instance=-958035003
+09:24:06.398 [setUp@null] DEBUG c.browserstack.utils.UtilityMethods - [findFileMatcher] Current Path is :: /Users/bhuwankashyap/Documents/testng-appium-app-browserstack/android/testng-examples, TestClass :: com/browserstack/FirstTest
+09:24:06.401 [setUp@null] INFO  c.b.v2.framework.TestNgFramework - trackEvent: loaded initial test data to instance, testFrameworkState=TestFrameworkState.TEST hookState=HookState.PRE instance=-958035003 instanceThreadId=3 testResult=FirstTest testData={test_uuid=c8714ed6-60a2-4ba7-935a-5e5f2414d203, test_file_path=src/test/java/com/browserstack/FirstTest.java, test_scope=First.com.browserstack.FirstTest, test_meta={}, test_scopes=[First, com.browserstack.FirstTest], test_code=public void com.browserstack.FirstTest.test() throws java.lang.Exception, test_session_name=com.browserstack.FirstTest-test, test_name=test, test_tags=, custom_metadata={}, test_id=FirstTest@null, test_location=src/test/java/com/browserstack/FirstTest.java}
+09:24:06.401 [setUp@null] INFO  c.b.v2.module.WebdriverModule - onBeforeTest: event=com.browserstack.v2.eventBus.Event@76a7fcbd
+09:24:06.403 [test@null] INFO  c.b.v2.framework.TestNgFramework - trackEvent: found instance, testFrameworkState=TestFrameworkState.LOG_REPORT hookState=HookState.PRE instance=-958035003
+09:24:06.403 [test@null] WARN  c.b.v2.eventBus.EventDispatcher - notifyModuleObservers: No observers registered for hookRegistry={TestFrameworkState.LOG_REPORT:HookState.PRE}
+09:24:06.403 [test@null] INFO  c.b.v2.framework.TestNgFramework - trackEvent: found instance, testFrameworkState=TestFrameworkState.LOG_REPORT hookState=HookState.POST instance=-958035003
+09:24:06.403 [test@null] INFO  c.b.v2.framework.TestNgFramework - trackEvent: load test results
+09:24:06.404 [test@null] WARN  c.b.v2.eventBus.EventDispatcher - notifyModuleObservers: No observers registered for hookRegistry={TestFrameworkState.LOG_REPORT:HookState.POST}
+09:24:06.404 [test@null] INFO  c.b.v2.framework.TestNgFramework - trackEvent: found instance, testFrameworkState=TestFrameworkState.TEST hookState=HookState.POST instance=-958035003
+09:24:06.404 [test@null] INFO  c.b.v2.module.WebdriverModule - onAfterTest: event=com.browserstack.v2.eventBus.Event@6c3f1658
+09:24:06.404 [test@null] INFO  c.b.utils.SeleniumMethodUtils - Session Name ID status marking: 
+09:24:06.718 [test@null] INFO  c.b.utils.SeleniumMethodUtils - Session ID status marking: 
+09:24:07.049 [tearDown@null] DEBUG c.browserstack.utils.UtilityMethods - [findFileMatcher] Current Path is :: /Users/bhuwankashyap/Documents/testng-appium-app-browserstack/android/testng-examples, TestClass :: com/browserstack/AppiumTest
+09:24:07.054 [tearDown@null] INFO  com.browserstack.testOps.Listener - hookStarted: CLI is active
+09:24:07.058 [tearDown@null] DEBUG c.browserstack.utils.UtilityMethods - [findFileMatcher] Current Path is :: /Users/bhuwankashyap/Documents/testng-appium-app-browserstack/android/testng-examples, TestClass :: com/browserstack/AppiumTest
+09:24:07.061 [tearDown@null] INFO  com.browserstack.testOps.Listener - hookFinished: CLI is active
+09:24:08.131 [tearDown@null] DEBUG c.browserstack.utils.UtilityMethods - quitWebDriverForCLIFlow: [Instance: 22615:3] Starting single instance quit process
+09:24:08.131 [tearDown@null] DEBUG c.browserstack.utils.UtilityMethods - quitWebDriverForCLIFlow: [Instance: 22615:3] SdkCLI is running, getting tracked instance
+09:24:08.131 [tearDown@null] DEBUG c.browserstack.utils.UtilityMethods - quitWebDriverForCLIFlow: [Instance: 22615:3] Found tracked instance, getting driver
+09:24:08.132 [tearDown@null] DEBUG c.browserstack.utils.UtilityMethods - quitWebDriverForCLIFlow: [Instance: 22615:3] Driver is null, nothing to quit
+09:24:08.175 [tearDown@null] INFO  com.browserstack.testOps.Listener - logCreated: CLI is active
+09:24:08.176 [tearDown@null] INFO  com.browserstack.testOps.Listener - logCreated: CLI is active
+09:24:08.176 [tearDown@null] INFO  com.browserstack.testOps.Listener - logCreated: CLI is active
+09:24:08.176 [tearDown@null] INFO  com.browserstack.testOps.Listener - logCreated: CLI is active
+09:24:08.176 [tearDown@null] INFO  com.browserstack.testOps.Listener - logCreated: CLI is active
+09:24:08.200 [Thread-0] INFO  com.browserstack.testOps.Listener - onComplete: CLI is active
+09:24:08.202 [Thread-0] INFO  com.browserstack.v2.SdkCLI - stop: cli stop triggered
+09:24:08.218 [Thread-0] INFO  com.browserstack.v2.SdkCLI - stop: shutting down CLI
+09:24:10.048 [Thread-0] DEBUG c.browserstack.utils.UtilityMethods - Browserstack yml path passed - /Users/bhuwankashyap/Documents/testng-appium-app-browserstack/android/testng-examples/browserstack.yml
+09:24:11.258 [Thread-0] DEBUG c.browserstack.utils.UtilityMethods - Browserstack Gradle Config File does not exist.
+09:24:11.262 [Thread-0] WARN  c.browserstack.utils.UtilityMethods - Unable to show build URL, as build capability is not used
+09:24:11.263 [Thread-0] INFO  c.b.config.BrowserStackConfig - WARN
+09:24:11.263 [Thread-0] DEBUG c.browserstack.utils.UtilityMethods - quitAllWebDriversForCLIFlow: Starting cleanup process
+09:24:11.263 [Thread-0] DEBUG c.browserstack.utils.UtilityMethods - quitAllWebDriversForCLIFlow: No automation framework instances found to quit for CLI flow
+09:24:11.267 [Thread-0] INFO  c.browserstack.BrowserStackJavaAgent - SDK run ended for id: a749bc63-6159-4467-a621-e0bc34a35c30, testhub id: 
+09:24:11.267 [Thread-0] INFO  c.b.config.BrowserStackConfig - INFO
+09:25:03.650 [main] DEBUG c.browserstack.BrowserStackJavaAgent - [AGENT] Found agent via ProtectionDomain: /Users/bhuwankashyap/.m2/repository/com/browserstack/browserstack-java-sdk/1.56.6/browserstack-java-sdk-1.56.6.jar
+09:25:03.651 [main] INFO  c.browserstack.BrowserStackJavaAgent - [AGENT] Stored agent path for child processes: /Users/bhuwankashyap/.m2/repository/com/browserstack/browserstack-java-sdk/1.56.6/browserstack-java-sdk-1.56.6.jar
+09:25:03.651 [main] DEBUG c.browserstack.BrowserStackJavaAgent - Extracted CLI argument from system : null
+09:25:03.654 [main] INFO  c.browserstack.BrowserStackJavaAgent - Selenium version detected - 4.13.0
+09:25:03.654 [main] INFO  c.browserstack.BrowserStackJavaAgent - Appium version detected - 8.6.0
+09:25:03.729 [main] DEBUG c.b.config.BrowserStackConfig - Cli Config passed - {basedir=/Users/bhuwankashyap/Documents/testng-appium-app-browserstack/android/testng-examples, surefire.suitexmlfiles=src/test/resources/com/browserstack/ai-authoring-test.testng.xml, user.dir=/Users/bhuwankashyap/Documents/testng-appium-app-browserstack/android/testng-examples, localrepository=/Users/bhuwankashyap/.m2/repository}
+09:25:03.733 [main] INFO  c.b.config.BrowserStackConfig - Detected Framework testng
+09:25:03.735 [main] INFO  c.b.config.BrowserStackConfig - Few SDK features were not activated as platforms object was not defined
+09:25:03.850 [main] DEBUG c.b.logger.BrowserstackLoggerFactory - Log Level set to INFO for logger ROOT
+09:25:03.850 [main] DEBUG c.b.logger.BrowserstackLoggerFactory - Log Level set to TRACE for logger browserStackAutomationFileDebugger
+09:25:03.850 [main] DEBUG c.b.logger.BrowserstackLoggerFactory - Log Level set to INFO for logger browserStackFileDebugger
+09:25:03.850 [main] DEBUG c.b.logger.BrowserstackLoggerFactory - Log Level set to INFO for logger com
+09:25:03.865 [main] INFO  c.browserstack.BrowserStackJavaAgent - Framework set to testng
+09:25:03.866 [main] INFO  c.browserstack.BrowserStackJavaAgent - SDK run started with id: da4d00ee-86f9-4246-acf2-24fe9f81db99
+09:25:03.866 [main] INFO  c.b.config.BrowserStackConfig - INFO
+09:25:05.417 [main] INFO  com.browserstack.v2.SdkCliUtils - CLI update check successful. Status: 200
+09:25:15.904 [main] INFO  com.browserstack.v2.SdkCLI - spawning command='/Users/bhuwankashyap/.browserstack/cli/binary-macos-arm64' 'sdk' 'tcp'
+09:25:16.865 [ForkJoinPool.commonPool-worker-1] INFO  com.browserstack.v2.SdkCLI - loadCLIParams: start binSessionId=e31cc122-1e28-48ba-b77c-2a3d6682bd48 listenAddress=127.0.0.1:5400
+09:25:17.006 [main] INFO  com.browserstack.v2.SdkCLI - startMain: main-process connected
+09:25:17.278 [main] INFO  c.browserstack.BrowserStackJavaAgent - Project and debug logs are captured by default. To disable, set disableAutoCaptureLogs: true in config.
+09:25:17.286 [main] INFO  com.browserstack.testOps.Listener - onStart: CLI is active
+09:25:17.619 [main] INFO  com.browserstack.testOps.Listener - logCreated: CLI is active
+09:25:17.619 [main] INFO  com.browserstack.testOps.Listener - logCreated: CLI is active
+09:25:17.621 [main] INFO  com.browserstack.testOps.Listener - logCreated: CLI is active
+09:25:17.621 [main] INFO  com.browserstack.testOps.Listener - logCreated: CLI is active
+09:25:17.621 [main] INFO  com.browserstack.testOps.Listener - logCreated: CLI is active
+09:25:17.622 [main] INFO  com.browserstack.testOps.Listener - logCreated: CLI is active
+09:25:17.622 [main] INFO  com.browserstack.testOps.Listener - logCreated: CLI is active
+09:25:17.622 [main] INFO  com.browserstack.testOps.Listener - logCreated: CLI is active
+09:25:17.622 [main] INFO  com.browserstack.testOps.Listener - logCreated: CLI is active
+09:25:17.622 [main] INFO  com.browserstack.testOps.Listener - logCreated: CLI is active
+09:25:17.623 [main] INFO  com.browserstack.testOps.Listener - logCreated: CLI is active
+09:25:17.623 [main] INFO  com.browserstack.testOps.Listener - logCreated: CLI is active
+09:25:17.623 [main] INFO  com.browserstack.testOps.Listener - logCreated: CLI is active
+09:25:17.623 [main] INFO  com.browserstack.testOps.Listener - logCreated: CLI is active
+09:25:17.623 [main] INFO  com.browserstack.testOps.Listener - logCreated: CLI is active
+09:25:17.636 [main] INFO  c.b.v2.framework.TestNgFramework - trackTestNgTest: saved instance contextId=-1272257018 target=AIAuthoringTest@null instances=[3, -1272257018]
+09:25:17.637 [main] INFO  c.b.v2.framework.TestNgFramework - trackEvent: found instance, testFrameworkState=TestFrameworkState.INIT_TEST hookState=HookState.PRE instance=-1272257018
+09:25:17.637 [main] INFO  c.b.v2.framework.TestNgFramework - trackEvent: loaded instance, testFrameworkState=TestFrameworkState.INIT_TEST hookState=HookState.PRE instance=-1272257018
+09:25:17.638 [main] WARN  c.b.v2.eventBus.EventDispatcher - notifyModuleObservers: No observers registered for hookRegistry={TestFrameworkState.INIT_TEST:HookState.PRE}
+09:25:17.648 [setUp@null] DEBUG c.browserstack.utils.UtilityMethods - [findFileMatcher] Current Path is :: /Users/bhuwankashyap/Documents/testng-appium-app-browserstack/android/testng-examples, TestClass :: com/browserstack/AppiumTest
+09:25:17.657 [setUp@null] INFO  com.browserstack.testOps.Listener - hookStarted: CLI is active
+09:25:17.749 [setUp@null] INFO  com.browserstack.testOps.Listener - logCreated: CLI is active
+09:25:17.897 [setUp@null] DEBUG c.browserstack.utils.UtilityMethods - [Patch]: SDK enabled, patching remote server
+09:25:17.898 [setUp@null] DEBUG c.browserstack.utils.UtilityMethods - quitWebDriverForCLIFlow: [Instance: 22908:3] Starting single instance quit process
+09:25:17.898 [setUp@null] DEBUG c.browserstack.utils.UtilityMethods - quitWebDriverForCLIFlow: [Instance: 22908:3] SdkCLI is running, getting tracked instance
+09:25:17.898 [setUp@null] DEBUG c.browserstack.utils.UtilityMethods - quitWebDriverForCLIFlow: [Instance: 22908:3] AutomationFramework.getTrackedInstance() returned null, no driver to quit
+09:25:17.899 [setUp@null] INFO  c.b.v2.framework.SeleniumFramework - trackSeleniumTest: saved instance contextId=-1383872326 target=22908:3 instances=[-1383872326]
+09:25:17.899 [setUp@null] INFO  c.b.v2.module.WebdriverModule - onBeforeDriverCreate: event=com.browserstack.v2.eventBus.Event@3a1b36a1
+09:25:17.904 [setUp@null] DEBUG c.browserstack.utils.UtilityMethods - Optimal hub url from cli. 
+09:25:17.908 [setUp@null] INFO  c.b.v2.framework.TestNgFramework - trackEvent: found instance, testFrameworkState=TestFrameworkState.TEST hookState=HookState.PRE instance=-1272257018
+09:25:17.908 [setUp@null] DEBUG c.browserstack.utils.UtilityMethods - [findFileMatcher] Current Path is :: /Users/bhuwankashyap/Documents/testng-appium-app-browserstack/android/testng-examples, TestClass :: com/browserstack/AIAuthoringTest
+09:25:17.911 [setUp@null] INFO  c.b.v2.framework.TestNgFramework - trackEvent: loaded initial test data to instance, testFrameworkState=TestFrameworkState.TEST hookState=HookState.PRE instance=-1272257018 instanceThreadId=3 testResult=AIAuthoringTest testData={test_uuid=3e7baf64-58b7-4e2a-b6ea-b2b978b9a824, test_file_path=src/test/java/com/browserstack/AIAuthoringTest.java, test_scope=AIAuthoring.com.browserstack.AIAuthoringTest, test_meta={}, test_scopes=[AIAuthoring, com.browserstack.AIAuthoringTest], test_code=public void com.browserstack.AIAuthoringTest.testLoginWithAIAgent() throws java.lang.Exception, test_session_name=com.browserstack.AIAuthoringTest-testLoginWithAIAgent, test_name=testLoginWithAIAgent, test_tags=, custom_metadata={}, test_id=AIAuthoringTest@null, test_location=src/test/java/com/browserstack/AIAuthoringTest.java}
+09:25:17.911 [setUp@null] INFO  c.b.v2.module.WebdriverModule - onBeforeTest: event=com.browserstack.v2.eventBus.Event@1e545821
+09:25:17.913 [testLoginWithAIAgent@null] INFO  c.b.v2.framework.TestNgFramework - trackEvent: found instance, testFrameworkState=TestFrameworkState.LOG_REPORT hookState=HookState.PRE instance=-1272257018
+09:25:17.913 [testLoginWithAIAgent@null] WARN  c.b.v2.eventBus.EventDispatcher - notifyModuleObservers: No observers registered for hookRegistry={TestFrameworkState.LOG_REPORT:HookState.PRE}
+09:25:17.913 [testLoginWithAIAgent@null] INFO  c.b.v2.framework.TestNgFramework - trackEvent: found instance, testFrameworkState=TestFrameworkState.LOG_REPORT hookState=HookState.POST instance=-1272257018
+09:25:17.913 [testLoginWithAIAgent@null] INFO  c.b.v2.framework.TestNgFramework - trackEvent: load test results
+09:25:17.913 [testLoginWithAIAgent@null] WARN  c.b.v2.eventBus.EventDispatcher - notifyModuleObservers: No observers registered for hookRegistry={TestFrameworkState.LOG_REPORT:HookState.POST}
+09:25:17.914 [testLoginWithAIAgent@null] INFO  c.b.v2.framework.TestNgFramework - trackEvent: found instance, testFrameworkState=TestFrameworkState.TEST hookState=HookState.POST instance=-1272257018
+09:25:17.914 [testLoginWithAIAgent@null] INFO  c.b.v2.module.WebdriverModule - onAfterTest: event=com.browserstack.v2.eventBus.Event@7f5614f9
+09:25:17.914 [testLoginWithAIAgent@null] INFO  c.b.utils.SeleniumMethodUtils - Session Name ID status marking: 
+09:25:18.208 [testLoginWithAIAgent@null] INFO  c.b.utils.SeleniumMethodUtils - Session ID status marking: 
+09:25:19.074 [tearDown@null] DEBUG c.browserstack.utils.UtilityMethods - [findFileMatcher] Current Path is :: /Users/bhuwankashyap/Documents/testng-appium-app-browserstack/android/testng-examples, TestClass :: com/browserstack/AppiumTest
+09:25:19.078 [tearDown@null] INFO  com.browserstack.testOps.Listener - hookStarted: CLI is active
+09:25:19.081 [tearDown@null] DEBUG c.browserstack.utils.UtilityMethods - [findFileMatcher] Current Path is :: /Users/bhuwankashyap/Documents/testng-appium-app-browserstack/android/testng-examples, TestClass :: com/browserstack/AppiumTest
+09:25:19.083 [tearDown@null] INFO  com.browserstack.testOps.Listener - hookFinished: CLI is active
+09:25:20.041 [tearDown@null] DEBUG c.browserstack.utils.UtilityMethods - quitWebDriverForCLIFlow: [Instance: 22908:3] Starting single instance quit process
+09:25:20.041 [tearDown@null] DEBUG c.browserstack.utils.UtilityMethods - quitWebDriverForCLIFlow: [Instance: 22908:3] SdkCLI is running, getting tracked instance
+09:25:20.041 [tearDown@null] DEBUG c.browserstack.utils.UtilityMethods - quitWebDriverForCLIFlow: [Instance: 22908:3] Found tracked instance, getting driver
+09:25:20.042 [tearDown@null] DEBUG c.browserstack.utils.UtilityMethods - quitWebDriverForCLIFlow: [Instance: 22908:3] Driver is null, nothing to quit
+09:25:20.081 [tearDown@null] INFO  com.browserstack.testOps.Listener - logCreated: CLI is active
+09:25:20.081 [tearDown@null] INFO  com.browserstack.testOps.Listener - logCreated: CLI is active
+09:25:20.081 [tearDown@null] INFO  com.browserstack.testOps.Listener - logCreated: CLI is active
+09:25:20.081 [tearDown@null] INFO  com.browserstack.testOps.Listener - logCreated: CLI is active
+09:25:20.081 [tearDown@null] INFO  com.browserstack.testOps.Listener - logCreated: CLI is active
+09:25:20.109 [Thread-0] INFO  com.browserstack.testOps.Listener - onComplete: CLI is active
+09:25:20.112 [Thread-0] INFO  com.browserstack.v2.SdkCLI - stop: cli stop triggered
+09:25:20.129 [Thread-0] INFO  com.browserstack.v2.SdkCLI - stop: shutting down CLI
+09:25:21.170 [Thread-0] DEBUG c.browserstack.utils.UtilityMethods - Browserstack yml path passed - /Users/bhuwankashyap/Documents/testng-appium-app-browserstack/android/testng-examples/browserstack.yml
+09:25:22.280 [Thread-0] DEBUG c.browserstack.utils.UtilityMethods - Browserstack Gradle Config File does not exist.
+09:25:22.283 [Thread-0] WARN  c.browserstack.utils.UtilityMethods - Unable to show build URL, as build capability is not used
+09:25:22.283 [Thread-0] INFO  c.b.config.BrowserStackConfig - WARN
+09:25:22.283 [Thread-0] DEBUG c.browserstack.utils.UtilityMethods - quitAllWebDriversForCLIFlow: Starting cleanup process
+09:25:22.283 [Thread-0] DEBUG c.browserstack.utils.UtilityMethods - quitAllWebDriversForCLIFlow: No automation framework instances found to quit for CLI flow
+09:25:22.286 [Thread-0] INFO  c.browserstack.BrowserStackJavaAgent - SDK run ended for id: da4d00ee-86f9-4246-acf2-24fe9f81db99, testhub id: 
+09:25:22.286 [Thread-0] INFO  c.b.config.BrowserStackConfig - INFO
+09:25:27.429 [main] DEBUG c.browserstack.BrowserStackJavaAgent - [AGENT] Found agent via ProtectionDomain: /Users/bhuwankashyap/.m2/repository/com/browserstack/browserstack-java-sdk/1.56.6/browserstack-java-sdk-1.56.6.jar
+09:25:27.430 [main] INFO  c.browserstack.BrowserStackJavaAgent - [AGENT] Stored agent path for child processes: /Users/bhuwankashyap/.m2/repository/com/browserstack/browserstack-java-sdk/1.56.6/browserstack-java-sdk-1.56.6.jar
+09:25:27.430 [main] DEBUG c.browserstack.BrowserStackJavaAgent - Extracted CLI argument from system : null
+09:25:27.433 [main] INFO  c.browserstack.BrowserStackJavaAgent - Selenium version detected - 4.13.0
+09:25:27.433 [main] INFO  c.browserstack.BrowserStackJavaAgent - Appium version detected - 8.6.0
+09:25:27.503 [main] DEBUG c.b.config.BrowserStackConfig - Cli Config passed - {basedir=/Users/bhuwankashyap/Documents/testng-appium-app-browserstack/android/testng-examples, user.dir=/Users/bhuwankashyap/Documents/testng-appium-app-browserstack/android/testng-examples, localrepository=/Users/bhuwankashyap/.m2/repository}
+09:25:27.506 [main] INFO  c.b.config.BrowserStackConfig - Detected Framework testng
+09:25:27.508 [main] INFO  c.b.config.BrowserStackConfig - Few SDK features were not activated as platforms object was not defined
+09:25:27.595 [main] DEBUG c.b.logger.BrowserstackLoggerFactory - Log Level set to INFO for logger ROOT
+09:25:27.595 [main] DEBUG c.b.logger.BrowserstackLoggerFactory - Log Level set to TRACE for logger browserStackAutomationFileDebugger
+09:25:27.595 [main] DEBUG c.b.logger.BrowserstackLoggerFactory - Log Level set to INFO for logger browserStackFileDebugger
+09:25:27.595 [main] DEBUG c.b.logger.BrowserstackLoggerFactory - Log Level set to INFO for logger com
+09:25:27.610 [main] INFO  c.browserstack.BrowserStackJavaAgent - Framework set to testng
+09:25:27.610 [main] INFO  c.browserstack.BrowserStackJavaAgent - SDK run started with id: 681282ee-462e-42bb-bbb4-514836e0570a
+09:25:27.610 [main] INFO  c.b.config.BrowserStackConfig - INFO
+09:25:28.425 [main] INFO  com.browserstack.v2.SdkCliUtils - CLI update check successful. Status: 200
+09:25:38.433 [main] INFO  com.browserstack.v2.SdkCLI - spawning command='/Users/bhuwankashyap/.browserstack/cli/binary-macos-arm64' 'sdk' 'tcp'
+09:25:39.348 [ForkJoinPool.commonPool-worker-1] INFO  com.browserstack.v2.SdkCLI - loadCLIParams: start binSessionId=4412e6ab-9e74-4b01-bbeb-eb87849ba3c7 listenAddress=127.0.0.1:5400
+09:25:39.489 [main] INFO  com.browserstack.v2.SdkCLI - startMain: main-process connected
+09:25:40.341 [main] INFO  c.browserstack.BrowserStackJavaAgent - Project and debug logs are captured by default. To disable, set disableAutoCaptureLogs: true in config.
+09:25:40.350 [main] INFO  com.browserstack.testOps.Listener - onStart: CLI is active
+09:25:40.694 [main] INFO  com.browserstack.testOps.Listener - logCreated: CLI is active
+09:25:40.694 [main] INFO  com.browserstack.testOps.Listener - logCreated: CLI is active
+09:25:40.696 [main] INFO  com.browserstack.testOps.Listener - logCreated: CLI is active
+09:25:40.696 [main] INFO  com.browserstack.testOps.Listener - logCreated: CLI is active
+09:25:40.696 [main] INFO  com.browserstack.testOps.Listener - logCreated: CLI is active
+09:25:40.696 [main] INFO  com.browserstack.testOps.Listener - logCreated: CLI is active
+09:25:40.696 [main] INFO  com.browserstack.testOps.Listener - logCreated: CLI is active
+09:25:40.696 [main] INFO  com.browserstack.testOps.Listener - logCreated: CLI is active
+09:25:40.697 [main] INFO  com.browserstack.testOps.Listener - logCreated: CLI is active
+09:25:40.697 [main] INFO  com.browserstack.testOps.Listener - logCreated: CLI is active
+09:25:40.698 [main] INFO  com.browserstack.testOps.Listener - logCreated: CLI is active
+09:25:40.698 [main] INFO  com.browserstack.testOps.Listener - logCreated: CLI is active
+09:25:40.698 [main] INFO  com.browserstack.testOps.Listener - logCreated: CLI is active
+09:25:40.698 [main] INFO  com.browserstack.testOps.Listener - logCreated: CLI is active
+09:25:40.698 [main] INFO  com.browserstack.testOps.Listener - logCreated: CLI is active
+09:25:40.714 [main] INFO  c.b.v2.framework.TestNgFramework - trackTestNgTest: saved instance contextId=-958035003 target=FirstTest@null instances=[-958035003, 3]
+09:25:40.714 [main] INFO  c.b.v2.framework.TestNgFramework - trackEvent: found instance, testFrameworkState=TestFrameworkState.INIT_TEST hookState=HookState.PRE instance=-958035003
+09:25:40.716 [main] INFO  c.b.v2.framework.TestNgFramework - trackEvent: loaded instance, testFrameworkState=TestFrameworkState.INIT_TEST hookState=HookState.PRE instance=-958035003
+09:25:40.716 [main] WARN  c.b.v2.eventBus.EventDispatcher - notifyModuleObservers: No observers registered for hookRegistry={TestFrameworkState.INIT_TEST:HookState.PRE}
+09:25:40.728 [setUp@null] DEBUG c.browserstack.utils.UtilityMethods - [findFileMatcher] Current Path is :: /Users/bhuwankashyap/Documents/testng-appium-app-browserstack/android/testng-examples, TestClass :: com/browserstack/AppiumTest
+09:25:40.738 [setUp@null] INFO  com.browserstack.testOps.Listener - hookStarted: CLI is active
+09:25:40.838 [setUp@null] INFO  com.browserstack.testOps.Listener - logCreated: CLI is active
+09:25:40.991 [setUp@null] DEBUG c.browserstack.utils.UtilityMethods - [Patch]: SDK enabled, patching remote server
+09:25:40.991 [setUp@null] DEBUG c.browserstack.utils.UtilityMethods - quitWebDriverForCLIFlow: [Instance: 23049:3] Starting single instance quit process
+09:25:40.992 [setUp@null] DEBUG c.browserstack.utils.UtilityMethods - quitWebDriverForCLIFlow: [Instance: 23049:3] SdkCLI is running, getting tracked instance
+09:25:40.992 [setUp@null] DEBUG c.browserstack.utils.UtilityMethods - quitWebDriverForCLIFlow: [Instance: 23049:3] AutomationFramework.getTrackedInstance() returned null, no driver to quit
+09:25:40.992 [setUp@null] INFO  c.b.v2.framework.SeleniumFramework - trackSeleniumTest: saved instance contextId=-1363434739 target=23049:3 instances=[-1363434739]
+09:25:40.992 [setUp@null] INFO  c.b.v2.module.WebdriverModule - onBeforeDriverCreate: event=com.browserstack.v2.eventBus.Event@4b55ff0a
+09:25:40.998 [setUp@null] DEBUG c.browserstack.utils.UtilityMethods - Optimal hub url from cli. 
+09:25:41.001 [setUp@null] INFO  c.b.v2.framework.TestNgFramework - trackEvent: found instance, testFrameworkState=TestFrameworkState.TEST hookState=HookState.PRE instance=-958035003
+09:25:41.002 [setUp@null] DEBUG c.browserstack.utils.UtilityMethods - [findFileMatcher] Current Path is :: /Users/bhuwankashyap/Documents/testng-appium-app-browserstack/android/testng-examples, TestClass :: com/browserstack/FirstTest
+09:25:41.007 [setUp@null] INFO  c.b.v2.framework.TestNgFramework - trackEvent: loaded initial test data to instance, testFrameworkState=TestFrameworkState.TEST hookState=HookState.PRE instance=-958035003 instanceThreadId=3 testResult=FirstTest testData={test_uuid=8715f34d-1a2e-49e7-9f0e-32bfd37b8898, test_file_path=src/test/java/com/browserstack/FirstTest.java, test_scope=First.com.browserstack.FirstTest, test_meta={}, test_scopes=[First, com.browserstack.FirstTest], test_code=public void com.browserstack.FirstTest.test() throws java.lang.Exception, test_session_name=com.browserstack.FirstTest-test, test_name=test, test_tags=, custom_metadata={}, test_id=FirstTest@null, test_location=src/test/java/com/browserstack/FirstTest.java}
+09:25:41.007 [setUp@null] INFO  c.b.v2.module.WebdriverModule - onBeforeTest: event=com.browserstack.v2.eventBus.Event@76a7fcbd
+09:25:41.009 [test@null] INFO  c.b.v2.framework.TestNgFramework - trackEvent: found instance, testFrameworkState=TestFrameworkState.LOG_REPORT hookState=HookState.PRE instance=-958035003
+09:25:41.009 [test@null] WARN  c.b.v2.eventBus.EventDispatcher - notifyModuleObservers: No observers registered for hookRegistry={TestFrameworkState.LOG_REPORT:HookState.PRE}
+09:25:41.009 [test@null] INFO  c.b.v2.framework.TestNgFramework - trackEvent: found instance, testFrameworkState=TestFrameworkState.LOG_REPORT hookState=HookState.POST instance=-958035003
+09:25:41.009 [test@null] INFO  c.b.v2.framework.TestNgFramework - trackEvent: load test results
+09:25:41.010 [test@null] WARN  c.b.v2.eventBus.EventDispatcher - notifyModuleObservers: No observers registered for hookRegistry={TestFrameworkState.LOG_REPORT:HookState.POST}
+09:25:41.010 [test@null] INFO  c.b.v2.framework.TestNgFramework - trackEvent: found instance, testFrameworkState=TestFrameworkState.TEST hookState=HookState.POST instance=-958035003
+09:25:41.010 [test@null] INFO  c.b.v2.module.WebdriverModule - onAfterTest: event=com.browserstack.v2.eventBus.Event@6c3f1658
+09:25:41.010 [test@null] INFO  c.b.utils.SeleniumMethodUtils - Session Name ID status marking: 
+09:25:41.298 [test@null] INFO  c.b.utils.SeleniumMethodUtils - Session ID status marking: 
+09:25:41.596 [tearDown@null] DEBUG c.browserstack.utils.UtilityMethods - [findFileMatcher] Current Path is :: /Users/bhuwankashyap/Documents/testng-appium-app-browserstack/android/testng-examples, TestClass :: com/browserstack/AppiumTest
+09:25:41.603 [tearDown@null] INFO  com.browserstack.testOps.Listener - hookStarted: CLI is active
+09:25:41.608 [tearDown@null] DEBUG c.browserstack.utils.UtilityMethods - [findFileMatcher] Current Path is :: /Users/bhuwankashyap/Documents/testng-appium-app-browserstack/android/testng-examples, TestClass :: com/browserstack/AppiumTest
+09:25:41.613 [tearDown@null] INFO  com.browserstack.testOps.Listener - hookFinished: CLI is active
+09:25:42.649 [tearDown@null] DEBUG c.browserstack.utils.UtilityMethods - quitWebDriverForCLIFlow: [Instance: 23049:3] Starting single instance quit process
+09:25:42.649 [tearDown@null] DEBUG c.browserstack.utils.UtilityMethods - quitWebDriverForCLIFlow: [Instance: 23049:3] SdkCLI is running, getting tracked instance
+09:25:42.649 [tearDown@null] DEBUG c.browserstack.utils.UtilityMethods - quitWebDriverForCLIFlow: [Instance: 23049:3] Found tracked instance, getting driver
+09:25:42.649 [tearDown@null] DEBUG c.browserstack.utils.UtilityMethods - quitWebDriverForCLIFlow: [Instance: 23049:3] Driver is null, nothing to quit
+09:25:42.695 [tearDown@null] INFO  com.browserstack.testOps.Listener - logCreated: CLI is active
+09:25:42.695 [tearDown@null] INFO  com.browserstack.testOps.Listener - logCreated: CLI is active
+09:25:42.695 [tearDown@null] INFO  com.browserstack.testOps.Listener - logCreated: CLI is active
+09:25:42.695 [tearDown@null] INFO  com.browserstack.testOps.Listener - logCreated: CLI is active
+09:25:42.695 [tearDown@null] INFO  com.browserstack.testOps.Listener - logCreated: CLI is active
+09:25:42.800 [Thread-0] INFO  com.browserstack.testOps.Listener - onComplete: CLI is active
+09:25:42.806 [Thread-0] INFO  com.browserstack.v2.SdkCLI - stop: cli stop triggered
+09:25:42.831 [Thread-0] INFO  com.browserstack.v2.SdkCLI - stop: shutting down CLI
+09:25:44.831 [Thread-0] DEBUG c.browserstack.utils.UtilityMethods - Browserstack yml path passed - /Users/bhuwankashyap/Documents/testng-appium-app-browserstack/android/testng-examples/browserstack.yml
+09:25:45.936 [Thread-0] DEBUG c.browserstack.utils.UtilityMethods - Browserstack Gradle Config File does not exist.
+09:25:45.939 [Thread-0] WARN  c.browserstack.utils.UtilityMethods - Unable to show build URL, as build capability is not used
+09:25:45.939 [Thread-0] INFO  c.b.config.BrowserStackConfig - WARN
+09:25:45.939 [Thread-0] DEBUG c.browserstack.utils.UtilityMethods - quitAllWebDriversForCLIFlow: Starting cleanup process
+09:25:45.939 [Thread-0] DEBUG c.browserstack.utils.UtilityMethods - quitAllWebDriversForCLIFlow: No automation framework instances found to quit for CLI flow
+09:25:45.942 [Thread-0] INFO  c.browserstack.BrowserStackJavaAgent - SDK run ended for id: 681282ee-462e-42bb-bbb4-514836e0570a, testhub id: 
+09:25:45.942 [Thread-0] INFO  c.b.config.BrowserStackConfig - INFO
+09:27:59.849 [main] DEBUG c.browserstack.BrowserStackJavaAgent - [AGENT] Found agent via ProtectionDomain: /Users/bhuwankashyap/.m2/repository/com/browserstack/browserstack-java-sdk/1.56.6/browserstack-java-sdk-1.56.6.jar
+09:27:59.850 [main] INFO  c.browserstack.BrowserStackJavaAgent - [AGENT] Stored agent path for child processes: /Users/bhuwankashyap/.m2/repository/com/browserstack/browserstack-java-sdk/1.56.6/browserstack-java-sdk-1.56.6.jar
+09:27:59.850 [main] DEBUG c.browserstack.BrowserStackJavaAgent - Extracted CLI argument from system : null
+09:27:59.854 [main] INFO  c.browserstack.BrowserStackJavaAgent - Selenium version detected - 4.13.0
+09:27:59.854 [main] INFO  c.browserstack.BrowserStackJavaAgent - Appium version detected - 8.6.0
+09:27:59.929 [main] DEBUG c.b.config.BrowserStackConfig - Cli Config passed - {basedir=/Users/bhuwankashyap/Documents/testng-appium-app-browserstack/android/testng-examples, surefire.suitexmlfiles=src/test/resources/com/browserstack/ai-authoring-test.testng.xml, user.dir=/Users/bhuwankashyap/Documents/testng-appium-app-browserstack/android/testng-examples, argline=-javaagent\:/Users/bhuwankashyap/.m2/repository/com/browserstack/browserstack-java-sdk/1.56.6/browserstack-java-sdk-1.56.6.jar, localrepository=/Users/bhuwankashyap/.m2/repository}
+09:27:59.932 [main] INFO  c.b.config.BrowserStackConfig - Detected Framework testng
+09:27:59.936 [main] INFO  c.b.config.BrowserStackConfig - Few SDK features were not activated as platforms object was not defined
+09:28:00.047 [main] DEBUG c.b.logger.BrowserstackLoggerFactory - Log Level set to INFO for logger ROOT
+09:28:00.047 [main] DEBUG c.b.logger.BrowserstackLoggerFactory - Log Level set to TRACE for logger browserStackAutomationFileDebugger
+09:28:00.047 [main] DEBUG c.b.logger.BrowserstackLoggerFactory - Log Level set to INFO for logger browserStackFileDebugger
+09:28:00.047 [main] DEBUG c.b.logger.BrowserstackLoggerFactory - Log Level set to INFO for logger com
+09:28:00.063 [main] INFO  c.browserstack.BrowserStackJavaAgent - Framework set to testng
+09:28:00.064 [main] INFO  c.browserstack.BrowserStackJavaAgent - SDK run started with id: f36577ec-dd3b-4a2a-8484-a0d60697e4b6
+09:28:00.064 [main] INFO  c.b.config.BrowserStackConfig - INFO
+09:28:01.008 [main] INFO  com.browserstack.v2.SdkCliUtils - CLI update check successful. Status: 200
+09:28:11.006 [main] INFO  com.browserstack.v2.SdkCLI - spawning command='/Users/bhuwankashyap/.browserstack/cli/binary-macos-arm64' 'sdk' 'tcp'
+09:28:11.925 [ForkJoinPool.commonPool-worker-1] INFO  com.browserstack.v2.SdkCLI - loadCLIParams: start binSessionId=105ad293-c323-4c30-ac32-20ea98d12fbd listenAddress=127.0.0.1:5400
+09:28:12.060 [main] INFO  com.browserstack.v2.SdkCLI - startMain: main-process connected
+09:28:12.371 [main] INFO  c.browserstack.BrowserStackJavaAgent - Project and debug logs are captured by default. To disable, set disableAutoCaptureLogs: true in config.
+09:28:12.383 [main] INFO  com.browserstack.testOps.Listener - onStart: CLI is active
+09:28:12.715 [main] INFO  com.browserstack.testOps.Listener - logCreated: CLI is active
+09:28:12.715 [main] INFO  com.browserstack.testOps.Listener - logCreated: CLI is active
+09:28:12.717 [main] INFO  com.browserstack.testOps.Listener - logCreated: CLI is active
+09:28:12.717 [main] INFO  com.browserstack.testOps.Listener - logCreated: CLI is active
+09:28:12.717 [main] INFO  com.browserstack.testOps.Listener - logCreated: CLI is active
+09:28:12.718 [main] INFO  com.browserstack.testOps.Listener - logCreated: CLI is active
+09:28:12.718 [main] INFO  com.browserstack.testOps.Listener - logCreated: CLI is active
+09:28:12.718 [main] INFO  com.browserstack.testOps.Listener - logCreated: CLI is active
+09:28:12.718 [main] INFO  com.browserstack.testOps.Listener - logCreated: CLI is active
+09:28:12.718 [main] INFO  com.browserstack.testOps.Listener - logCreated: CLI is active
+09:28:12.719 [main] INFO  com.browserstack.testOps.Listener - logCreated: CLI is active
+09:28:12.719 [main] INFO  com.browserstack.testOps.Listener - logCreated: CLI is active
+09:28:12.719 [main] INFO  com.browserstack.testOps.Listener - logCreated: CLI is active
+09:28:12.719 [main] INFO  com.browserstack.testOps.Listener - logCreated: CLI is active
+09:28:12.719 [main] INFO  com.browserstack.testOps.Listener - logCreated: CLI is active
+09:28:12.733 [main] INFO  c.b.v2.framework.TestNgFramework - trackTestNgTest: saved instance contextId=-1272257018 target=AIAuthoringTest@null instances=[3, -1272257018]
+09:28:12.733 [main] INFO  c.b.v2.framework.TestNgFramework - trackEvent: found instance, testFrameworkState=TestFrameworkState.INIT_TEST hookState=HookState.PRE instance=-1272257018
+09:28:12.734 [main] INFO  c.b.v2.framework.TestNgFramework - trackEvent: loaded instance, testFrameworkState=TestFrameworkState.INIT_TEST hookState=HookState.PRE instance=-1272257018
+09:28:12.734 [main] WARN  c.b.v2.eventBus.EventDispatcher - notifyModuleObservers: No observers registered for hookRegistry={TestFrameworkState.INIT_TEST:HookState.PRE}
+09:28:12.744 [setUp@null] DEBUG c.browserstack.utils.UtilityMethods - [findFileMatcher] Current Path is :: /Users/bhuwankashyap/Documents/testng-appium-app-browserstack/android/testng-examples, TestClass :: com/browserstack/AppiumTest
+09:28:12.753 [setUp@null] INFO  com.browserstack.testOps.Listener - hookStarted: CLI is active
+09:28:12.844 [setUp@null] INFO  com.browserstack.testOps.Listener - logCreated: CLI is active
+09:28:12.996 [setUp@null] DEBUG c.browserstack.utils.UtilityMethods - [Patch]: SDK enabled, patching remote server
+09:28:12.996 [setUp@null] DEBUG c.browserstack.utils.UtilityMethods - quitWebDriverForCLIFlow: [Instance: 24475:3] Starting single instance quit process
+09:28:12.996 [setUp@null] DEBUG c.browserstack.utils.UtilityMethods - quitWebDriverForCLIFlow: [Instance: 24475:3] SdkCLI is running, getting tracked instance
+09:28:12.997 [setUp@null] DEBUG c.browserstack.utils.UtilityMethods - quitWebDriverForCLIFlow: [Instance: 24475:3] AutomationFramework.getTrackedInstance() returned null, no driver to quit
+09:28:12.997 [setUp@null] INFO  c.b.v2.framework.SeleniumFramework - trackSeleniumTest: saved instance contextId=-1331025975 target=24475:3 instances=[-1331025975]
+09:28:12.997 [setUp@null] INFO  c.b.v2.module.WebdriverModule - onBeforeDriverCreate: event=com.browserstack.v2.eventBus.Event@2f3928ac
+09:28:13.003 [setUp@null] DEBUG c.browserstack.utils.UtilityMethods - Optimal hub url from cli. 
+09:28:13.007 [setUp@null] INFO  c.b.v2.framework.TestNgFramework - trackEvent: found instance, testFrameworkState=TestFrameworkState.TEST hookState=HookState.PRE instance=-1272257018
+09:28:13.008 [setUp@null] DEBUG c.browserstack.utils.UtilityMethods - [findFileMatcher] Current Path is :: /Users/bhuwankashyap/Documents/testng-appium-app-browserstack/android/testng-examples, TestClass :: com/browserstack/AIAuthoringTest
+09:28:13.012 [setUp@null] INFO  c.b.v2.framework.TestNgFramework - trackEvent: loaded initial test data to instance, testFrameworkState=TestFrameworkState.TEST hookState=HookState.PRE instance=-1272257018 instanceThreadId=3 testResult=AIAuthoringTest testData={test_uuid=05490939-a91f-4b51-9ccb-60a238546228, test_file_path=src/test/java/com/browserstack/AIAuthoringTest.java, test_scope=AIAuthoring.com.browserstack.AIAuthoringTest, test_meta={}, test_scopes=[AIAuthoring, com.browserstack.AIAuthoringTest], test_code=public void com.browserstack.AIAuthoringTest.testLoginWithAIAgent() throws java.lang.Exception, test_session_name=com.browserstack.AIAuthoringTest-testLoginWithAIAgent, test_name=testLoginWithAIAgent, test_tags=, custom_metadata={}, test_id=AIAuthoringTest@null, test_location=src/test/java/com/browserstack/AIAuthoringTest.java}
+09:28:13.013 [setUp@null] INFO  c.b.v2.module.WebdriverModule - onBeforeTest: event=com.browserstack.v2.eventBus.Event@446e7065
+09:28:13.016 [testLoginWithAIAgent@null] INFO  c.b.v2.framework.TestNgFramework - trackEvent: found instance, testFrameworkState=TestFrameworkState.LOG_REPORT hookState=HookState.PRE instance=-1272257018
+09:28:13.016 [testLoginWithAIAgent@null] WARN  c.b.v2.eventBus.EventDispatcher - notifyModuleObservers: No observers registered for hookRegistry={TestFrameworkState.LOG_REPORT:HookState.PRE}
+09:28:13.016 [testLoginWithAIAgent@null] INFO  c.b.v2.framework.TestNgFramework - trackEvent: found instance, testFrameworkState=TestFrameworkState.LOG_REPORT hookState=HookState.POST instance=-1272257018
+09:28:13.016 [testLoginWithAIAgent@null] INFO  c.b.v2.framework.TestNgFramework - trackEvent: load test results
+09:28:13.016 [testLoginWithAIAgent@null] WARN  c.b.v2.eventBus.EventDispatcher - notifyModuleObservers: No observers registered for hookRegistry={TestFrameworkState.LOG_REPORT:HookState.POST}
+09:28:13.016 [testLoginWithAIAgent@null] INFO  c.b.v2.framework.TestNgFramework - trackEvent: found instance, testFrameworkState=TestFrameworkState.TEST hookState=HookState.POST instance=-1272257018
+09:28:13.016 [testLoginWithAIAgent@null] INFO  c.b.v2.module.WebdriverModule - onAfterTest: event=com.browserstack.v2.eventBus.Event@73608eb0
+09:28:13.017 [testLoginWithAIAgent@null] INFO  c.b.utils.SeleniumMethodUtils - Session Name ID status marking: 
+09:28:13.365 [testLoginWithAIAgent@null] INFO  c.b.utils.SeleniumMethodUtils - Session ID status marking: 
+09:28:13.660 [tearDown@null] DEBUG c.browserstack.utils.UtilityMethods - [findFileMatcher] Current Path is :: /Users/bhuwankashyap/Documents/testng-appium-app-browserstack/android/testng-examples, TestClass :: com/browserstack/AppiumTest
+09:28:13.666 [tearDown@null] INFO  com.browserstack.testOps.Listener - hookStarted: CLI is active
+09:28:13.671 [tearDown@null] DEBUG c.browserstack.utils.UtilityMethods - [findFileMatcher] Current Path is :: /Users/bhuwankashyap/Documents/testng-appium-app-browserstack/android/testng-examples, TestClass :: com/browserstack/AppiumTest
+09:28:13.675 [tearDown@null] INFO  com.browserstack.testOps.Listener - hookFinished: CLI is active
+09:28:14.690 [tearDown@null] DEBUG c.browserstack.utils.UtilityMethods - quitWebDriverForCLIFlow: [Instance: 24475:3] Starting single instance quit process
+09:28:14.690 [tearDown@null] DEBUG c.browserstack.utils.UtilityMethods - quitWebDriverForCLIFlow: [Instance: 24475:3] SdkCLI is running, getting tracked instance
+09:28:14.691 [tearDown@null] DEBUG c.browserstack.utils.UtilityMethods - quitWebDriverForCLIFlow: [Instance: 24475:3] Found tracked instance, getting driver
+09:28:14.691 [tearDown@null] DEBUG c.browserstack.utils.UtilityMethods - quitWebDriverForCLIFlow: [Instance: 24475:3] Driver is null, nothing to quit
+09:28:14.733 [tearDown@null] INFO  com.browserstack.testOps.Listener - logCreated: CLI is active
+09:28:14.733 [tearDown@null] INFO  com.browserstack.testOps.Listener - logCreated: CLI is active
+09:28:14.733 [tearDown@null] INFO  com.browserstack.testOps.Listener - logCreated: CLI is active
+09:28:14.733 [tearDown@null] INFO  com.browserstack.testOps.Listener - logCreated: CLI is active
+09:28:14.733 [tearDown@null] INFO  com.browserstack.testOps.Listener - logCreated: CLI is active
+09:28:14.757 [Thread-0] INFO  com.browserstack.testOps.Listener - onComplete: CLI is active
+09:28:14.760 [Thread-0] INFO  com.browserstack.v2.SdkCLI - stop: cli stop triggered
+09:28:14.783 [Thread-0] INFO  com.browserstack.v2.SdkCLI - stop: shutting down CLI
+09:28:15.875 [Thread-0] DEBUG c.browserstack.utils.UtilityMethods - Browserstack yml path passed - /Users/bhuwankashyap/Documents/testng-appium-app-browserstack/android/testng-examples/browserstack.yml
+09:28:16.925 [Thread-0] DEBUG c.browserstack.utils.UtilityMethods - Browserstack Gradle Config File does not exist.
+09:28:16.928 [Thread-0] WARN  c.browserstack.utils.UtilityMethods - Unable to show build URL, as build capability is not used
+09:28:16.928 [Thread-0] INFO  c.b.config.BrowserStackConfig - WARN
+09:28:16.929 [Thread-0] DEBUG c.browserstack.utils.UtilityMethods - quitAllWebDriversForCLIFlow: Starting cleanup process
+09:28:16.929 [Thread-0] DEBUG c.browserstack.utils.UtilityMethods - quitAllWebDriversForCLIFlow: No automation framework instances found to quit for CLI flow
+09:28:16.932 [Thread-0] INFO  c.browserstack.BrowserStackJavaAgent - SDK run ended for id: f36577ec-dd3b-4a2a-8484-a0d60697e4b6, testhub id: 
+09:28:16.932 [Thread-0] INFO  c.b.config.BrowserStackConfig - INFO
+09:33:46.960 [main] DEBUG c.browserstack.BrowserStackJavaAgent - [AGENT] Found agent via ProtectionDomain: /Users/bhuwankashyap/.m2/repository/com/browserstack/browserstack-java-sdk/1.56.6/browserstack-java-sdk-1.56.6.jar
+09:33:46.961 [main] INFO  c.browserstack.BrowserStackJavaAgent - [AGENT] Stored agent path for child processes: /Users/bhuwankashyap/.m2/repository/com/browserstack/browserstack-java-sdk/1.56.6/browserstack-java-sdk-1.56.6.jar
+09:33:46.962 [main] DEBUG c.browserstack.BrowserStackJavaAgent - Extracted CLI argument from system : null
+09:33:46.965 [main] INFO  c.browserstack.BrowserStackJavaAgent - Selenium version detected - 4.13.0
+09:33:46.965 [main] INFO  c.browserstack.BrowserStackJavaAgent - Appium version detected - 8.6.0
+09:33:47.050 [main] DEBUG c.b.config.BrowserStackConfig - Cli Config passed - {basedir=/Users/bhuwankashyap/Documents/testng-appium-app-browserstack/android/testng-examples, surefire.suitexmlfiles=src/test/resources/com/browserstack/ai-authoring-test.testng.xml, user.dir=/Users/bhuwankashyap/Documents/testng-appium-app-browserstack/android/testng-examples, argline=-javaagent\:/Users/bhuwankashyap/.m2/repository/com/browserstack/browserstack-java-sdk/1.56.6/browserstack-java-sdk-1.56.6.jar, localrepository=/Users/bhuwankashyap/.m2/repository}
+09:33:47.052 [main] INFO  c.b.config.BrowserStackConfig - Detected Framework testng
+09:33:47.196 [main] DEBUG c.b.logger.BrowserstackLoggerFactory - Log Level set to INFO for logger ROOT
+09:33:47.197 [main] DEBUG c.b.logger.BrowserstackLoggerFactory - Log Level set to TRACE for logger browserStackAutomationFileDebugger
+09:33:47.197 [main] DEBUG c.b.logger.BrowserstackLoggerFactory - Log Level set to INFO for logger browserStackFileDebugger
+09:33:47.197 [main] DEBUG c.b.logger.BrowserstackLoggerFactory - Log Level set to INFO for logger com
+09:33:47.212 [main] INFO  c.browserstack.BrowserStackJavaAgent - Using app: [-bs://e062a41d22626330df16b78ddf43fb319f078be2]
+09:33:47.212 [main] INFO  c.browserstack.BrowserStackJavaAgent - Framework set to testng
+09:33:47.213 [main] INFO  c.browserstack.BrowserStackJavaAgent - SDK run started with id: c8caeed7-c996-4f61-a92b-06a5428ddbcf
+09:33:47.213 [main] INFO  c.b.config.BrowserStackConfig - INFO
+09:33:48.355 [main] INFO  com.browserstack.v2.SdkCliUtils - CLI update check successful. Status: 200
+09:33:58.670 [main] INFO  com.browserstack.v2.SdkCLI - spawning command='/Users/bhuwankashyap/.browserstack/cli/binary-macos-arm64' 'sdk' 'tcp'
+09:33:59.711 [ForkJoinPool.commonPool-worker-1] INFO  com.browserstack.v2.SdkCLI - loadCLIParams: start binSessionId=51c93ef5-e67c-4357-9ff3-bd059adbd933 listenAddress=127.0.0.1:5400
+10:54:25.217 [main] DEBUG c.browserstack.BrowserStackJavaAgent - [AGENT] Found agent via ProtectionDomain: /Users/bhuwankashyap/.m2/repository/com/browserstack/browserstack-java-sdk/1.56.6/browserstack-java-sdk-1.56.6.jar
+10:54:25.218 [main] INFO  c.browserstack.BrowserStackJavaAgent - [AGENT] Stored agent path for child processes: /Users/bhuwankashyap/.m2/repository/com/browserstack/browserstack-java-sdk/1.56.6/browserstack-java-sdk-1.56.6.jar
+10:54:25.218 [main] DEBUG c.browserstack.BrowserStackJavaAgent - Extracted CLI argument from system : null
+10:54:25.222 [main] INFO  c.browserstack.BrowserStackJavaAgent - Selenium version detected - 4.13.0
+10:54:25.222 [main] INFO  c.browserstack.BrowserStackJavaAgent - Appium version detected - 8.6.0
+10:54:25.311 [main] DEBUG c.b.config.BrowserStackConfig - Cli Config passed - {basedir=/Users/bhuwankashyap/Documents/testng-appium-app-browserstack/android/testng-examples, surefire.suitexmlfiles=src/test/resources/com/browserstack/ai-authoring-test.testng.xml, user.dir=/Users/bhuwankashyap/Documents/testng-appium-app-browserstack/android/testng-examples, argline=-javaagent\:/Users/bhuwankashyap/.m2/repository/com/browserstack/browserstack-java-sdk/1.56.6/browserstack-java-sdk-1.56.6.jar, localrepository=/Users/bhuwankashyap/.m2/repository}
+10:54:25.313 [main] INFO  c.b.config.BrowserStackConfig - Detected Framework testng
+10:54:25.492 [main] DEBUG c.b.logger.BrowserstackLoggerFactory - Log Level set to INFO for logger ROOT
+10:54:25.492 [main] DEBUG c.b.logger.BrowserstackLoggerFactory - Log Level set to TRACE for logger browserStackAutomationFileDebugger
+10:54:25.492 [main] DEBUG c.b.logger.BrowserstackLoggerFactory - Log Level set to INFO for logger browserStackFileDebugger
+10:54:25.492 [main] DEBUG c.b.logger.BrowserstackLoggerFactory - Log Level set to INFO for logger com
+10:54:25.508 [main] INFO  c.browserstack.BrowserStackJavaAgent - Using app: [-bs://e062a41d22626330df16b78ddf43fb319f078be2]
+10:54:25.508 [main] INFO  c.browserstack.BrowserStackJavaAgent - Framework set to testng
+10:54:25.509 [main] INFO  c.browserstack.BrowserStackJavaAgent - SDK run started with id: 221096fe-8697-4283-bc95-b112a9551561
+10:54:25.509 [main] INFO  c.b.config.BrowserStackConfig - INFO
+10:54:26.501 [main] INFO  com.browserstack.v2.SdkCliUtils - CLI update check successful. Status: 200
+10:54:36.699 [main] INFO  com.browserstack.v2.SdkCLI - spawning command='/Users/bhuwankashyap/.browserstack/cli/binary-macos-arm64' 'sdk' 'tcp'
+10:54:36.730 [main] INFO  com.browserstack.v2.SdkCLI - startMain: main-process connected
+10:54:37.623 [main] INFO  c.browserstack.BrowserStackJavaAgent - Project and debug logs are captured by default. To disable, set disableAutoCaptureLogs: true in config.
+10:54:41.847 [main] INFO  com.browserstack.testOps.Listener - Testhub started with id: 4j7qgohuqxj8bxsqvdgusqopihbsfcu5t4d2n0c4
+10:54:41.848 [main] INFO  c.b.config.BrowserStackConfig - INFO
+10:54:41.848 [main] INFO  c.browserstack.BrowserStackJavaAgent - Starting Percy......
+10:54:42.744 [main] ERROR com.browserstack.PercyFactory - Initialization of percy failed - java.lang.Exception: Could not get percy token
+	at com.browserstack.PercyFactory.<init>(Unknown Source)
+	at com.browserstack.PercyFactory.a(Unknown Source)
+	at com.browserstack.PercyFactory.a(Unknown Source)
+	at com.browserstack.PercyFactory.createInstance(Unknown Source)
+	at com.browserstack.BrowserStackJavaAgent.b(Unknown Source)
+	at com.browserstack.BrowserStackJavaAgent.a(Unknown Source)
+	at com.browserstack.BrowserStackJavaAgent.startBrowserStackAgent(Unknown Source)
+	at com.browserstack.BrowserStackJavaAgent.premain(Unknown Source)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.instrument/sun.instrument.InstrumentationImpl.loadClassAndStartAgent(InstrumentationImpl.java:544)
+	at java.instrument/sun.instrument.InstrumentationImpl.loadClassAndCallPremain(InstrumentationImpl.java:556)
+
+10:54:42.744 [main] INFO  c.browserstack.BrowserStackJavaAgent - Starting BrowserStack Local......
+10:54:50.948 [main] INFO  com.browserstack.LocalFactory - BrowserStack Local Started Successfully.
+10:54:51.320 [setUp@0] DEBUG c.browserstack.utils.UtilityMethods - [findFileMatcher] Current Path is :: /Users/bhuwankashyap/Documents/testng-appium-app-browserstack/android/testng-examples, TestClass :: com/browserstack/AppiumTest
+10:54:51.320 [setUp@1] DEBUG c.browserstack.utils.UtilityMethods - [findFileMatcher] Current Path is :: /Users/bhuwankashyap/Documents/testng-appium-app-browserstack/android/testng-examples, TestClass :: com/browserstack/AppiumTest
+10:54:51.321 [setUp@2] DEBUG c.browserstack.utils.UtilityMethods - [findFileMatcher] Current Path is :: /Users/bhuwankashyap/Documents/testng-appium-app-browserstack/android/testng-examples, TestClass :: com/browserstack/AppiumTest
+10:54:51.616 [setUp@1] DEBUG c.browserstack.utils.UtilityMethods - [Patch]: SDK enabled, patching remote server
+10:54:51.616 [setUp@2] DEBUG c.browserstack.utils.UtilityMethods - [Patch]: SDK enabled, patching remote server
+10:54:51.616 [setUp@0] DEBUG c.browserstack.utils.UtilityMethods - [Patch]: SDK enabled, patching remote server
+10:54:51.620 [setUp@2] DEBUG c.browserstack.utils.UtilityMethods - [Patch]: SDK enabled, patching remote server
+10:54:51.621 [setUp@1] DEBUG c.browserstack.utils.UtilityMethods - [Patch]: SDK enabled, patching remote server
+10:54:51.624 [setUp@0] DEBUG c.browserstack.utils.UtilityMethods - [Patch]: SDK enabled, patching remote server
+10:55:16.972 [AIAuthoringTest-2@2] DEBUG c.browserstack.utils.UtilityMethods - [findFileMatcher] Current Path is :: /Users/bhuwankashyap/Documents/testng-appium-app-browserstack/android/testng-examples, TestClass :: com/browserstack/AIAuthoringTest
+10:55:28.306 [AIAuthoringTest-1@1] DEBUG c.browserstack.utils.UtilityMethods - [findFileMatcher] Current Path is :: /Users/bhuwankashyap/Documents/testng-appium-app-browserstack/android/testng-examples, TestClass :: com/browserstack/AIAuthoringTest
+10:55:39.208 [AIAuthoringTest-0@0] DEBUG c.browserstack.utils.UtilityMethods - [findFileMatcher] Current Path is :: /Users/bhuwankashyap/Documents/testng-appium-app-browserstack/android/testng-examples, TestClass :: com/browserstack/AIAuthoringTest
+10:56:52.581 [testLoginWithAIAgent@1] DEBUG c.browserstack.utils.UtilityMethods - [findFileMatcher] Current Path is :: /Users/bhuwankashyap/Documents/testng-appium-app-browserstack/android/testng-examples, TestClass :: com/browserstack/AppiumTest
+10:56:52.590 [testLoginWithAIAgent@1] DEBUG c.browserstack.utils.UtilityMethods - [findFileMatcher] Current Path is :: /Users/bhuwankashyap/Documents/testng-appium-app-browserstack/android/testng-examples, TestClass :: com/browserstack/AIAuthoringTest
+10:56:52.746 [tearDown@1] DEBUG c.browserstack.utils.UtilityMethods - [findFileMatcher] Current Path is :: /Users/bhuwankashyap/Documents/testng-appium-app-browserstack/android/testng-examples, TestClass :: com/browserstack/AppiumTest
+10:56:55.356 [tearDown@1] DEBUG c.browserstack.utils.UtilityMethods - [findFileMatcher] Current Path is :: /Users/bhuwankashyap/Documents/testng-appium-app-browserstack/android/testng-examples, TestClass :: com/browserstack/AppiumTest
+10:57:29.403 [testLoginWithAIAgent@0] DEBUG c.browserstack.utils.UtilityMethods - [findFileMatcher] Current Path is :: /Users/bhuwankashyap/Documents/testng-appium-app-browserstack/android/testng-examples, TestClass :: com/browserstack/AppiumTest
+10:57:29.410 [testLoginWithAIAgent@0] DEBUG c.browserstack.utils.UtilityMethods - [findFileMatcher] Current Path is :: /Users/bhuwankashyap/Documents/testng-appium-app-browserstack/android/testng-examples, TestClass :: com/browserstack/AIAuthoringTest
+10:57:29.433 [tearDown@0] DEBUG c.browserstack.utils.UtilityMethods - [findFileMatcher] Current Path is :: /Users/bhuwankashyap/Documents/testng-appium-app-browserstack/android/testng-examples, TestClass :: com/browserstack/AppiumTest
+10:57:31.914 [tearDown@0] DEBUG c.browserstack.utils.UtilityMethods - [findFileMatcher] Current Path is :: /Users/bhuwankashyap/Documents/testng-appium-app-browserstack/android/testng-examples, TestClass :: com/browserstack/AppiumTest
+10:58:21.057 [testLoginWithAIAgent@2] DEBUG c.browserstack.utils.UtilityMethods - [findFileMatcher] Current Path is :: /Users/bhuwankashyap/Documents/testng-appium-app-browserstack/android/testng-examples, TestClass :: com/browserstack/AppiumTest
+10:58:21.070 [testLoginWithAIAgent@2] DEBUG c.browserstack.utils.UtilityMethods - [findFileMatcher] Current Path is :: /Users/bhuwankashyap/Documents/testng-appium-app-browserstack/android/testng-examples, TestClass :: com/browserstack/AIAuthoringTest
+10:58:21.099 [tearDown@2] DEBUG c.browserstack.utils.UtilityMethods - [findFileMatcher] Current Path is :: /Users/bhuwankashyap/Documents/testng-appium-app-browserstack/android/testng-examples, TestClass :: com/browserstack/AppiumTest
+10:58:23.392 [tearDown@2] DEBUG c.browserstack.utils.UtilityMethods - [findFileMatcher] Current Path is :: /Users/bhuwankashyap/Documents/testng-appium-app-browserstack/android/testng-examples, TestClass :: com/browserstack/AppiumTest
+10:58:24.894 [Thread-0] INFO  c.browserstack.utils.LogReportingAPI - Visit https://automation.browserstack.com/builds/4j7qgohuqxj8bxsqvdgusqopihbsfcu5t4d2n0c4 to view build report, insights, and many more debugging information all at one place!
+
+10:58:24.895 [Thread-0] INFO  c.b.config.BrowserStackConfig - INFO
+10:58:24.898 [Thread-0] DEBUG c.browserstack.utils.UtilityMethods - [collectBuildData] Skipping build data collection: runSmartSelection is not enabled.
+10:58:24.898 [Thread-0] INFO  com.browserstack.v2.SdkCLI - stop: cli is not running.
+10:58:29.658 [Thread-0] DEBUG c.browserstack.utils.UtilityMethods - Browserstack yml path passed - /Users/bhuwankashyap/Documents/testng-appium-app-browserstack/android/testng-examples/browserstack.yml
+10:58:30.837 [Thread-0] DEBUG c.browserstack.utils.UtilityMethods - Browserstack Gradle Config File does not exist.
+10:58:31.387 [Thread-0] INFO  c.browserstack.utils.UtilityMethods - View build on BrowserStack dashboard: https://app-automate.browserstack.com/dashboard/v2/builds/aa1268ace0007c45d1bf3221d4a9ab1a9b89edcf
+10:58:31.387 [Thread-0] INFO  c.b.config.BrowserStackConfig - INFO
+10:58:31.389 [Thread-0] DEBUG c.browserstack.utils.UtilityMethods - Server side buildName(browserstack build  2) is not same as client side buildName(browserstack build #2)
+10:58:31.389 [Thread-0] DEBUG c.browserstack.utils.UtilityMethods - quitAllWebDriversForCLIFlow: Starting cleanup process
+10:58:31.389 [Thread-0] DEBUG c.browserstack.utils.UtilityMethods - quitAllWebDriversForCLIFlow: No automation framework instances found to quit for CLI flow
+10:58:31.394 [Thread-0] INFO  c.browserstack.BrowserStackJavaAgent - SDK run ended for id: 221096fe-8697-4283-bc95-b112a9551561, testhub id: 4j7qgohuqxj8bxsqvdgusqopihbsfcu5t4d2n0c4
+10:58:31.394 [Thread-0] INFO  c.b.config.BrowserStackConfig - INFO
+14:48:26.147 [main] INFO  com.browserstack.v2.SdkCLI - loadBinResponse: Loading modules as per LoadBinResponse=bin_session_id: "51c93ef5-e67c-4357-9ff3-bd059adbd933"
+config: "{\"userName\":\"[REDACTED]\",\"accessKey\":\"[REDACTED]\",\"projectName\":\"BrowserStack Samples\",\"buildName\":\"browserstack build\",\"buildIdentifier\":\"#1\",\"framework\":\"testng\",\"aiAuthoring\":true,\"source\":\"testng:appium-sample-sdk:v1.1\",\"app\":\"bs://e062a41d22626330df16b78ddf43fb319f078be2\",\"platforms\":[{\"deviceName\":\"Samsung Galaxy S22 Ultra\",\"osVersion\":\"12.0\",\"platformName\":\"android\"},{\"deviceName\":\"Google Pixel 8 Pro\",\"osVersion\":\"14.0\",\"platformName\":\"android\"},{\"deviceName\":\"OnePlus 11R\",\"osVersion\":\"13.0\",\"platformName\":\"android\"}],\"parallelsPerPlatform\":1,\"browserstackLocal\":true,\"debug\":false,\"networkLogs\":false,\"consoleLogs\":\"errors\",\"browserStackLocalOptions\":{\"localIdentifier\":\"Apr_20_0933_BhuwanKashyap-C9Q29M60MC_xlxk\",\"key\":\"[REDACTED]\",\"skipBinaryInitialisation\":false},\"testObservability\":true,\"accessibility\":false,\"browserstackAutomation\":true,\"selfHeal\":false,\"disableAutoCaptureLogs\":false,\"testhub\":true,\"additionalPlatforms\":[],\"additionalParams\":{},\"testContextOptions\":{\"skipSessionStatus\":false,\"skipSessionName\":false},\"logDir\":\"/Users/bhuwankashyap/Documents/testng-appium-app-browserstack/android/testng-examples/log\",\"testOrchestrationOptions\":{\"retryTestsOnFailure\":{},\"abortBuildOnFailure\":{}},\"apis\":{\"automate\":{\"hub\":\"https://hub.browserstack.com\",\"cdp\":\"https://cdp.browserstack.com\",\"api\":\"https://api.browserstack.com\",\"upload\":\"https://api-cloud.browserstack.com\"},\"appAutomate\":{\"hub\":\"https://hub.browserstack.com\",\"api\":\"https://api.browserstack.com\",\"upload\":\"https://api-cloud.browserstack.com\"},\"percy\":{\"api\":\"https://api.browserstack.com\"},\"turboScale\":{\"api\":\"https://grid.browserstack.com\"},\"accessibility\":{\"api\":\"https://accessibility.browserstack.com\"},\"appAccessibility\":{\"api\":\"https://app-accessibility.browserstack.com\"},\"observability\":{\"api\":\"https://collector-observability.browserstack.com\",\"upload\":\"https://upload-observability.browserstack.com\"},\"configServer\":{\"api\":\"https://sdk.browserstack.com\"},\"edsInstrumentation\":{\"api\":\"https://eds.browserstack.com\"},\"tcg\":{\"api\":\"https://tcg.browserstack.com\"}},\"hubUrl\":\"https://hub-aps.browserstack.com/wd/hub\",\"proxySettings\":{}}"
+testhub {
+  jwt: "eyJhbGciOiJSUzI1NiJ9.eyJleHAiOiIxNzc2Njg1NjEyIiwiaXNzIjoid3d3LmJyb3dzZXJzdGFjay5jb20iLCJzdWIiOjEwMTE4NDc0LCJzY29wZSI6eyJwcm9kdWN0Ijoic2RrIiwidXNlcl9hY2Nlc3MiOnsiYXV0b21hdGUiOjEsImFwcF9hdXRvbWF0ZSI6MSwicGVyY3kiOjEsImFwcF9hY2Nlc3NpYmlsaXR5X3Rlc3RpbmciOjEsImF1dG9tYXRlX3R1cmJvc2NhbGUiOjEsImFjY2Vzc2liaWxpdHlfdGVzdGluZyI6MSwidGVzdF9vYnNlcnZhYmlsaXR5IjoxLCJhcHBfcGVyY3kiOjF9LCJpYWFtX3JvbGUiOiJ1c2VyIn0sImdyb3VwX2lkIjoyLCJ0ZWFtX2lkIjpudWxsLCJ1ZGFjX2FjY2VzcyI6Imdsb2JhbCJ9.BYeKjnkWxXO9iXibe93mTJKF2C9-KiJHWwdeXgCOKGImNKgtyJopa5ZrTViWTM8S1HZDaomeCucwAhFCBhmkr42sLr2Ta1qxHp1OdBV4kZZu_S_OGw7I2HPFx2G2AsV2J4IBpGxOXT-UgOKFuu3J-HWWTtRCTX4lNbiqQGZFHpK2nEnFtkBfyyP_WASejO5ihxpy7cnwZAqMxRVpCN_DKcG0-0XyveRqcQyT9GfvXjZwHml5pl8ZbKJ4-sFixDuw0cX2vxo5NRYARFQEuTNex3cpEBghGmB2fI4s7pmSt2m_T6ymRseorAIAQMtu8c6tkVmqiDy6iAA63BpKdcuscw"
+  build_hashed_id: "qc57zxhe0f926uyumcw5lo6piiwbpyb1jgqppg6a"
+  testhub_events: true
+}
+observability {
+  success: true
+  options {
+    allow_screenshots: "true"
+  }
+}
+percy {
+  5: "app"
+}
+session_framework: "selenium"
+test_orchestration {
+  retry_tests_on_failure {
+  }
+  abort_build_on_failure {
+  }
+}
+
+14:48:26.170 [main] INFO  com.browserstack.v2.SdkCLI - startChild: child-process connected
+14:48:26.177 [main] INFO  com.browserstack.v2.SdkCLI - startMain: main-process connected
+14:48:26.588 [main] INFO  c.browserstack.BrowserStackJavaAgent - Project and debug logs are captured by default. To disable, set disableAutoCaptureLogs: true in config.
+14:48:26.596 [main] INFO  com.browserstack.testOps.Listener - onStart: CLI is active
+14:48:26.923 [Thread-0] INFO  com.browserstack.testOps.Listener - onComplete: CLI is active
+14:48:26.925 [Thread-0] INFO  com.browserstack.v2.SdkCLI - stop: cli stop triggered
+14:48:28.055 [Thread-0] INFO  com.browserstack.v2.SdkCLI - stop: shutting down CLI
+14:48:29.036 [Thread-0] DEBUG c.browserstack.utils.UtilityMethods - Browserstack yml path passed - /Users/bhuwankashyap/Documents/testng-appium-app-browserstack/android/testng-examples/browserstack.yml
+14:48:30.104 [Thread-0] DEBUG c.browserstack.utils.UtilityMethods - Browserstack Gradle Config File does not exist.
+14:48:30.105 [Thread-0] INFO  c.browserstack.BrowserStackJavaAgent - Visit https://automation.browserstack.com/builds/qc57zxhe0f926uyumcw5lo6piiwbpyb1jgqppg6a to view build report, insights, and many more debugging information all at one place!
+14:48:30.105 [Thread-0] INFO  c.b.config.BrowserStackConfig - INFO
+14:48:30.106 [Thread-0] INFO  c.browserstack.utils.UtilityMethods - View build on BrowserStack dashboard: https://app-automate.browserstack.com/dashboard/v2/builds/d9014d8ef411f8d75011b0a7acf6739836f24b42
+14:48:30.106 [Thread-0] INFO  c.b.config.BrowserStackConfig - INFO
+14:48:30.107 [Thread-0] DEBUG c.browserstack.utils.UtilityMethods - quitAllWebDriversForCLIFlow: Starting cleanup process
+14:48:30.107 [Thread-0] DEBUG c.browserstack.utils.UtilityMethods - quitAllWebDriversForCLIFlow: No automation framework instances found to quit for CLI flow
+14:48:30.110 [Thread-0] INFO  c.browserstack.BrowserStackJavaAgent - SDK run ended for id: c8caeed7-c996-4f61-a92b-06a5428ddbcf, testhub id: qc57zxhe0f926uyumcw5lo6piiwbpyb1jgqppg6a
+14:48:30.110 [Thread-0] INFO  c.b.config.BrowserStackConfig - INFO
+14:58:13.033 [main] DEBUG c.browserstack.BrowserStackJavaAgent - [AGENT] Found agent via ProtectionDomain: /Users/bhuwankashyap/.m2/repository/com/browserstack/browserstack-java-sdk/1.56.6/browserstack-java-sdk-1.56.6.jar
+14:58:13.035 [main] INFO  c.browserstack.BrowserStackJavaAgent - [AGENT] Stored agent path for child processes: /Users/bhuwankashyap/.m2/repository/com/browserstack/browserstack-java-sdk/1.56.6/browserstack-java-sdk-1.56.6.jar
+14:58:13.035 [main] DEBUG c.browserstack.BrowserStackJavaAgent - Extracted CLI argument from system : null
+14:58:13.039 [main] INFO  c.browserstack.BrowserStackJavaAgent - Selenium version detected - 4.13.0
+14:58:13.039 [main] INFO  c.browserstack.BrowserStackJavaAgent - Appium version detected - 8.6.0
+14:58:13.112 [main] DEBUG c.b.config.BrowserStackConfig - Cli Config passed - {basedir=/Users/bhuwankashyap/Documents/testng-appium-app-browserstack/android/testng-examples, surefire.suitexmlfiles=src/test/resources/com/browserstack/ai-authoring-test.testng.xml, user.dir=/Users/bhuwankashyap/Documents/testng-appium-app-browserstack/android/testng-examples, argline=-javaagent\:/Users/bhuwankashyap/.m2/repository/com/browserstack/browserstack-java-sdk/1.56.6/browserstack-java-sdk-1.56.6.jar, localrepository=/Users/bhuwankashyap/.m2/repository}
+14:58:13.114 [main] INFO  c.b.config.BrowserStackConfig - Detected Framework testng
+14:58:13.246 [main] DEBUG c.b.logger.BrowserstackLoggerFactory - Log Level set to INFO for logger ROOT
+14:58:13.246 [main] DEBUG c.b.logger.BrowserstackLoggerFactory - Log Level set to TRACE for logger browserStackAutomationFileDebugger
+14:58:13.246 [main] DEBUG c.b.logger.BrowserstackLoggerFactory - Log Level set to INFO for logger browserStackFileDebugger
+14:58:13.246 [main] DEBUG c.b.logger.BrowserstackLoggerFactory - Log Level set to INFO for logger com
+14:58:13.264 [main] INFO  c.browserstack.BrowserStackJavaAgent - Using app: [-bs://e062a41d22626330df16b78ddf43fb319f078be2]
+14:58:13.265 [main] INFO  c.browserstack.BrowserStackJavaAgent - Framework set to testng
+14:58:13.266 [main] INFO  c.browserstack.BrowserStackJavaAgent - SDK run started with id: af76b89e-5a49-4c9a-a5da-5a4b9d7b3cca
+14:58:13.266 [main] INFO  c.b.config.BrowserStackConfig - INFO
+14:58:18.768 [main] INFO  com.browserstack.v2.SdkCliUtils - CLI update check successful. Status: 200
+14:58:30.201 [main] INFO  com.browserstack.v2.SdkCLI - spawning command='/Users/bhuwankashyap/.browserstack/cli/binary-macos-arm64' 'sdk' 'tcp'

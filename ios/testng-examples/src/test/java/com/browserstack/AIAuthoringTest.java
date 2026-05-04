@@ -14,7 +14,7 @@ public class AIAuthoringTest extends AppiumTest {
 
         // Search using AI Agent commands
         js.executeScript("browserstack_executor: {\"action\": \"ai\", \"arguments\": [\"Tap on Search Wikipedia\"]}");
-        js.executeScript("browserstack_executor: {\"action\": \"ai\", \"arguments\": [\"Type BrowserStack in the search field\"]}");
+        js.executeScript("browserstack_executor: {\"action\": \"ai\", \"arguments\": [\"Type India in the search field\"]}");
 
         // Verify results
         js.executeScript("browserstack_executor: {\"action\": \"ai\", \"arguments\": [\"Verify search results are displayed\"]}");
