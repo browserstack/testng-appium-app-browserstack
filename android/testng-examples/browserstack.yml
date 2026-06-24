@@ -3,8 +3,8 @@
 # =============================
 # Add your BrowserStack userName and acccessKey here or set BROWSERSTACK_USERNAME and
 # BROWSERSTACK_ACCESS_KEY as env variables
-userName: BROWSERSTACK_USERNAME
-accessKey: BROWSERSTACK_ACCESS_KEY
+userName: bhuwankashyap_vKETCb
+accessKey: EduWT5j69HyrJAyBnxMz
 
 # ======================
 # BrowserStack Reporting
@@ -24,9 +24,12 @@ buildIdentifier: '#${BUILD_NUMBER}' # Supports strings along with either/both ${
 # This property is needed to send test context to BrowserStack (test name, status)
 framework: testng
 
+aiAuthoring: true
+# this works best with latest to latest-3
+
 source: testng:appium-sample-sdk:v1.1
 
-app: ./WikipediaSample.apk
+app: bs://e062a41d22626330df16b78ddf43fb319f078be2
 #app: ./LocalSample.apk #For running local tests
 
 # =======================================

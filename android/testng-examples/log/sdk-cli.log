@@ -1,0 +1,623 @@
+2026-04-20T03:49:41.870Z CLI info [main]     Server listening on port: 5400
+2026-04-20T03:49:42.090Z CLI error     Error parsing YAML content: YAMLException: can not read a block mapping entry; a multiline key may not be an implicit key (30:7)
+
+ 27 | aiAuthoring: true
+ 28 | /** this works best with latest to la ...
+ 29 | 
+ 30 | source: testng:appium-sample-sdk:v1.1
+------------^
+ 31 | 
+ 32 | app: ./WikipediaSample.apk
+    at generateError (/snapshot/browserstack-binary/cli/dist/index.js)
+    at throwError (/snapshot/browserstack-binary/cli/dist/index.js)
+    at readBlockMapping (/snapshot/browserstack-binary/cli/dist/index.js)
+    at composeNode$3 (/snapshot/browserstack-binary/cli/dist/index.js)
+    at readDocument (/snapshot/browserstack-binary/cli/dist/index.js)
+    at loadDocuments (/snapshot/browserstack-binary/cli/dist/index.js)
+    at load (/snapshot/browserstack-binary/cli/dist/index.js)
+    at _0x3719df (/snapshot/browserstack-binary/cli/dist/index.js)
+    at _0x3b1923 (/snapshot/browserstack-binary/cli/dist/index.js)
+    at /snapshot/browserstack-binary/cli/dist/index.js {
+  reason: 'can not read a block mapping entry; a multiline key may not be an implicit key',
+  mark: {
+    name: null,
+    buffer: '# =============================\n' +
+      '# Set BrowserStack Credentials\n' +
+      '# =============================\n' +
+      '# Add your BrowserStack userName and acccessKey here or set BROWSERSTACK_USERNAME and\n' +
+      '# BROWSERSTACK_ACCESS_KEY as env variables\n' +
+      'userName: BROWSERSTACK_USERNAME\n' +
+      'accessKey: BROWSERSTACK_ACCESS_KEY\n' +
+      '\n' +
+      '# ======================\n' +
+      '# BrowserStack Reporting\n' +
+      '# ======================\n' +
+      '# The following capabilities are used to set up reporting on BrowserStack:\n' +
+      "# Set 'projectName' to the name of your project. Example, Marketing Website\n" +
+      'projectName: BrowserStack Samples\n' +
+      '# Set `buildName` as the name of the job / testsuite being run\n' +
+      'buildName: browserstack build\n' +
+      '# `buildIdentifier` is a unique id to differentiate every execution that gets appended to\n' +
+      '# buildName. Choose your buildIdentifier format from the available expressions:\n' +
+      '# ${BUILD_NUMBER} (Default): Generates an incremental counter with every execution\n' +
+      '# ${DATE_TIME}: Generates a Timestamp with every execution. Eg. 05-Nov-19:30\n' +
+      '# Read more about buildIdentifiers here -> https://www.browserstack.com/docs/automate/selenium/organize-tests\n' +
+      "buildIdentifier: '#${BUILD_NUMBER}' # Supports strings along with either/both ${expression}\n" +
+      '# Set `framework` of your test suite. Example, `testng`, `cucumber`, `cucumber-testng`\n' +
+      '# This property is needed to send test context to BrowserStack (test name, status)\n' +
+      'framework: testng\n' +
+      '\n' +
+      'aiAuthoring: true\n' +
+      '/** this works best with latest to latest-3 **/\n' +
+      '\n' +
+      'source: testng:appium-sample-sdk:v1.1\n' +
+      '\n' +
+      'app: ./WikipediaSample.apk\n' +
+      '#app: ./LocalSample.apk #For running local tests\n' +
+      '\n' +
+      '# =======================================\n' +
+      '# Platforms (Browsers / Devices to test)\n' +
+      '# =======================================\n' +
+      '# Platforms object contains all the browser / device combinations you want to test on.\n' +
+      '# Entire list available here -> (https://www.browserstack.com/list-of-browsers-and-platforms/automate)\n' +
+      '\n' +
+      'platforms:\n' +
+      '  - deviceName: Samsung Galaxy S22 Ultra\n' +
+      '    osVersion: 12.0\n' +
+      '    platformName: android\n' +
+      '  - deviceName: Google Pixel 8 Pro\n' +
+      '    osVersion: 14.0\n' +
+      '    platformName: android\n' +
+      '  - deviceName: OnePlus 11R\n' +
+      '    osVersion: 13.0\n' +
+      '    platformName: android\n' +
+      '\n' +
+      '# =======================\n' +
+      '# Parallels per Platform\n' +
+      '# =======================\n' +
+      '# The number of parallel threads to be used for each platform set.\n' +
+      "# BrowserStack's SDK runner will select the best strategy based on the configured value\n" +
+      '#\n' +
+      '# Example 1 - If you have configured 3 platforms and set `parallelsPerPlatform` as 2, a total of 6 (2 * 3) parallel threads will be used on BrowserStack\n' +
+      '#\n' +
+      '# Example 2 - If you have configured 1 platform and set `parallelsPerPlatform` as 5, a total of 5 (1 * 5) parallel threads will be used on BrowserStack\n' +
+      'parallelsPerPlatform: 1\n' +
+      '\n' +
+      '# ==========================================\n' +
+      '# BrowserStack Local\n' +
+      '# (For localhost, staging/private websites)\n' +
+      '# ==========================================\n' +
+      '# Set browserStackLocal to true if your website under test is not accessible publicly over the internet\n' +
+      '# Learn more about how BrowserStack Local works here -> https://www.browserstack.com/docs/automate/selenium/local-testing-introduction\n' +
+      'browserstackLocal: true # <boolean> (Default false)\n' +
+      '#browserStackLocalOptions:\n' +
+      '#Options to be passed to BrowserStack local in-case of advanced configurations\n' +
+      '#  localIdentifier: # <string> (Default: null) Needed if you need to run multiple instances of local.\n' +
+      '#  forceLocal: true  # <boolean> (Default: false) Set to true if you need to resolve all your traffic via BrowserStack Local tunnel.\n' +
+      '# Entire list of arguments available here -> https://www.browserstack.com/docs/automate/selenium/manage-incoming-connections\n' +
+      '\n' +
+      '# ===================\n' +
+      '# Debugging features\n' +
+      '# ===================\n' +
+      'debug: false # <boolean> # Set to true if you need screenshots for every selenium command ran\n' +
+      'networkLogs: false # <boolean> Set to true to enable HAR logs capturing\n' +
+      "consoleLogs: errors # <string> Remote browser's console debug levels to be printed (Default: errors)\n" +
+      '# Available options are `disable`, `errors`, `warnings`, `info`, `verbose` (Default: errors)\n',
+    position: 1439,
+    line: 29,
+    column: 6,
+    snippet: ' 27 | aiAuthoring: true\n' +
+      ' 28 | /** this works best with latest to la ...\n' +
+      ' 29 | \n' +
+      ' 30 | source: testng:appium-sample-sdk:v1.1\n' +
+      '------------^\n' +
+      ' 31 | \n' +
+      ' 32 | app: ./WikipediaSample.apk'
+  }
+}
+2026-04-20T03:49:45.547Z CLI info [main]     Received graceful signal termination (SIGTERM), performing cleanup
+2026-04-20T03:54:04.660Z CLI info [main]     Server listening on port: 5400
+2026-04-20T03:54:04.880Z CLI error     Error parsing YAML content: YAMLException: can not read a block mapping entry; a multiline key may not be an implicit key (30:7)
+
+ 27 | aiAuthoring: true
+ 28 | /** this works best with latest to la ...
+ 29 | 
+ 30 | source: testng:appium-sample-sdk:v1.1
+------------^
+ 31 | 
+ 32 | app: ./WikipediaSample.apk
+    at generateError (/snapshot/browserstack-binary/cli/dist/index.js)
+    at throwError (/snapshot/browserstack-binary/cli/dist/index.js)
+    at readBlockMapping (/snapshot/browserstack-binary/cli/dist/index.js)
+    at composeNode$3 (/snapshot/browserstack-binary/cli/dist/index.js)
+    at readDocument (/snapshot/browserstack-binary/cli/dist/index.js)
+    at loadDocuments (/snapshot/browserstack-binary/cli/dist/index.js)
+    at load (/snapshot/browserstack-binary/cli/dist/index.js)
+    at _0x3719df (/snapshot/browserstack-binary/cli/dist/index.js)
+    at _0x3b1923 (/snapshot/browserstack-binary/cli/dist/index.js)
+    at /snapshot/browserstack-binary/cli/dist/index.js {
+  reason: 'can not read a block mapping entry; a multiline key may not be an implicit key',
+  mark: {
+    name: null,
+    buffer: '# =============================\n' +
+      '# Set BrowserStack Credentials\n' +
+      '# =============================\n' +
+      '# Add your BrowserStack userName and acccessKey here or set BROWSERSTACK_USERNAME and\n' +
+      '# BROWSERSTACK_ACCESS_KEY as env variables\n' +
+      'userName: BROWSERSTACK_USERNAME\n' +
+      'accessKey: BROWSERSTACK_ACCESS_KEY\n' +
+      '\n' +
+      '# ======================\n' +
+      '# BrowserStack Reporting\n' +
+      '# ======================\n' +
+      '# The following capabilities are used to set up reporting on BrowserStack:\n' +
+      "# Set 'projectName' to the name of your project. Example, Marketing Website\n" +
+      'projectName: BrowserStack Samples\n' +
+      '# Set `buildName` as the name of the job / testsuite being run\n' +
+      'buildName: browserstack build\n' +
+      '# `buildIdentifier` is a unique id to differentiate every execution that gets appended to\n' +
+      '# buildName. Choose your buildIdentifier format from the available expressions:\n' +
+      '# ${BUILD_NUMBER} (Default): Generates an incremental counter with every execution\n' +
+      '# ${DATE_TIME}: Generates a Timestamp with every execution. Eg. 05-Nov-19:30\n' +
+      '# Read more about buildIdentifiers here -> https://www.browserstack.com/docs/automate/selenium/organize-tests\n' +
+      "buildIdentifier: '#${BUILD_NUMBER}' # Supports strings along with either/both ${expression}\n" +
+      '# Set `framework` of your test suite. Example, `testng`, `cucumber`, `cucumber-testng`\n' +
+      '# This property is needed to send test context to BrowserStack (test name, status)\n' +
+      'framework: testng\n' +
+      '\n' +
+      'aiAuthoring: true\n' +
+      '/** this works best with latest to latest-3 **/\n' +
+      '\n' +
+      'source: testng:appium-sample-sdk:v1.1\n' +
+      '\n' +
+      'app: ./WikipediaSample.apk\n' +
+      '#app: ./LocalSample.apk #For running local tests\n' +
+      '\n' +
+      '# =======================================\n' +
+      '# Platforms (Browsers / Devices to test)\n' +
+      '# =======================================\n' +
+      '# Platforms object contains all the browser / device combinations you want to test on.\n' +
+      '# Entire list available here -> (https://www.browserstack.com/list-of-browsers-and-platforms/automate)\n' +
+      '\n' +
+      'platforms:\n' +
+      '  - deviceName: Samsung Galaxy S22 Ultra\n' +
+      '    osVersion: 12.0\n' +
+      '    platformName: android\n' +
+      '  - deviceName: Google Pixel 8 Pro\n' +
+      '    osVersion: 14.0\n' +
+      '    platformName: android\n' +
+      '  - deviceName: OnePlus 11R\n' +
+      '    osVersion: 13.0\n' +
+      '    platformName: android\n' +
+      '\n' +
+      '# =======================\n' +
+      '# Parallels per Platform\n' +
+      '# =======================\n' +
+      '# The number of parallel threads to be used for each platform set.\n' +
+      "# BrowserStack's SDK runner will select the best strategy based on the configured value\n" +
+      '#\n' +
+      '# Example 1 - If you have configured 3 platforms and set `parallelsPerPlatform` as 2, a total of 6 (2 * 3) parallel threads will be used on BrowserStack\n' +
+      '#\n' +
+      '# Example 2 - If you have configured 1 platform and set `parallelsPerPlatform` as 5, a total of 5 (1 * 5) parallel threads will be used on BrowserStack\n' +
+      'parallelsPerPlatform: 1\n' +
+      '\n' +
+      '# ==========================================\n' +
+      '# BrowserStack Local\n' +
+      '# (For localhost, staging/private websites)\n' +
+      '# ==========================================\n' +
+      '# Set browserStackLocal to true if your website under test is not accessible publicly over the internet\n' +
+      '# Learn more about how BrowserStack Local works here -> https://www.browserstack.com/docs/automate/selenium/local-testing-introduction\n' +
+      'browserstackLocal: true # <boolean> (Default false)\n' +
+      '#browserStackLocalOptions:\n' +
+      '#Options to be passed to BrowserStack local in-case of advanced configurations\n' +
+      '#  localIdentifier: # <string> (Default: null) Needed if you need to run multiple instances of local.\n' +
+      '#  forceLocal: true  # <boolean> (Default: false) Set to true if you need to resolve all your traffic via BrowserStack Local tunnel.\n' +
+      '# Entire list of arguments available here -> https://www.browserstack.com/docs/automate/selenium/manage-incoming-connections\n' +
+      '\n' +
+      '# ===================\n' +
+      '# Debugging features\n' +
+      '# ===================\n' +
+      'debug: false # <boolean> # Set to true if you need screenshots for every selenium command ran\n' +
+      'networkLogs: false # <boolean> Set to true to enable HAR logs capturing\n' +
+      "consoleLogs: errors # <string> Remote browser's console debug levels to be printed (Default: errors)\n" +
+      '# Available options are `disable`, `errors`, `warnings`, `info`, `verbose` (Default: errors)\n',
+    position: 1439,
+    line: 29,
+    column: 6,
+    snippet: ' 27 | aiAuthoring: true\n' +
+      ' 28 | /** this works best with latest to la ...\n' +
+      ' 29 | \n' +
+      ' 30 | source: testng:appium-sample-sdk:v1.1\n' +
+      '------------^\n' +
+      ' 31 | \n' +
+      ' 32 | app: ./WikipediaSample.apk'
+  }
+}
+2026-04-20T03:54:08.218Z CLI info [main]     Received graceful signal termination (SIGTERM), performing cleanup
+2026-04-20T03:55:16.781Z CLI info [main]     Server listening on port: 5400
+2026-04-20T03:55:16.990Z CLI error     Error parsing YAML content: YAMLException: can not read a block mapping entry; a multiline key may not be an implicit key (30:7)
+
+ 27 | aiAuthoring: true
+ 28 | /** this works best with latest to la ...
+ 29 | 
+ 30 | source: testng:appium-sample-sdk:v1.1
+------------^
+ 31 | 
+ 32 | app: ./WikipediaSample.apk
+    at generateError (/snapshot/browserstack-binary/cli/dist/index.js)
+    at throwError (/snapshot/browserstack-binary/cli/dist/index.js)
+    at readBlockMapping (/snapshot/browserstack-binary/cli/dist/index.js)
+    at composeNode$3 (/snapshot/browserstack-binary/cli/dist/index.js)
+    at readDocument (/snapshot/browserstack-binary/cli/dist/index.js)
+    at loadDocuments (/snapshot/browserstack-binary/cli/dist/index.js)
+    at load (/snapshot/browserstack-binary/cli/dist/index.js)
+    at _0x3719df (/snapshot/browserstack-binary/cli/dist/index.js)
+    at _0x3b1923 (/snapshot/browserstack-binary/cli/dist/index.js)
+    at /snapshot/browserstack-binary/cli/dist/index.js {
+  reason: 'can not read a block mapping entry; a multiline key may not be an implicit key',
+  mark: {
+    name: null,
+    buffer: '# =============================\n' +
+      '# Set BrowserStack Credentials\n' +
+      '# =============================\n' +
+      '# Add your BrowserStack userName and acccessKey here or set BROWSERSTACK_USERNAME and\n' +
+      '# BROWSERSTACK_ACCESS_KEY as env variables\n' +
+      'userName: BROWSERSTACK_USERNAME\n' +
+      'accessKey: BROWSERSTACK_ACCESS_KEY\n' +
+      '\n' +
+      '# ======================\n' +
+      '# BrowserStack Reporting\n' +
+      '# ======================\n' +
+      '# The following capabilities are used to set up reporting on BrowserStack:\n' +
+      "# Set 'projectName' to the name of your project. Example, Marketing Website\n" +
+      'projectName: BrowserStack Samples\n' +
+      '# Set `buildName` as the name of the job / testsuite being run\n' +
+      'buildName: browserstack build\n' +
+      '# `buildIdentifier` is a unique id to differentiate every execution that gets appended to\n' +
+      '# buildName. Choose your buildIdentifier format from the available expressions:\n' +
+      '# ${BUILD_NUMBER} (Default): Generates an incremental counter with every execution\n' +
+      '# ${DATE_TIME}: Generates a Timestamp with every execution. Eg. 05-Nov-19:30\n' +
+      '# Read more about buildIdentifiers here -> https://www.browserstack.com/docs/automate/selenium/organize-tests\n' +
+      "buildIdentifier: '#${BUILD_NUMBER}' # Supports strings along with either/both ${expression}\n" +
+      '# Set `framework` of your test suite. Example, `testng`, `cucumber`, `cucumber-testng`\n' +
+      '# This property is needed to send test context to BrowserStack (test name, status)\n' +
+      'framework: testng\n' +
+      '\n' +
+      'aiAuthoring: true\n' +
+      '/** this works best with latest to latest-3 **/\n' +
+      '\n' +
+      'source: testng:appium-sample-sdk:v1.1\n' +
+      '\n' +
+      'app: ./WikipediaSample.apk\n' +
+      '#app: ./LocalSample.apk #For running local tests\n' +
+      '\n' +
+      '# =======================================\n' +
+      '# Platforms (Browsers / Devices to test)\n' +
+      '# =======================================\n' +
+      '# Platforms object contains all the browser / device combinations you want to test on.\n' +
+      '# Entire list available here -> (https://www.browserstack.com/list-of-browsers-and-platforms/automate)\n' +
+      '\n' +
+      'platforms:\n' +
+      '  - deviceName: Samsung Galaxy S22 Ultra\n' +
+      '    osVersion: 12.0\n' +
+      '    platformName: android\n' +
+      '  - deviceName: Google Pixel 8 Pro\n' +
+      '    osVersion: 14.0\n' +
+      '    platformName: android\n' +
+      '  - deviceName: OnePlus 11R\n' +
+      '    osVersion: 13.0\n' +
+      '    platformName: android\n' +
+      '\n' +
+      '# =======================\n' +
+      '# Parallels per Platform\n' +
+      '# =======================\n' +
+      '# The number of parallel threads to be used for each platform set.\n' +
+      "# BrowserStack's SDK runner will select the best strategy based on the configured value\n" +
+      '#\n' +
+      '# Example 1 - If you have configured 3 platforms and set `parallelsPerPlatform` as 2, a total of 6 (2 * 3) parallel threads will be used on BrowserStack\n' +
+      '#\n' +
+      '# Example 2 - If you have configured 1 platform and set `parallelsPerPlatform` as 5, a total of 5 (1 * 5) parallel threads will be used on BrowserStack\n' +
+      'parallelsPerPlatform: 1\n' +
+      '\n' +
+      '# ==========================================\n' +
+      '# BrowserStack Local\n' +
+      '# (For localhost, staging/private websites)\n' +
+      '# ==========================================\n' +
+      '# Set browserStackLocal to true if your website under test is not accessible publicly over the internet\n' +
+      '# Learn more about how BrowserStack Local works here -> https://www.browserstack.com/docs/automate/selenium/local-testing-introduction\n' +
+      'browserstackLocal: true # <boolean> (Default false)\n' +
+      '#browserStackLocalOptions:\n' +
+      '#Options to be passed to BrowserStack local in-case of advanced configurations\n' +
+      '#  localIdentifier: # <string> (Default: null) Needed if you need to run multiple instances of local.\n' +
+      '#  forceLocal: true  # <boolean> (Default: false) Set to true if you need to resolve all your traffic via BrowserStack Local tunnel.\n' +
+      '# Entire list of arguments available here -> https://www.browserstack.com/docs/automate/selenium/manage-incoming-connections\n' +
+      '\n' +
+      '# ===================\n' +
+      '# Debugging features\n' +
+      '# ===================\n' +
+      'debug: false # <boolean> # Set to true if you need screenshots for every selenium command ran\n' +
+      'networkLogs: false # <boolean> Set to true to enable HAR logs capturing\n' +
+      "consoleLogs: errors # <string> Remote browser's console debug levels to be printed (Default: errors)\n" +
+      '# Available options are `disable`, `errors`, `warnings`, `info`, `verbose` (Default: errors)\n',
+    position: 1439,
+    line: 29,
+    column: 6,
+    snippet: ' 27 | aiAuthoring: true\n' +
+      ' 28 | /** this works best with latest to la ...\n' +
+      ' 29 | \n' +
+      ' 30 | source: testng:appium-sample-sdk:v1.1\n' +
+      '------------^\n' +
+      ' 31 | \n' +
+      ' 32 | app: ./WikipediaSample.apk'
+  }
+}
+2026-04-20T03:55:20.130Z CLI info [main]     Received graceful signal termination (SIGTERM), performing cleanup
+2026-04-20T03:55:39.276Z CLI info [main]     Server listening on port: 5400
+2026-04-20T03:55:39.477Z CLI error     Error parsing YAML content: YAMLException: can not read a block mapping entry; a multiline key may not be an implicit key (30:7)
+
+ 27 | aiAuthoring: true
+ 28 | /** this works best with latest to la ...
+ 29 | 
+ 30 | source: testng:appium-sample-sdk:v1.1
+------------^
+ 31 | 
+ 32 | app: ./WikipediaSample.apk
+    at generateError (/snapshot/browserstack-binary/cli/dist/index.js)
+    at throwError (/snapshot/browserstack-binary/cli/dist/index.js)
+    at readBlockMapping (/snapshot/browserstack-binary/cli/dist/index.js)
+    at composeNode$3 (/snapshot/browserstack-binary/cli/dist/index.js)
+    at readDocument (/snapshot/browserstack-binary/cli/dist/index.js)
+    at loadDocuments (/snapshot/browserstack-binary/cli/dist/index.js)
+    at load (/snapshot/browserstack-binary/cli/dist/index.js)
+    at _0x3719df (/snapshot/browserstack-binary/cli/dist/index.js)
+    at _0x3b1923 (/snapshot/browserstack-binary/cli/dist/index.js)
+    at /snapshot/browserstack-binary/cli/dist/index.js {
+  reason: 'can not read a block mapping entry; a multiline key may not be an implicit key',
+  mark: {
+    name: null,
+    buffer: '# =============================\n' +
+      '# Set BrowserStack Credentials\n' +
+      '# =============================\n' +
+      '# Add your BrowserStack userName and acccessKey here or set BROWSERSTACK_USERNAME and\n' +
+      '# BROWSERSTACK_ACCESS_KEY as env variables\n' +
+      'userName: BROWSERSTACK_USERNAME\n' +
+      'accessKey: BROWSERSTACK_ACCESS_KEY\n' +
+      '\n' +
+      '# ======================\n' +
+      '# BrowserStack Reporting\n' +
+      '# ======================\n' +
+      '# The following capabilities are used to set up reporting on BrowserStack:\n' +
+      "# Set 'projectName' to the name of your project. Example, Marketing Website\n" +
+      'projectName: BrowserStack Samples\n' +
+      '# Set `buildName` as the name of the job / testsuite being run\n' +
+      'buildName: browserstack build\n' +
+      '# `buildIdentifier` is a unique id to differentiate every execution that gets appended to\n' +
+      '# buildName. Choose your buildIdentifier format from the available expressions:\n' +
+      '# ${BUILD_NUMBER} (Default): Generates an incremental counter with every execution\n' +
+      '# ${DATE_TIME}: Generates a Timestamp with every execution. Eg. 05-Nov-19:30\n' +
+      '# Read more about buildIdentifiers here -> https://www.browserstack.com/docs/automate/selenium/organize-tests\n' +
+      "buildIdentifier: '#${BUILD_NUMBER}' # Supports strings along with either/both ${expression}\n" +
+      '# Set `framework` of your test suite. Example, `testng`, `cucumber`, `cucumber-testng`\n' +
+      '# This property is needed to send test context to BrowserStack (test name, status)\n' +
+      'framework: testng\n' +
+      '\n' +
+      'aiAuthoring: true\n' +
+      '/** this works best with latest to latest-3 **/\n' +
+      '\n' +
+      'source: testng:appium-sample-sdk:v1.1\n' +
+      '\n' +
+      'app: ./WikipediaSample.apk\n' +
+      '#app: ./LocalSample.apk #For running local tests\n' +
+      '\n' +
+      '# =======================================\n' +
+      '# Platforms (Browsers / Devices to test)\n' +
+      '# =======================================\n' +
+      '# Platforms object contains all the browser / device combinations you want to test on.\n' +
+      '# Entire list available here -> (https://www.browserstack.com/list-of-browsers-and-platforms/automate)\n' +
+      '\n' +
+      'platforms:\n' +
+      '  - deviceName: Samsung Galaxy S22 Ultra\n' +
+      '    osVersion: 12.0\n' +
+      '    platformName: android\n' +
+      '  - deviceName: Google Pixel 8 Pro\n' +
+      '    osVersion: 14.0\n' +
+      '    platformName: android\n' +
+      '  - deviceName: OnePlus 11R\n' +
+      '    osVersion: 13.0\n' +
+      '    platformName: android\n' +
+      '\n' +
+      '# =======================\n' +
+      '# Parallels per Platform\n' +
+      '# =======================\n' +
+      '# The number of parallel threads to be used for each platform set.\n' +
+      "# BrowserStack's SDK runner will select the best strategy based on the configured value\n" +
+      '#\n' +
+      '# Example 1 - If you have configured 3 platforms and set `parallelsPerPlatform` as 2, a total of 6 (2 * 3) parallel threads will be used on BrowserStack\n' +
+      '#\n' +
+      '# Example 2 - If you have configured 1 platform and set `parallelsPerPlatform` as 5, a total of 5 (1 * 5) parallel threads will be used on BrowserStack\n' +
+      'parallelsPerPlatform: 1\n' +
+      '\n' +
+      '# ==========================================\n' +
+      '# BrowserStack Local\n' +
+      '# (For localhost, staging/private websites)\n' +
+      '# ==========================================\n' +
+      '# Set browserStackLocal to true if your website under test is not accessible publicly over the internet\n' +
+      '# Learn more about how BrowserStack Local works here -> https://www.browserstack.com/docs/automate/selenium/local-testing-introduction\n' +
+      'browserstackLocal: true # <boolean> (Default false)\n' +
+      '#browserStackLocalOptions:\n' +
+      '#Options to be passed to BrowserStack local in-case of advanced configurations\n' +
+      '#  localIdentifier: # <string> (Default: null) Needed if you need to run multiple instances of local.\n' +
+      '#  forceLocal: true  # <boolean> (Default: false) Set to true if you need to resolve all your traffic via BrowserStack Local tunnel.\n' +
+      '# Entire list of arguments available here -> https://www.browserstack.com/docs/automate/selenium/manage-incoming-connections\n' +
+      '\n' +
+      '# ===================\n' +
+      '# Debugging features\n' +
+      '# ===================\n' +
+      'debug: false # <boolean> # Set to true if you need screenshots for every selenium command ran\n' +
+      'networkLogs: false # <boolean> Set to true to enable HAR logs capturing\n' +
+      "consoleLogs: errors # <string> Remote browser's console debug levels to be printed (Default: errors)\n" +
+      '# Available options are `disable`, `errors`, `warnings`, `info`, `verbose` (Default: errors)\n',
+    position: 1439,
+    line: 29,
+    column: 6,
+    snippet: ' 27 | aiAuthoring: true\n' +
+      ' 28 | /** this works best with latest to la ...\n' +
+      ' 29 | \n' +
+      ' 30 | source: testng:appium-sample-sdk:v1.1\n' +
+      '------------^\n' +
+      ' 31 | \n' +
+      ' 32 | app: ./WikipediaSample.apk'
+  }
+}
+2026-04-20T03:55:42.832Z CLI info [main]     Received graceful signal termination (SIGTERM), performing cleanup
+2026-04-20T03:58:11.845Z CLI info [main]     Server listening on port: 5400
+2026-04-20T03:58:12.046Z CLI error     Error parsing YAML content: YAMLException: can not read a block mapping entry; a multiline key may not be an implicit key (30:7)
+
+ 27 | aiAuthoring: true
+ 28 | /** this works best with latest to la ...
+ 29 | 
+ 30 | source: testng:appium-sample-sdk:v1.1
+------------^
+ 31 | 
+ 32 | app: ./WikipediaSample.apk
+    at generateError (/snapshot/browserstack-binary/cli/dist/index.js)
+    at throwError (/snapshot/browserstack-binary/cli/dist/index.js)
+    at readBlockMapping (/snapshot/browserstack-binary/cli/dist/index.js)
+    at composeNode$3 (/snapshot/browserstack-binary/cli/dist/index.js)
+    at readDocument (/snapshot/browserstack-binary/cli/dist/index.js)
+    at loadDocuments (/snapshot/browserstack-binary/cli/dist/index.js)
+    at load (/snapshot/browserstack-binary/cli/dist/index.js)
+    at _0x3719df (/snapshot/browserstack-binary/cli/dist/index.js)
+    at _0x3b1923 (/snapshot/browserstack-binary/cli/dist/index.js)
+    at /snapshot/browserstack-binary/cli/dist/index.js {
+  reason: 'can not read a block mapping entry; a multiline key may not be an implicit key',
+  mark: {
+    name: null,
+    buffer: '# =============================\n' +
+      '# Set BrowserStack Credentials\n' +
+      '# =============================\n' +
+      '# Add your BrowserStack userName and acccessKey here or set BROWSERSTACK_USERNAME and\n' +
+      '# BROWSERSTACK_ACCESS_KEY as env variables\n' +
+      'userName: BROWSERSTACK_USERNAME\n' +
+      'accessKey: BROWSERSTACK_ACCESS_KEY\n' +
+      '\n' +
+      '# ======================\n' +
+      '# BrowserStack Reporting\n' +
+      '# ======================\n' +
+      '# The following capabilities are used to set up reporting on BrowserStack:\n' +
+      "# Set 'projectName' to the name of your project. Example, Marketing Website\n" +
+      'projectName: BrowserStack Samples\n' +
+      '# Set `buildName` as the name of the job / testsuite being run\n' +
+      'buildName: browserstack build\n' +
+      '# `buildIdentifier` is a unique id to differentiate every execution that gets appended to\n' +
+      '# buildName. Choose your buildIdentifier format from the available expressions:\n' +
+      '# ${BUILD_NUMBER} (Default): Generates an incremental counter with every execution\n' +
+      '# ${DATE_TIME}: Generates a Timestamp with every execution. Eg. 05-Nov-19:30\n' +
+      '# Read more about buildIdentifiers here -> https://www.browserstack.com/docs/automate/selenium/organize-tests\n' +
+      "buildIdentifier: '#${BUILD_NUMBER}' # Supports strings along with either/both ${expression}\n" +
+      '# Set `framework` of your test suite. Example, `testng`, `cucumber`, `cucumber-testng`\n' +
+      '# This property is needed to send test context to BrowserStack (test name, status)\n' +
+      'framework: testng\n' +
+      '\n' +
+      'aiAuthoring: true\n' +
+      '/** this works best with latest to latest-3 **/\n' +
+      '\n' +
+      'source: testng:appium-sample-sdk:v1.1\n' +
+      '\n' +
+      'app: ./WikipediaSample.apk\n' +
+      '#app: ./LocalSample.apk #For running local tests\n' +
+      '\n' +
+      '# =======================================\n' +
+      '# Platforms (Browsers / Devices to test)\n' +
+      '# =======================================\n' +
+      '# Platforms object contains all the browser / device combinations you want to test on.\n' +
+      '# Entire list available here -> (https://www.browserstack.com/list-of-browsers-and-platforms/automate)\n' +
+      '\n' +
+      'platforms:\n' +
+      '  - deviceName: Samsung Galaxy S22 Ultra\n' +
+      '    osVersion: 12.0\n' +
+      '    platformName: android\n' +
+      '  - deviceName: Google Pixel 8 Pro\n' +
+      '    osVersion: 14.0\n' +
+      '    platformName: android\n' +
+      '  - deviceName: OnePlus 11R\n' +
+      '    osVersion: 13.0\n' +
+      '    platformName: android\n' +
+      '\n' +
+      '# =======================\n' +
+      '# Parallels per Platform\n' +
+      '# =======================\n' +
+      '# The number of parallel threads to be used for each platform set.\n' +
+      "# BrowserStack's SDK runner will select the best strategy based on the configured value\n" +
+      '#\n' +
+      '# Example 1 - If you have configured 3 platforms and set `parallelsPerPlatform` as 2, a total of 6 (2 * 3) parallel threads will be used on BrowserStack\n' +
+      '#\n' +
+      '# Example 2 - If you have configured 1 platform and set `parallelsPerPlatform` as 5, a total of 5 (1 * 5) parallel threads will be used on BrowserStack\n' +
+      'parallelsPerPlatform: 1\n' +
+      '\n' +
+      '# ==========================================\n' +
+      '# BrowserStack Local\n' +
+      '# (For localhost, staging/private websites)\n' +
+      '# ==========================================\n' +
+      '# Set browserStackLocal to true if your website under test is not accessible publicly over the internet\n' +
+      '# Learn more about how BrowserStack Local works here -> https://www.browserstack.com/docs/automate/selenium/local-testing-introduction\n' +
+      'browserstackLocal: true # <boolean> (Default false)\n' +
+      '#browserStackLocalOptions:\n' +
+      '#Options to be passed to BrowserStack local in-case of advanced configurations\n' +
+      '#  localIdentifier: # <string> (Default: null) Needed if you need to run multiple instances of local.\n' +
+      '#  forceLocal: true  # <boolean> (Default: false) Set to true if you need to resolve all your traffic via BrowserStack Local tunnel.\n' +
+      '# Entire list of arguments available here -> https://www.browserstack.com/docs/automate/selenium/manage-incoming-connections\n' +
+      '\n' +
+      '# ===================\n' +
+      '# Debugging features\n' +
+      '# ===================\n' +
+      'debug: false # <boolean> # Set to true if you need screenshots for every selenium command ran\n' +
+      'networkLogs: false # <boolean> Set to true to enable HAR logs capturing\n' +
+      "consoleLogs: errors # <string> Remote browser's console debug levels to be printed (Default: errors)\n" +
+      '# Available options are `disable`, `errors`, `warnings`, `info`, `verbose` (Default: errors)\n',
+    position: 1439,
+    line: 29,
+    column: 6,
+    snippet: ' 27 | aiAuthoring: true\n' +
+      ' 28 | /** this works best with latest to la ...\n' +
+      ' 29 | \n' +
+      ' 30 | source: testng:appium-sample-sdk:v1.1\n' +
+      '------------^\n' +
+      ' 31 | \n' +
+      ' 32 | app: ./WikipediaSample.apk'
+  }
+}
+2026-04-20T03:58:14.784Z CLI info [main]     Received graceful signal termination (SIGTERM), performing cleanup
+2026-04-20T04:03:59.618Z CLI info [main]     Server listening on port: 5400
+2026-04-20T04:03:59.839Z CLI info     Config : {"userName":"[REDACTED]","accessKey":"[REDACTED]","projectName":"BrowserStack Samples","buildName":"browserstack build","buildIdentifier":"#${BUILD_NUMBER}","framework":"testng","aiAuthoring":true,"source":"testng:appium-sample-sdk:v1.1","app":"bs://e062a41d22626330df16b78ddf43fb319f078be2","platforms":[{"deviceName":"Samsung Galaxy S22 Ultra","osVersion":"12.0","platformName":"android"},{"deviceName":"Google Pixel 8 Pro","osVersion":"14.0","platformName":"android"},{"deviceName":"OnePlus 11R","osVersion":"13.0","platformName":"android"}],"parallelsPerPlatform":1,"browserstackLocal":true,"debug":false,"networkLogs":false,"consoleLogs":"errors"}
+2026-04-20T04:03:59.846Z CLI info     Should start debug utility: undefined
+2026-04-20T04:03:59.847Z CLI info [testhub:module]  [bhuwankashyap_vKETCb]   [51c93ef5-e67c-4357-9ff3-bd059adbd933]  Starting testhub from 25901:0
+2026-04-20T04:03:59.914Z CLI info  [bhuwankashyap_vKETCb]   [51c93ef5-e67c-4357-9ff3-bd059adbd933]  [PRODUCTION] Making POST request to https://sdk.browserstack.com
+2026-04-20T04:03:59.915Z CLI info  [bhuwankashyap_vKETCb]   [51c93ef5-e67c-4357-9ff3-bd059adbd933]  [PRODUCTION] Making GET request to https://hub.browserstack.com
+2026-04-20T04:04:03.097Z CLI info  [bhuwankashyap_vKETCb]   [51c93ef5-e67c-4357-9ff3-bd059adbd933]  [PRODUCTION] Making GET request to https://hub-aps.browserstack.com
+2026-04-20T04:04:03.098Z CLI info  [bhuwankashyap_vKETCb]   [51c93ef5-e67c-4357-9ff3-bd059adbd933]  [PRODUCTION] Making GET request to https://hub-euw.browserstack.com
+2026-04-20T04:04:03.098Z CLI info  [bhuwankashyap_vKETCb]   [51c93ef5-e67c-4357-9ff3-bd059adbd933]  [PRODUCTION] Making GET request to https://hub-apse.browserstack.com
+2026-04-20T04:04:03.991Z CLI info [testhub:module]  [bhuwankashyap_vKETCb]   [51c93ef5-e67c-4357-9ff3-bd059adbd933]  startBuild: response=qc57zxhe0f926uyumcw5lo6piiwbpyb1jgqppg6a
+2026-04-20T04:04:03.992Z CLI info  [bhuwankashyap_vKETCb]  [qc57zxhe0f926uyumcw5lo6piiwbpyb1jgqppg6a]  [51c93ef5-e67c-4357-9ff3-bd059adbd933]  [PRODUCTION] Making POST request to https://api.browserstack.com
+2026-04-20T04:04:05.464Z CLI info  [bhuwankashyap_vKETCb]  [qc57zxhe0f926uyumcw5lo6piiwbpyb1jgqppg6a]  [51c93ef5-e67c-4357-9ff3-bd059adbd933]  [PRODUCTION] Making GET request to https://api.browserstack.com
+2026-04-20T04:04:06.301Z CLI error  [bhuwankashyap_vKETCb]  [qc57zxhe0f926uyumcw5lo6piiwbpyb1jgqppg6a]  [51c93ef5-e67c-4357-9ff3-bd059adbd933]  error invoking callback for eventName: {}
+2026-04-20T04:04:06.302Z CLI error  [bhuwankashyap_vKETCb]  [qc57zxhe0f926uyumcw5lo6piiwbpyb1jgqppg6a]  [51c93ef5-e67c-4357-9ff3-bd059adbd933]  Error: invalid percyToken=null
+    at /snapshot/browserstack-binary/cli/dist/index.js
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+2026-04-20T06:20:07.834Z CLI info  [bhuwankashyap_vKETCb]  [qc57zxhe0f926uyumcw5lo6piiwbpyb1jgqppg6a]  [51c93ef5-e67c-4357-9ff3-bd059adbd933]  [PRODUCTION] Making POST request to https://sdk.browserstack.com
+2026-04-20T08:46:49.709Z CLI info  [bhuwankashyap_vKETCb]  [qc57zxhe0f926uyumcw5lo6piiwbpyb1jgqppg6a]  [51c93ef5-e67c-4357-9ff3-bd059adbd933]  [PRODUCTION] Making POST request to https://sdk.browserstack.com
+2026-04-20T09:18:25.836Z CLI error  [bhuwankashyap_vKETCb]  [qc57zxhe0f926uyumcw5lo6piiwbpyb1jgqppg6a]  [51c93ef5-e67c-4357-9ff3-bd059adbd933]  error invoking callback for eventName: {"name":"_0xd146e6","message":"\u0000\u0000\u0000\u000b\u0000\u0000\u0000\u0000"}
+2026-04-20T09:18:25.837Z CLI error  [bhuwankashyap_vKETCb]  [qc57zxhe0f926uyumcw5lo6piiwbpyb1jgqppg6a]  [51c93ef5-e67c-4357-9ff3-bd059adbd933]  _0xd146e6:        
+    at /snapshot/browserstack-binary/cli/dist/index.js
+    at ChildProcess.exithandler (node:child_process:414:7)
+    at ChildProcess.emit (node:events:517:28)
+    at ChildProcess.emit (node:domain:489:12)
+    at maybeClose (node:internal/child_process:1098:16)
+    at ChildProcess._handle.onexit (node:internal/child_process:303:5)
+2026-04-20T09:18:25.838Z CLI info [appautomate:service]  [bhuwankashyap_vKETCb]  [qc57zxhe0f926uyumcw5lo6piiwbpyb1jgqppg6a]  [51c93ef5-e67c-4357-9ff3-bd059adbd933]  Using app: bs://e062a41d22626330df16b78ddf43fb319f078be2
+2026-04-20T09:18:26.934Z CLI info  [bhuwankashyap_vKETCb]  [qc57zxhe0f926uyumcw5lo6piiwbpyb1jgqppg6a]  [51c93ef5-e67c-4357-9ff3-bd059adbd933]  [PRODUCTION] Making GET request to https://api.browserstack.com
+2026-04-20T09:18:26.940Z CLI info  [bhuwankashyap_vKETCb]  [qc57zxhe0f926uyumcw5lo6piiwbpyb1jgqppg6a]  [51c93ef5-e67c-4357-9ff3-bd059adbd933]  [PRODUCTION] Making PUT request to https://collector-observability.browserstack.com
+2026-04-20T09:18:27.746Z CLI info [testhub:module]  [bhuwankashyap_vKETCb]  [qc57zxhe0f926uyumcw5lo6piiwbpyb1jgqppg6a]  [51c93ef5-e67c-4357-9ff3-bd059adbd933]  stopBuild: qc57zxhe0f926uyumcw5lo6piiwbpyb1jgqppg6a request={"finished_at":"2026-04-20T09:18:26.933Z","finished_metadata":[],"custom_metadata":{}} response={"data":""}
+2026-04-20T09:18:27.750Z CLI info  [bhuwankashyap_vKETCb]  [qc57zxhe0f926uyumcw5lo6piiwbpyb1jgqppg6a]  [51c93ef5-e67c-4357-9ff3-bd059adbd933]  [PRODUCTION] Making POST request to https://api.browserstack.com
+2026-04-20T09:18:28.046Z CLI info [TEST REPORTING AND ANALYTICS:module]  [bhuwankashyap_vKETCb]  [qc57zxhe0f926uyumcw5lo6piiwbpyb1jgqppg6a]  [51c93ef5-e67c-4357-9ff3-bd059adbd933]  Visit https://automation.browserstack.com/builds/qc57zxhe0f926uyumcw5lo6piiwbpyb1jgqppg6a to view build report, insights, and many more debugging information all at one place!
+2026-04-20T09:18:28.056Z CLI info [main]  [bhuwankashyap_vKETCb]  [qc57zxhe0f926uyumcw5lo6piiwbpyb1jgqppg6a]  [51c93ef5-e67c-4357-9ff3-bd059adbd933]  Received graceful signal termination (SIGTERM), performing cleanup
